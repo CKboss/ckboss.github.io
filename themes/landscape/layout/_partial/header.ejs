@@ -25,8 +25,11 @@
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <%- search_form({button: '&#xF002;'}) %>
+        <form class="search-form">
+          <input type="text" id="ts-search-input"  name="word" maxlength="20"  class="search-form-input" placeholder="搜索">
+        </form>
       </div>
     </div>
   </div>
+  <%- partial('tinysou') %>
 </header>
