@@ -83,8 +83,11 @@ theme: landscape
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type: git
+- type: git
   repo: git@github.com:CKboss/ckboss.github.io.git
+- type: git
+  repo: git@gitcafe.com:CKboss/ckboss.git
+  branch: gitcafe-pages
 
 #comment
 #disqus_shortname: myhexoblog2
