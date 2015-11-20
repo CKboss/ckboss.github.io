@@ -19,3 +19,24 @@ date: 2015-09-07 18:48:38
 
 ##### QQ: 17569427 89
 ##### Email: qhn999[AT]2008.sina.com
+
+```bash
+                          ./+o+-       ckboss@ckboss
+                  yyyyy- -yyyyyy+      OS: ubuntu Ubuntu 14.04 trusty
+               ://+//////-yyyyyyo      Kernel: x86_64 Linux 3.13.0-35-generic
+           .++ .:/++++++/-.+sss/`      Uptime: 6h 25m
+         .:++o:  /++++++++/:--:/-      Packages: 4526
+        o:+o+:++.`..```.-/oo+++++/     Shell: zsh 5.0.2
+       .:+o:+o/.          `+sssoo+/    Resolution: 1280x800
+  .++/+:+oo+o:`             /sssooo.   WM: i3
+ /+++//+:`oo+o               /::--:.   GTK Theme: Orchis [GTK2/3]
+ \+/+o+++`o++o               ++////.   Icon Theme: oxygen
+  .++.o+++oo+:`             /dddhhh.   Font: Ubuntu Regular 12
+       .+.o+oo:.          `oddhhhh+    CPU: Intel Pentium Dual CPU T3400 @ 2.166GHz
+        \+.++o+o``-````.:ohdhhhhh+     GPU: GeForce 9300M GS
+         `:o+++ `ohhhhhhhhyo++os:      RAM: 1165MiB / 3004MiB
+           .o:`.syhhhhhhh/.oo++o`     
+               /osyyyyyyo++ooo+++/    
+                   ````` +oo+++o\:    
+                          `oo++.  
+```
