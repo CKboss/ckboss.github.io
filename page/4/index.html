@@ -104,6 +104,83 @@ _ts(option);
       <div class="outer">
         <section id="main">
   
+    <article id="post-HDOJ3715" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/10/30/HDOJ3715/" class="article-date">
+  <time datetime="2015-10-30T07:51:46.000Z" itemprop="datePublished">2015-10-30</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/acm-图论/">acm_图论</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/30/HDOJ3715/">HDOJ 3715 Go Deeper 2-SAT+二分</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>二分答案,2-SAT判断是否可行.</p>
+<h4 id="2-SAT建图总结:"><strong>2-SAT建图总结:</strong></h4><h5 id="++2-SAT建图的要点是只建必要边-++">++2-SAT建图的要点是只建必要边.++</h5><h6 id="比如:">比如:</h6><p>A(a,a’),B(b,b’)两对点,如果A和B不能同时选,那么考虑a选择了a则必须选择b’,这是一个<strong>必要边</strong>.考虑a’,没有选择A则B可以选也可以不选,那么就<strong>不是必要边</strong>,不要连接a’到其他点的边.</p>
+<p>对于题,考虑c分别为0,1,2的各种情况:</p>
+<p>A(a选,a’不选),B(b选,b’不选)</p>
+<ul>
+<li>c==0时: A+B!=0 , 选择了a’则必须得选b,选择了b’必须选择a这两条是必要边.</li>
+</ul>
+<p>$$a’\longrightarrow b$$<br>$$b’\longrightarrow a$$</p>
+<ul>
+<li>c==1时: A+B!=1 , 选择了a必须选择b,选择b必须选择a,同理a’和b’都得互选</li>
+</ul>
+<p>$$a’\longrightarrow b’$$<br>$$b’\longrightarrow a’$$<br>$$a\longrightarrow b$$<br>$$b\longrightarrow a$$</p>
+<ul>
+<li>c==2是: A+B!=2 , 选择了a必须选择b’,选择了b必须选择a’.</li>
+</ul>
+<p>$$ a \longrightarrow b’ $$<br>$$ b \longrightarrow a’ $$</p>
+<p>建图只建<strong>必要边</strong>,这题的建图可以自己推一下…<br>2-SAT的两个,特殊情况.</p>
+<ul>
+<li>必须选择A连边: $a’\longrightarrow a$</li>
+<li>必须不选择A连边: $a \longrightarrow a’$</li>
+</ul>
+<p>连好边后,可以跑一遍tarjan.一个点的两个分量不能在同一个联通分量上.</p>
+<h1 id="Go_Deeper"><a href="http://acm.hdu.edu.cn/showproblem.php?pid=3715">Go Deeper</a></h1><p>Time Limit: 4000/2000 MS (Java/Others)    Memory Limit: 65536/65536 K (Java/Others)<br>Total Submission(s): 2599    Accepted Submission(s): 830</p>
+<h5 id="Problem_Description">Problem Description</h5><p>Here is a procedure’s pseudocode:</p>
+<p>go(int dep, int n, int m)<br>begin<br>output the value of dep.<br>if dep &lt; m and x[a[dep]] + x[b[dep]] != c[dep] then go(dep + 1, n, m)<br>end</p>
+<p>In this code n is an integer. a, b, c and x are 4 arrays of integers. The index of array always starts from 0. Array a and b consist of non-negative integers smaller than n. Array x consists of only 0 and 1. Array c consists of only 0, 1 and 2. The lengths of array a, b and c are m while the length of array x is n. Given the elements of array a, b, and c, when we call the procedure go(0, n, m) what is the maximal possible value the procedure may output?</p>
+<h5 id="Input">Input</h5><p>There are multiple test cases. The first line of input is an integer T (0 &lt; T ≤ 100), indicating the number of test cases. Then T test cases follow. Each case starts with a line of 2 integers n and m (0 &lt; n ≤ 200, 0 &lt; m ≤ 10000). Then m lines of 3 integers follow. The i-th(1 ≤ i ≤ m) line of them are ai-1 ,bi-1 and ci-1 (0 ≤ ai-1, bi-1 &lt; n, 0 ≤ ci-1 ≤ 2).</p>
+<h5 id="Output">Output</h5><p>For each test case, output the result in a single line.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Sample Input</span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">2</span> <span class="number">1</span></span><br><span class="line"><span class="number">0</span> <span class="number">1</span> <span class="number">0</span></span><br><span class="line"><span class="number">2</span> <span class="number">1</span></span><br><span class="line"><span class="number">0</span> <span class="number">0</span> <span class="number">0</span></span><br><span class="line"><span class="number">2</span> <span class="number">2</span></span><br><span class="line"><span class="number">0</span> <span class="number">1</span> <span class="number">0</span></span><br><span class="line"><span class="number">1</span> <span class="number">1</span> <span class="number">2</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Sample Output</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure>
+<p>Author<br>CAO, Peng</p>
+<p>Source<br>2010 Asia Chengdu Regional Contest</p>
+        
+          <p class="article-more-link">
+            <a href="/2015/10/30/HDOJ3715/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.ckboss.cf/2015/10/30/HDOJ3715/" data-id="cim8rdnxx00a39ooncp20k1js" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/2-SAT/">2-SAT</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HDOJ/">HDOJ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/二分/">二分</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-ZOJ2860" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/10/29/ZOJ2860/" class="article-date">
@@ -148,7 +225,7 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/29/ZOJ2860/" data-id="cim4uq79f0023kjonqi16l4in" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/29/ZOJ2860/" data-id="cim8rdnu100239oonqj9pkvb4" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ZOJ/">ZOJ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp/">dp</a></li></ul>
@@ -202,7 +279,7 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/29/ZOJ2563/" data-id="cim4uq7a1002ikjonl0pki5r1" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/29/ZOJ2563/" data-id="cim8rdnuc002i9oonc98hlafx" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp/">dp</a></li></ul>
@@ -257,7 +334,7 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/27/2015ShengyangRegional/" data-id="cim4uq7ex00bbkjon0g4ucx3d" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/27/2015ShengyangRegional/" data-id="cim8rdnyc00bc9oonoj1u4e9a" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/现场赛/">现场赛</a></li></ul>
@@ -316,7 +393,7 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/27/ZOJ2561/" data-id="cim4uq7a4002lkjonoaremmz1" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/27/ZOJ2561/" data-id="cim8rdnur002l9oonlnpdf3yp" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp优化/">dp优化</a></li></ul>
@@ -371,7 +448,7 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/27/四边形优化DP/" data-id="cim4uq785000nkjon2qcn90nj" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/27/四边形优化DP/" data-id="cim8rdnsy000n9oonc16nij7s" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DP/">DP</a></li></ul>
@@ -429,7 +506,7 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/27/ZOJ2565/" data-id="cim4uq79y002ekjonu3eeeu0s" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/27/ZOJ2565/" data-id="cim8rdnu8002e9oona56pbqjx" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp/">dp</a></li></ul>
@@ -484,7 +561,7 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/27/ZOJ2559/" data-id="cim4uq7a6002pkjonjxgd959p" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/27/ZOJ2559/" data-id="cim8rdnut002p9oon9uc1f3g0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/水/">水</a></li></ul>
@@ -549,7 +626,7 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/20/HDOJ5506/" data-id="cim4uq7ba003ykjon24pve1tt" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/20/HDOJ5506/" data-id="cim8rdnvo003z9oonbpdgysfv" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/搜索/">搜索</a></li></ul>
@@ -608,70 +685,10 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/19/2015CCPC/" data-id="cim4uq7ey00bfkjonxzi0c9ax" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/19/2015CCPC/" data-id="cim8rdnye00bg9oonp3hvby4a" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/现场赛/">现场赛</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-HDOJ5501" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/10/13/HDOJ5501/" class="article-date">
-  <time datetime="2015-10-13T03:10:00.000Z" itemprop="datePublished">2015-10-13</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/acm-dp/">acm_dp</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/13/HDOJ5501/">HDOJ 5501 The Highest Mark 贪心+背包</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>如果两个问题i,j都需要要做,那么应该选择:<br>$$\frac{c_i}{b_i} &lt; \frac{c_j}{b_j}$$<br>的做更好.</p>
-<p>按这个顺序排好后,DP背包就可以了.</p>
-<h2 id="The_Highest_Mark"><a href="http://acm.hdu.edu.cn/showproblem.php?pid=5501">The Highest Mark</a></h2><p>Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 131072/131072 K (Java/Others)<br>Total Submission(s): 485    Accepted Submission(s): 200</p>
-<h5 id="Problem_Description">Problem Description</h5><p>The SDOI in 2045 is far from what it was been 30 years ago. Each competition has t minutes and n problems.</p>
-<p>The ith problem with the original mark of Ai(Ai≤106),and it decreases Bi by each minute. It is guaranteed that it does not go to minus when the competition ends. For example someone solves the ith problem after x minutes of the competition beginning. He/She will get Ai−Bi∗x marks.</p>
-<p>If someone solves a problem on x minute. He/She will begin to solve the next problem on x+1 minute.</p>
-<p>dxy who attend this competition with excellent strength, can measure the time of solving each problem exactly.He will spend Ci(Ci≤t) minutes to solve the ith problem. It is because he is so godlike that he can solve every problem of this competition. But to the limitation of time, it’s probable he cannot solve every problem in this competition. He wanted to arrange the order of solving problems to get the highest mark in this competition.</p>
-<h5 id="Input">Input</h5><p>There is an positive integer T(T≤10) in the first line for the number of testcases.(the number of testcases with n&gt;200 is no more than 5)</p>
-<p>For each testcase, there are two integers in the first line n(1≤n≤1000) and t(1≤t≤3000) for the number of problems and the time limitation of this competition.</p>
-<p>There are n lines followed and three positive integers each line Ai,Bi,Ci. For the original mark,the mark decreasing per minute and the time dxy of solving this problem will spend.</p>
-<p>Hint:<br>First to solve problem 2 and then solve problem 1 he will get 88 marks. Higher than any other order.</p>
-<h5 id="Output">Output</h5><p>For each testcase output a line for an integer, for the highest mark dxy will get in this competition.</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Sample Input</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">4</span> <span class="number">10</span></span><br><span class="line"><span class="number">110</span> <span class="number">5</span> <span class="number">9</span></span><br><span class="line"><span class="number">30</span> <span class="number">2</span> <span class="number">1</span></span><br><span class="line"><span class="number">80</span> <span class="number">4</span> <span class="number">8</span></span><br><span class="line"><span class="number">50</span> <span class="number">3</span> <span class="number">2</span></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Sample Output</span><br><span class="line"><span class="number">88</span></span><br></pre></td></tr></table></figure>
-<h5 id="Source">Source</h5><p><a href="http://acm.hdu.edu.cn/search.php?field=problem&amp;key=BestCoder+Round+%2359+%28div.1%29&amp;source=1&amp;searchmode=source">BestCoder Round #59 (div.1)</a></p>
-        
-          <p class="article-more-link">
-            <a href="/2015/10/13/HDOJ5501/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/13/HDOJ5501/" data-id="cim4uq7bc0042kjone6zsr09y" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/背包/">背包</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/贪心/">贪心</a></li></ul>
 
     </footer>
   </div>
@@ -720,7 +737,7 @@ _ts(option);
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
     </div>
   </div>
 
@@ -730,6 +747,10 @@ _ts(option);
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/03/26/Ubuntu默认字体设置和Chrome书签栏的Bug/">Ubuntu默认字体设置和Chrome书签栏的Bug</a>
+          </li>
         
           <li>
             <a href="/2016/03/21/2016年3月-最近在干什么/">2016年3月:最近在干什么</a>
@@ -745,10 +766,6 @@ _ts(option);
         
           <li>
             <a href="/2016/01/12/Java模拟两小球的碰撞/">Java模拟两小球的碰撞</a>
-          </li>
-        
-          <li>
-            <a href="/2016/01/12/java爬虫/">Java爬虫简单介绍</a>
           </li>
         
       </ul>

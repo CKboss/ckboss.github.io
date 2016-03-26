@@ -104,6 +104,65 @@ _ts(option);
       <div class="outer">
         <section id="main">
   
+    <article id="post-Ubuntu默认字体设置和Chrome书签栏的Bug" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/26/Ubuntu默认字体设置和Chrome书签栏的Bug/" class="article-date">
+  <time datetime="2016-03-26T06:01:59.000Z" itemprop="datePublished">2016-03-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/26/Ubuntu默认字体设置和Chrome书签栏的Bug/">Ubuntu默认字体设置和Chrome书签栏的Bug</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>ubuntu 默认字体设置:</p>
+<p>在~/.fonts.conf中设置:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="pi">&lt;?xml version="1.0"?&gt;</span></span><br><span class="line"><span class="doctype">&lt;!DOCTYPE fontconfig SYSTEM "fonts.dtd"&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">fontconfig</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- created by WenQuanYi FcDesigner v0.5 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">match</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">test</span> <span class="attribute">name</span>=<span class="value">"family"</span>&gt;</span><span class="tag">&lt;<span class="title">string</span>&gt;</span>sans-serif<span class="tag">&lt;/<span class="title">string</span>&gt;</span><span class="tag">&lt;/<span class="title">test</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">edit</span> <span class="attribute">name</span>=<span class="value">"family"</span> <span class="attribute">mode</span>=<span class="value">"prepend"</span> <span class="attribute">binding</span>=<span class="value">"strong"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">string</span>&gt;</span>Ubuntu<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">edit</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">match</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">match</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">test</span> <span class="attribute">name</span>=<span class="value">"family"</span>&gt;</span><span class="tag">&lt;<span class="title">string</span>&gt;</span>serif<span class="tag">&lt;/<span class="title">string</span>&gt;</span><span class="tag">&lt;/<span class="title">test</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">edit</span> <span class="attribute">name</span>=<span class="value">"family"</span> <span class="attribute">mode</span>=<span class="value">"prepend"</span> <span class="attribute">binding</span>=<span class="value">"strong"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">string</span>&gt;</span>Ubuntu<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">edit</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">match</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">match</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">test</span> <span class="attribute">name</span>=<span class="value">"family"</span>&gt;</span><span class="tag">&lt;<span class="title">string</span>&gt;</span>monospace<span class="tag">&lt;/<span class="title">string</span>&gt;</span><span class="tag">&lt;/<span class="title">test</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">edit</span> <span class="attribute">name</span>=<span class="value">"family"</span> <span class="attribute">mode</span>=<span class="value">"prepend"</span> <span class="attribute">binding</span>=<span class="value">"strong"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">string</span>&gt;</span>Ubuntu Mono<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">edit</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">match</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">fontconfig</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>配置文件可以在<a href="http://wenq.org/cloud/fcdesigner_local.html#" target="_blank" rel="external">这里</a>生成.</p>
+<p>用类似: <code>fc-match mono</code>的命令可以查看默认的字体．</p>
+<hr>
+<p>如果字体更改后,Chrome的输入框和书签栏特别的卡…</p>
+<p>可以看这个:<a href="http://suselinks.us/how-to-fix-slow-typing-in-chrome-addressbar-in-linux/" target="_blank" rel="external">linux 系统中 Chrome 地址栏输入卡顿的解决方法</a></p>
+<blockquote>
+<p>在 Chromium 的故障跟踪系统中有这么个故障：Omnibox popup is slow to paint on Linux &amp; ChromeOS when many suggestions are present，描述的现象和我遇到的一模一样。从该故障的描述和回复来看，可以总结出：</p>
+<p>该现象从 Google Chrome 35 版本开始出现。<br>该故障和 Aura UI 有关，而 Aura UI 正是从 35版本开始引入的。<br>启动 Google Chrome 时带上 –enable-harfbuzz-rendertext 参数之后，可以启动 RenderTextHarfbuzz 来进行 UI 文本渲染，在地址栏的键入速度就会变快了。<br>看到这里，我已经抑制不住激动的心情，在 Google Chrome 的启动快捷方式里面火速加入 –enable-harfbuzz-rendertext 参数，重启 Google Chrome，双手张开，准备拥抱胜利的果实。</p>
+<p>然而问题依旧……</p>
+<p>为什么呢？再仔细阅读上述故障，comment 27 提到了：</p>
+<p>　I’m hoping we can enable RenderTextHarfbuzz by default this week, now that font fallback landed. That still may not fix this issue, since RenderTextHarfBuzz::ShapeRun calls internal::CreateSkiaTypeface. I don’t think we ought to cache stylized fonts within a RenderText object, that probably wouldn’t help either. (in this scenario, the omnibox dropdown result views are being tossed and recreated as fast as possible) It seems like we’d need a centralized cache of fonts, so the most commonly used ones are readily available. Perhaps in the near term, OmniboxResultView could cache stylized FontLists for its RenderText instances.</p>
+<p>原来问题的根源出在 Skia 的字体这块，然而由于 RenderTextHarfBuzz 还是调用了 internal::CreateSkiaTypeface，所以问题还是可能存在。</p>
+<p>转折</p>
+<p>有方向了，Skia 的字体问题和 CreateSkiaTypeface API！</p>
+<p>再一次，又找到一个故障： Excessive call for SkFontConfigInterfaceDirect::matchFamilyName from OmniboxResultView</p>
+<p>故障描述中说，为了渲染地址栏的弹出菜单，每当你输入一个字符， matchFamilyName() 方法就会被调用 100 到 200 次！ 同时 comment 30 给出了真正的问题根源：</p>
+<p>　Google Chrome UI 的缺省字体继承自 Gnome 桌面设置（而不是 chrome://settings/）。<br>地址栏弹出框的缺省字体也是继承自 Gnome 桌面设置。<br>字体名称的标准名称和本地化名称不相同导致了 Skia 缓存无法命中。<br>Skia 缓存无法命中导致 fontconfig 频繁被调用，而该调用非常消耗 CPU 时间！<br>结论</p>
+<p>啊哈！问题根源找到了！ 该 comment 的作者也提交补丁了，可是 Google Chrome 40、41 版本还没有打该补丁的呀，怎么办呢？ 上述故障的末尾也提到了一个规避方法，那就是修改 Gnome 桌面设置中（GTK）的缺省字体。我这里讲下以 KDE 作为默认桌面的系统的修改方法，打开 系统设置 -&gt; 应用程序外观 -&gt; GTK ，修改字体（默认是 无衬线）为 Droid Sans 或者 DejaVu Sans 或者任何其它没有本地化名称的字体。像默认的 无衬线 以及 文泉驿微米黑 这样的有本地化名称的就不行的， 无衬线 的标准名称是 Sans Serif， 无衬线 是它的本地化名称，这样的字体会导致 Skia 缓存无法命中。<br>根据我的测试，google-chrome-beta-44.0.2403.89 依然尚未合入该补丁。<br>对于 40 版本以前的 Google Chrome ，你还需要在启动 Google Chrome 时带上 –enable-harfbuzz-rendertext 参数。<br>做了上述修改之后，该文开头提到了4个性能问题都解决了！ Google Chrome 和 Opera 都变得异常流畅了，哦耶！</p>
+</blockquote>
+<p>总之就Chrome的一个bug,现在到了chrome49了还没有得到解决…<br>用一些系统默认的字体就好了,比如Ubuntu….</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.ckboss.cf/2016/03/26/Ubuntu默认字体设置和Chrome书签栏的Bug/" data-id="cim8rdnuv002t9oon2cdordtg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-2016年3月-最近在干什么" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/03/21/2016年3月-最近在干什么/" class="article-date">
@@ -152,7 +211,7 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2016/03/21/2016年3月-最近在干什么/" data-id="cim4uq7ev00b8kjongrqti83u" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2016/03/21/2016年3月-最近在干什么/" data-id="cim8rdnyb00b99ooni9omjmbh" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
@@ -239,7 +298,7 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2016/03/21/qlcoder-时间线2/" data-id="cim4uq78q001akjon0wr3qk6k" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2016/03/21/qlcoder-时间线2/" data-id="cim8rdnth001a9oon1x9kkkgv" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/qlcoder/">qlcoder</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据结构/">数据结构</a></li></ul>
@@ -307,7 +366,7 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2016/02/18/鸟枪换炮/" data-id="cim4uq77m0003kjona2nul8yd" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2016/02/18/鸟枪换炮/" data-id="cim8rdnse00039oon55hbhrfn" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
@@ -347,7 +406,7 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2016/01/12/Java模拟两小球的碰撞/" data-id="cim4uq7ah0038kjon5qiu4n9u" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2016/01/12/Java模拟两小球的碰撞/" data-id="cim8rdnv600399oon48og1lbr" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
@@ -423,7 +482,7 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2016/01/12/java爬虫/" data-id="cim4uq790001mkjon4v8ctjbr" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2016/01/12/java爬虫/" data-id="cim8rdnto001m9oondie2ojuz" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
@@ -469,7 +528,7 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/12/10/使用实时更新的卫星照片做桌面壁纸/" data-id="cim4uq78h000zkjonnrokhh3i" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/12/10/使用实时更新的卫星照片做桌面壁纸/" data-id="cim8rdnt7000z9oony8ga1cf2" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python3小玩意/">Python3小玩意</a></li></ul>
@@ -521,7 +580,7 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/12/05/坑爹的freenom域名/" data-id="cim4uq782000hkjonvermdikk" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/12/05/坑爹的freenom域名/" data-id="cim8rdnsu000h9oonupebbozm" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/freenom/">freenom</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/域名/">域名</a></li></ul>
@@ -566,7 +625,7 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/11/23/近况201511/" data-id="cim4uq77v0008kjonwevkn1xk" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/11/23/近况201511/" data-id="cim8rdnsn00089ooniocyrbld" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/近况/">近况</a></li></ul>
@@ -613,56 +672,7 @@ _ts(option);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/11/20/Python填写表单/" data-id="cim4uq7af0035kjong3khu7jm" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python3小玩意/">Python3小玩意</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-SPAM-Python" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/11/20/SPAM-Python/" class="article-date">
-  <time datetime="2015-11-20T14:51:17.000Z" itemprop="datePublished">2015-11-20</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Python3小玩意/">Python3小玩意</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/20/SPAM-Python/">MailGun API发送电子邮件</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="https://e45a551211fc56cb40b0-7d31421b6f9e7cf93475b75027a9bfbb.ssl.cf2.rackcdn.com/e6c50080e48828348b948be33d5efdb232a25789/images/mailgun.svg" alt="MailGun"></p>
-<h5 id="Python是一门简单又功能强大的脚本语言…-">Python是一门简单又功能强大的脚本语言….</h5><h5 id="配合MailGun提供的API,则可以轻松组装成一把威力强大的MailGun-">配合MailGun提供的API,则可以轻松组装成一把威力强大的<em>MailGun</em>.</h5><h5 id="MailGun官网"><a href="https://www.mailgun.com/" target="_blank" rel="external">MailGun官网</a></h5><p>MailGun提供电子邮件发送的API,免费账号可以每月发送10000封邮件,不验证域名的话每天限量300封</p>
-<p>注册账号后就会提供两个可以调用的API,调用方式非常简单如下:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> smtplib</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> email.mime.text <span class="keyword">import</span> MIMEText</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">send_simple_message</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> requests.post(</span><br><span class="line">        <span class="string">"https://api.mailgun.net/v3/sandboxxxxxxxxxxxx.mailgun.org/messages"</span>,</span><br><span class="line">        auth=(<span class="string">"api"</span>, <span class="string">"key-ccxxxxxxxxxxxxxxxxxx"</span>),</span><br><span class="line">        data=&#123;<span class="string">"from"</span>: <span class="string">"TestSender &lt;justaTest@tt.com&gt;"</span>,</span><br><span class="line">              <span class="string">"to"</span>: <span class="string">"X &lt;xxxxx@sina.com&gt;"</span>,</span><br><span class="line">              <span class="string">"subject"</span>: <span class="string">"Just a Test"</span>,</span><br><span class="line">              <span class="string">"text"</span>: <span class="string">"rt Just a Test"</span>&#125;)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">send_smtp_message</span><span class="params">()</span>:</span></span><br><span class="line">    msg = MIMEText(<span class="string">'Testing some Mailgun awesomness'</span>)</span><br><span class="line">    msg[<span class="string">'Subject'</span>] = <span class="string">"Hello"</span></span><br><span class="line">    msg[<span class="string">'From'</span>]    = <span class="string">"foo@tt.cc"</span></span><br><span class="line">    msg[<span class="string">'To'</span>]      = <span class="string">"xxxxx@sina.com"</span></span><br><span class="line"></span><br><span class="line">    s = smtplib.SMTP(<span class="string">'smtp.mailgun.org'</span>, XXX)</span><br><span class="line"></span><br><span class="line">    s.login(<span class="string">'postmaster@sandboxbxxxxxxxxxxxxxx.mailgun.org'</span>, <span class="string">'xxxxxxxxxxxxxxxxx'</span>) </span><br><span class="line">	<span class="comment">#填自己的账号和密码</span></span><br><span class="line">    s.sendmail(msg[<span class="string">'From'</span>], msg[<span class="string">'To'</span>], msg.as_string())</span><br><span class="line">    s.quit()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">    send_simple_message()</span><br><span class="line">    send_smtp_message()</span><br></pre></td></tr></table></figure>
-<p>以上就大功告成了,可以发送邮件测试一下.</p>
-<p><img src="http://ww2.sinaimg.cn/mw1024/50a04a61gw1ey7uhjz32tj20xh0dbq6a.jpg" alt=""></p>
-<p><del>电子邮件的寄信人是可以随意伪造的,真的可以做一把SpamGun哦</del></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/11/20/SPAM-Python/" data-id="cim4uq7ab002xkjonj384ogjb" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/11/20/Python填写表单/" data-id="cim8rdnv500369oonyo4q6usr" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python3小玩意/">Python3小玩意</a></li></ul>
@@ -714,7 +724,7 @@ _ts(option);
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
     </div>
   </div>
 
@@ -724,6 +734,10 @@ _ts(option);
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/03/26/Ubuntu默认字体设置和Chrome书签栏的Bug/">Ubuntu默认字体设置和Chrome书签栏的Bug</a>
+          </li>
         
           <li>
             <a href="/2016/03/21/2016年3月-最近在干什么/">2016年3月:最近在干什么</a>
@@ -739,10 +753,6 @@ _ts(option);
         
           <li>
             <a href="/2016/01/12/Java模拟两小球的碰撞/">Java模拟两小球的碰撞</a>
-          </li>
-        
-          <li>
-            <a href="/2016/01/12/java爬虫/">Java爬虫简单介绍</a>
           </li>
         
       </ul>
