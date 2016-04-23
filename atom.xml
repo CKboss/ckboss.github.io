@@ -4,7 +4,7 @@
   <subtitle><![CDATA[码代码的猿猿的ac之路]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.ckboss.cf/"/>
-  <updated>2016-04-16T05:01:26.918Z</updated>
+  <updated>2016-04-23T15:42:19.169Z</updated>
   <id>http://www.ckboss.cf/</id>
   
   <author>
@@ -15,11 +15,59 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[ubuntu16.04初体验]]></title>
+    <link href="http://www.ckboss.cf/2016/04/23/ubuntu16-04%E5%88%9D%E4%BD%93%E9%AA%8C/"/>
+    <id>http://www.ckboss.cf/2016/04/23/ubuntu16-04初体验/</id>
+    <published>2016-04-23T14:32:57.000Z</published>
+    <updated>2016-04-23T15:42:19.169Z</updated>
+    <content type="html"><![CDATA[<p>大概两天前，4月21日，第一时间下载了ubuntu16.04。并作死安装升级。</p>
+<p>你要是问我体验怎么样，那我只能回答体验是非常的差的。。。</p>
+<p>总的来说初体验的感觉就是问题非常的多，根本不像个LTS版的样子，小白鼠fedaro都比现在的ubuntu稳定。。。。</p>
+<p>记得14.04刚出来的时候我也是立刻换了新版的，那时候似乎还没有这么多的问题。。。</p>
+<p>一些遇到的问题：</p>
+<ol>
+<li>首先作死用16.04的iso来升级14.04，结果可想而知。ubuntu的升级就从来就不会成功的。我用iso升级了3刚小时，最后爆出的只有一串的error而已</li>
+<li>然后清空系统进行重装，安装还是比较顺利的，只是在选择安装第三方包的时候，似乎有个安全启动什么的要输入一下密码（其实是第一个隐藏坑）。。</li>
+<li>16.04还是使用的unity7,界面和14.04一样，没有什么改变，令人有些小失望（不过很快就因为未知的原因再也打不开了）</li>
+<li>安装了一下nvidia显卡驱动和fcitx框架，准备上搜狗输入法，登陆出去了一下，OK这回循环登陆再也进不去桌面了。不知道是fcitx的问题还是显卡驱动的问题。</li>
+<li>安装了xfce的桌面环境，这回可以登陆桌面了，虽然用了附加驱动里推荐的nvidia361,但是驱动并没有装好。</li>
+<li>中文字体渲染非常糟糕，默认的字体细的根本没法看。尤其是在goolge浏览器中。最后用了插件把字体强制换成文泉驿的才勉强可以正常显示。</li>
+</ol>
+<p>16.04自带的包更新了不少，不过很多软件并没有做好兼容工作。</p>
+<ol>
+<li>装了搜狗的输入法，桌面上同时出现两个。。。（现在用fcitx框架自带的一个输入法，用起来还行）</li>
+<li>vmware不能新建虚拟机，因为安装的时候不小心开启了安全boot，需要手动去关闭</li>
+<li>ohmyzsh默认配置不能够保留history的记录，这个稍微改动一下就好了</li>
+<li>很多软件的中文字体都非常的细</li>
+<li>一些命令行工具变了，比如nm-tool没有了，取而代之的是nmcli（这个似乎变了有一阵了）</li>
+</ol>
+<p>总之，没有特殊需求，不建议在现阶段升级，等着这波bug修完了再升级。。。。</p>
+<h5 id="来张screenfetch：">来张screenfetch：</h5><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10140;  screenFetch-master ./screenfetch-dev &#10;                          ./+o+-       ckboss@ckboss-HP&#10;                  yyyyy- -yyyyyy+      OS: ubuntu Ubuntu 16.04 xenial&#10;               ://+//////-yyyyyyo      Kernel: x86_64 Linux 4.4.0-21-generic&#10;           .++ .:/++++++/-.+sss/`      Uptime: 6h 14m&#10;         .:++o:  /++++++++/:--:/-      Packages: 2091&#10;        o:+o+:++.`..```.-/oo+++++/     Shell: zsh 5.1.1&#10;       .:+o:+o/.          `+sssoo+/    Resolution: 1920x1080&#10;  .++/+:+oo+o:`             /sssooo.   DE: XFCE&#10; /+++//+:`oo+o               /::--:.   WM: Xfwm4&#10; \+/+o+++`o++o               ++////.   WM Theme: Numix&#10;  .++.o+++oo+:`             /dddhhh.   GTK Theme: Greybird [GTK2]&#10;       .+.o+oo:.          `oddhhhh+    Icon Theme: elementary-xfce-darker&#10;        \+.++o+o``-````.:ohdhhhhh+     Font: Ubuntu Medium 12&#10;         `:o+++ `ohhhhhhhhyo++os:      CPU: Intel Core i7-6500U CPU @ 3.1GHz&#10;           .o:`.syhhhhhhh/.oo++o`      RAM: 3997MiB / 7822MiB&#10;               /osyyyyyyo++ooo+++/    &#10;                   ````` +oo+++o\:    &#10;                          `oo++.</span><br></pre></td></tr></table></figure>
+<p>附Chrome字体特别细的解决办法：</p>
+<ol>
+<li>安装文泉驿微米黑</li>
+<li>在chrome的设置中选择高级设置字体设置，选择使用插件设置默认字体为文泉驿微米黑</li>
+</ol>
+<p>下载安装一些win10的字体可以改善中文字体的显示。。。。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>大概两天前，4月21日，第一时间下载了ubuntu16.04。并作死安装升级。</p>
+<p>你要是问我体验怎么样，那我只能回答体验是非常的差的。。。</p>
+<p>总的来说初体验的感觉就是问题非常的多，根本不像个LTS版的样子，小白鼠fedaro都比现在的ubuntu稳定]]>
+    </summary>
+    
+      <category term="Ubuntu" scheme="http://www.ckboss.cf/tags/Ubuntu/"/>
+    
+      <category term="Ubuntu" scheme="http://www.ckboss.cf/categories/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[ubuntu创建无线热点的神器!!]]></title>
     <link href="http://www.ckboss.cf/2016/04/16/ubuntu%E5%88%9B%E5%BB%BA%E6%97%A0%E7%BA%BF%E7%83%AD%E7%82%B9/"/>
     <id>http://www.ckboss.cf/2016/04/16/ubuntu创建无线热点/</id>
     <published>2016-04-16T04:54:27.000Z</published>
-    <updated>2016-04-16T05:01:26.918Z</updated>
+    <updated>2016-04-22T05:49:31.493Z</updated>
     <content type="html"><![CDATA[<p>以前用ubuntu共享wifi一直是一个比较麻烦事情….</p>
 <p>直到遇到了一个这样的神器:</p>
 <h3 id="create_ap"><a href="https://github.com/oblique/create_ap" target="_blank" rel="external">create_ap</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create_ap wlan0 eth0 MyAccessPoint MyPassPhrase</span><br></pre></td></tr></table></figure>
@@ -44,7 +92,7 @@
     <link href="http://www.ckboss.cf/2016/04/12/Log4j2%E5%85%A5%E9%97%A8/"/>
     <id>http://www.ckboss.cf/2016/04/12/Log4j2入门/</id>
     <published>2016-04-12T05:45:52.000Z</published>
-    <updated>2016-04-12T05:53:08.252Z</updated>
+    <updated>2016-04-22T05:49:31.493Z</updated>
     <content type="html"><![CDATA[<p>总是用printf调试不太方便管理,稍微研究了一下log4j的用法,其实都可以在<a href="https://logging.apache.org/log4j/2.0/faq.html" target="_blank" rel="external">FAQ</a>里找到.</p>
 <ul>
 <li><p>Log4j2<a href="https://logging.apache.org/log4j/2.x/" target="_blank" rel="external">官网</a></p>
@@ -73,7 +121,7 @@
     <link href="http://www.ckboss.cf/2016/04/09/%E7%94%A8%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E8%BF%9B%E8%A1%8C%E5%9E%83%E5%9C%BE%E9%82%AE%E4%BB%B6%E5%88%86%E7%B1%BB/"/>
     <id>http://www.ckboss.cf/2016/04/09/用朴素贝叶斯进行垃圾邮件分类/</id>
     <published>2016-04-08T17:38:59.000Z</published>
-    <updated>2016-04-08T18:35:56.435Z</updated>
+    <updated>2016-04-22T05:49:31.481Z</updated>
     <content type="html"><![CDATA[<p>朴素贝叶斯算法非常简单,但是在实际运用中效果往往还不错…</p>
 <p>贝叶斯公式:<br>$P(A,B)=P(A|B)<em>P(B)=P(B|A)</em>P(A)$<br>非常简单的概率公式,但有一个奇妙的用途就是可以让两个条件概率之间互相转换.</p>
 <p>举个例子:</p>
@@ -117,7 +165,7 @@
     <link href="http://www.ckboss.cf/2016/03/26/Ubuntu%E9%BB%98%E8%AE%A4%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE%E5%92%8CChrome%E4%B9%A6%E7%AD%BE%E6%A0%8F%E7%9A%84Bug/"/>
     <id>http://www.ckboss.cf/2016/03/26/Ubuntu默认字体设置和Chrome书签栏的Bug/</id>
     <published>2016-03-26T06:01:59.000Z</published>
-    <updated>2016-03-26T06:31:09.734Z</updated>
+    <updated>2016-04-22T05:49:31.457Z</updated>
     <content type="html"><![CDATA[<p>ubuntu 默认字体设置:</p>
 <p>在~/.fonts.conf中设置:</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="pi">&lt;?xml version="1.0"?&gt;</span></span><br><span class="line"><span class="doctype">&lt;!DOCTYPE fontconfig SYSTEM "fonts.dtd"&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">fontconfig</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- created by WenQuanYi FcDesigner v0.5 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">match</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">test</span> <span class="attribute">name</span>=<span class="value">"family"</span>&gt;</span><span class="tag">&lt;<span class="title">string</span>&gt;</span>sans-serif<span class="tag">&lt;/<span class="title">string</span>&gt;</span><span class="tag">&lt;/<span class="title">test</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">edit</span> <span class="attribute">name</span>=<span class="value">"family"</span> <span class="attribute">mode</span>=<span class="value">"prepend"</span> <span class="attribute">binding</span>=<span class="value">"strong"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">string</span>&gt;</span>Ubuntu<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">edit</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">match</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">match</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">test</span> <span class="attribute">name</span>=<span class="value">"family"</span>&gt;</span><span class="tag">&lt;<span class="title">string</span>&gt;</span>serif<span class="tag">&lt;/<span class="title">string</span>&gt;</span><span class="tag">&lt;/<span class="title">test</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">edit</span> <span class="attribute">name</span>=<span class="value">"family"</span> <span class="attribute">mode</span>=<span class="value">"prepend"</span> <span class="attribute">binding</span>=<span class="value">"strong"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">string</span>&gt;</span>Ubuntu<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">edit</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">match</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">match</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">test</span> <span class="attribute">name</span>=<span class="value">"family"</span>&gt;</span><span class="tag">&lt;<span class="title">string</span>&gt;</span>monospace<span class="tag">&lt;/<span class="title">string</span>&gt;</span><span class="tag">&lt;/<span class="title">test</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">edit</span> <span class="attribute">name</span>=<span class="value">"family"</span> <span class="attribute">mode</span>=<span class="value">"prepend"</span> <span class="attribute">binding</span>=<span class="value">"strong"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">string</span>&gt;</span>Ubuntu Mono<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">edit</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">match</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">fontconfig</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -155,7 +203,7 @@
     <link href="http://www.ckboss.cf/2016/03/21/2016%E5%B9%B43%E6%9C%88-%E6%9C%80%E8%BF%91%E5%9C%A8%E5%B9%B2%E4%BB%80%E4%B9%88/"/>
     <id>http://www.ckboss.cf/2016/03/21/2016年3月-最近在干什么/</id>
     <published>2016-03-21T14:41:32.000Z</published>
-    <updated>2016-03-21T16:37:03.473Z</updated>
+    <updated>2016-04-22T05:49:31.433Z</updated>
     <content type="html"><![CDATA[<p>很久没更新blog了,记录一下最近几个月来的近况.</p>
 <h4 id="VirtualJudgePY_的_第一版">VirtualJudgePY 的 第一版</h4><p>曾经尝试过搭建搭建hustVJ,记得那时候各种难搭,没有文档,安装说明混乱,代码太复杂等种种原因,一共也只在本地搭建成功过一次老的版本,最新的版本甚至连对应的sql文件都找不到了.于是准备称毕业设计的计划山寨HustVJ做一个轻量级容易使用的virtualJudge.</p>
 <p>当然做vj的其他原因还有当时对爬虫的兴趣,外加练习python和VJ自己留着用.</p>
@@ -191,7 +239,7 @@
     <link href="http://www.ckboss.cf/2016/03/21/qlcoder-%E6%97%B6%E9%97%B4%E7%BA%BF2/"/>
     <id>http://www.ckboss.cf/2016/03/21/qlcoder-时间线2/</id>
     <published>2016-03-21T14:29:59.000Z</published>
-    <updated>2016-03-21T14:37:10.222Z</updated>
+    <updated>2016-04-22T05:49:31.465Z</updated>
     <content type="html"><![CDATA[<h4 id="近况:">近况:</h4><p>写了不少业务代码…</p>
 <p>VirtualJudgePY第一个版本也接近完工…</p>
 <p>平时没事的时候主要看一些数学和机器学习入门书和java多线程和haskell和…</p>
@@ -258,7 +306,7 @@
     <link href="http://www.ckboss.cf/2016/02/18/%E9%B8%9F%E6%9E%AA%E6%8D%A2%E7%82%AE/"/>
     <id>http://www.ckboss.cf/2016/02/18/鸟枪换炮/</id>
     <published>2016-02-18T02:38:27.000Z</published>
-    <updated>2016-02-18T03:06:42.854Z</updated>
+    <updated>2016-04-22T05:49:31.441Z</updated>
     <content type="html"><![CDATA[<p>喜大普奔，装备终于升级了 , hp 291tx，上了i7和8g的内存，写起代码更爽了。。。</p>
 <p>就是高分屏字体有点小，感觉不太适应。。。</p>
 <p>这款机型又两个严重的设计问题:</p>
@@ -306,7 +354,7 @@
     <link href="http://www.ckboss.cf/2016/01/12/Java%E6%A8%A1%E6%8B%9F%E4%B8%A4%E5%B0%8F%E7%90%83%E7%9A%84%E7%A2%B0%E6%92%9E/"/>
     <id>http://www.ckboss.cf/2016/01/12/Java模拟两小球的碰撞/</id>
     <published>2016-01-11T17:09:39.000Z</published>
-    <updated>2016-02-17T12:50:49.897Z</updated>
+    <updated>2016-04-22T05:49:31.389Z</updated>
     <content type="html"><![CDATA[<h6 id="2016年第二更…">2016年第二更…</h6><p>最近写了一个模拟两个小球,无能量损失碰撞的java小程序….</p>
 <h5 id="介绍_java_绘图的网站"><a href="https://www3.ntu.edu.sg/home/ehchua/programming/java/J4b_CustomGraphics.html" target="_blank" rel="external">介绍 java 绘图的网站</a></h5><h5 id="模拟两个小球碰撞_网上的demo">模拟两个小球碰撞  <a href="http://www.cnblogs.com/kenkofox/archive/2011/09/06/2168944.html" target="_blank" rel="external">网上的demo</a></h5><h5 id="碰撞时速度的变化"><a href="http://tina0152.blog.163.com/blog/static/119447958200910229109326/" target="_blank" rel="external">碰撞时速度的变化</a></h5><p><em>碰撞的代码</em>:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Collision</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">double</span> base = <span class="number">50</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">double</span> w = <span class="number">500</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">double</span> eps = <span class="number">1e-5</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">distanceSQ</span><span class="params">(Circle c1,Circle c2)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">double</span> dx = Math.abs(c1.x - c2.x);</span><br><span class="line">        <span class="keyword">double</span> dy = Math.abs(c1.y - c2.y);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> dx*dx+dy*dy;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">CirToCirS</span><span class="params">(Circle c , Vector&lt;Circle&gt; vc)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">boolean</span> flag=<span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">for</span>(Circle othercircle : vc) &#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span>(othercircle.equals(c)) &#123;</span><br><span class="line">                flag=<span class="keyword">true</span>;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(flag==<span class="keyword">false</span>) &#123;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(flag==<span class="keyword">true</span>) &#123;</span><br><span class="line">                CircleToCircle(c,othercircle);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">CircleToCircle</span><span class="params">(Circle c1,Circle c2)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(CheckCirlceToCircle(c1,c2)) &#123;</span><br><span class="line">            <span class="comment">/// change vector</span></span><br><span class="line"></span><br><span class="line">            VVector vss = <span class="keyword">new</span> VVector(c2.x-c1.x,c2.y-c1.y);</span><br><span class="line">            vss = vss.unitfy();</span><br><span class="line">            VVector vst = <span class="keyword">new</span> VVector(vss.y,-vss.x);</span><br><span class="line"></span><br><span class="line">            VVector v1 = <span class="keyword">new</span> VVector(c1.vx,c1.vy);</span><br><span class="line">            VVector v2 = <span class="keyword">new</span> VVector(c2.vx,c2.vy);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">double</span> v1s = v1.dotMul(vss);</span><br><span class="line">            <span class="keyword">double</span> v2s = v2.dotMul(vss);</span><br><span class="line">            <span class="keyword">double</span> v1t = v1.dotMul(vst);</span><br><span class="line">            <span class="keyword">double</span> v2t = v2.dotMul(vst);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">double</span> temp = v1s; v1s=v2s; v2s=temp;</span><br><span class="line"></span><br><span class="line">            VVector v1tV = vst.mul(v1t);</span><br><span class="line">            VVector v1sV = vss.mul(v1s);</span><br><span class="line">            VVector v2tV = vst.mul(v2t);</span><br><span class="line">            VVector v2sV = vss.mul(v2s);</span><br><span class="line"></span><br><span class="line">            c1.vx=v1tV.x+v1sV.x; c1.vy=v1tV.y+v1sV.y;</span><br><span class="line">            c2.vx=v2tV.x+v2sV.x; c2.vy=v2tV.y+v2sV.y;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">CirlcleToWall</span><span class="params">(Circle cirlce)</span> </span>&#123;</span><br><span class="line">        Vector&lt;Integer&gt; vi = <span class="keyword">new</span> Vector&lt;Integer&gt;();</span><br><span class="line">        vi = CheckCircleToWall(cirlce);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(Integer x : vi) &#123;</span><br><span class="line">            <span class="keyword">if</span>(x==<span class="number">1</span>||x==<span class="number">3</span>) &#123;</span><br><span class="line">               cirlce.vx*=-<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(x==<span class="number">2</span>||x==<span class="number">4</span>) &#123;</span><br><span class="line">               cirlce.vy*=-<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">CheckCirlceToCircle</span><span class="params">(Circle c1,Circle c2)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(distanceSQ(c1, c2)+eps&lt;(<span class="keyword">double</span>)((c1.r+c2.r)*(c1.r+c2.r)))</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/// 0 no Collison</span></span><br><span class="line">    <span class="comment">/// 1 North 2 East 3 South 4 West</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Vector&lt;Integer&gt; <span class="title">CheckCircleToWall</span><span class="params">(Circle c)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        Vector&lt;Integer&gt; ret = <span class="keyword">new</span> Vector&lt;Integer&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(c.x+c.r&gt;w+base) &#123;</span><br><span class="line">            ret.add(<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(c.x-c.r&lt;base) &#123;</span><br><span class="line">            ret.add(<span class="number">3</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(c.y+c.r&gt;w+base) &#123;</span><br><span class="line">            ret.add(<span class="number">4</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(c.y-c.r&lt;base) &#123;</span><br><span class="line">            ret.add(<span class="number">2</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
@@ -324,7 +372,7 @@
     <link href="http://www.ckboss.cf/2016/01/12/java%E7%88%AC%E8%99%AB/"/>
     <id>http://www.ckboss.cf/2016/01/12/java爬虫/</id>
     <published>2016-01-11T16:18:46.000Z</published>
-    <updated>2016-02-17T12:50:42.489Z</updated>
+    <updated>2016-04-22T05:49:30.653Z</updated>
     <content type="html"><![CDATA[<h6 id="2016年第一更…">2016年第一更…</h6><p>上个月写了不少java的爬虫,总结一下常用的java爬虫框架.</p>
 <p>试用了两个比较常见的java爬虫相关框架,WebCollector和WebMagic.</p>
 <h2 id="Part1_正常向爬虫框架">Part1 正常向爬虫框架</h2><h3 id="WebCollector">WebCollector</h3><hr>
@@ -377,7 +425,7 @@
     <link href="http://www.ckboss.cf/2015/12/10/%E4%BD%BF%E7%94%A8%E5%AE%9E%E6%97%B6%E6%9B%B4%E6%96%B0%E7%9A%84%E5%8D%AB%E6%98%9F%E7%85%A7%E7%89%87%E5%81%9A%E6%A1%8C%E9%9D%A2%E5%A3%81%E7%BA%B8/"/>
     <id>http://www.ckboss.cf/2015/12/10/使用实时更新的卫星照片做桌面壁纸/</id>
     <published>2015-12-10T07:44:13.000Z</published>
-    <updated>2016-02-17T12:50:41.877Z</updated>
+    <updated>2016-04-22T05:49:30.601Z</updated>
     <content type="html"><![CDATA[<p><a href="https://www.v2ex.com/t/241563#reply62" target="_blank" rel="external">V2EX里的一篇帖子….</a></p>
 <p>抓取日本的向日葵8号卫星每十分钟更新的的地球照片作为桌面壁纸.</p>
 <p><img src="https://cloud.githubusercontent.com/assets/6072743/11613290/6af013a8-9c56-11e5-8d7e-553cc8226d5a.png" alt="示意图1"></p>
@@ -399,7 +447,7 @@
     <link href="http://www.ckboss.cf/2015/12/05/%E5%9D%91%E7%88%B9%E7%9A%84freenom%E5%9F%9F%E5%90%8D/"/>
     <id>http://www.ckboss.cf/2015/12/05/坑爹的freenom域名/</id>
     <published>2015-12-04T16:14:34.000Z</published>
-    <updated>2016-02-17T12:50:49.785Z</updated>
+    <updated>2016-04-22T05:49:31.369Z</updated>
     <content type="html"><![CDATA[<p>晚上看了下邮箱，发现了这个：</p>
 <p><img src="http://ww1.sinaimg.cn/mw1024/50a04a61gw1eyo32a0i1wj20ix0demz2.jpg" alt=""></p>
 <p>freenom说我的域名违规,给取消了…..</p>
@@ -430,7 +478,7 @@
     <link href="http://www.ckboss.cf/2015/11/23/%E8%BF%91%E5%86%B5201511/"/>
     <id>http://www.ckboss.cf/2015/11/23/近况201511/</id>
     <published>2015-11-23T05:04:10.000Z</published>
-    <updated>2016-02-17T12:50:43.721Z</updated>
+    <updated>2016-04-22T05:49:30.705Z</updated>
     <content type="html"><![CDATA[<h4 id="近况:">近况:</h4><h5 id="1-_ACM生涯正式结束了,我这么弱应该就不需要什么退役感言了-">1. ACM生涯正式结束了,我这么弱应该就不需要什么退役感言了.</h5><h5 id="2-_整理了一下模版,放出了第一个v0-1-alpha-1的pre-release…">2. 整理了一下模版,放出了第一个<strong>v0.1-alpha.1的pre-release</strong>…</h5><h5 id="下载地址:_MyAcmTemplate_Nov_23_2015">下载地址:  <a href="https://github.com/CKboss/MyAcmTemplate/releases/tag/v0.1-alpha.1" target="_blank" rel="external">MyAcmTemplate Nov 23 2015</a></h5><h4 id="最近在做什么:">最近在做什么:</h4><h5 id="1-_复习期末考试">1. 复习期末考试</h5><h5 id="2-_学习一下Django框架,顺手写个毕业设计(准备写个VJ)">2. 学习一下Django框架,顺手写个毕业设计(准备写个VJ)</h5><h6 id="PS:_推荐一个Django1-8的入门教程:https://www-youtube-com/watch?v=cvceyNioank_和_这个老外的youtube的主页:">PS: 推荐一个Django1.8的入门教程:<a href="https://www.youtube.com/watch?v=cvceyNioank" target="_blank" rel="external">https://www.youtube.com/watch?v=cvceyNioank</a> 和 <a href="https://www.youtube.com/channel/UCWEHue8kksIaktO8KTTN_zg" target="_blank" rel="external">这个老外的youtube的主页:</a></h6><h4 id="将来做什么:">将来做什么:</h4><p>学习一下 Linux,Unix高级编程,编译原理,Haskell等…<br>以后可能会搞一点 机器学习+数据挖掘 , 然后应用在: 大数据算命上…</p>
 <h4 id="博客内容变化:">博客内容变化:</h4><p>会从题解博客转型为技术博客,不过接下来一段时间应该会学习一些基础知识,应该没什么好更新的…</p>
 <p>当然过一段时间后,会重新开始刷点题,主战场会换成BZOJ….</p>
@@ -450,7 +498,7 @@
     <link href="http://www.ckboss.cf/2015/11/20/Python%E5%A1%AB%E5%86%99%E8%A1%A8%E5%8D%95/"/>
     <id>http://www.ckboss.cf/2015/11/20/Python填写表单/</id>
     <published>2015-11-20T15:28:13.000Z</published>
-    <updated>2016-02-17T12:50:45.605Z</updated>
+    <updated>2016-04-22T05:49:30.881Z</updated>
     <content type="html"><![CDATA[<p>Python写爬虫的时候经常要填写一些表单,总结了一下POST操作的写法.</p>
 <p>首先需要用浏览器找到POST连接,获得POST的数据的格式.</p>
 <p>然后编写返回特定格式字典的函数.</p>
@@ -475,7 +523,7 @@
     <link href="http://www.ckboss.cf/2015/11/20/SPAM-Python/"/>
     <id>http://www.ckboss.cf/2015/11/20/SPAM-Python/</id>
     <published>2015-11-20T14:51:17.000Z</published>
-    <updated>2016-02-17T12:50:41.713Z</updated>
+    <updated>2016-04-22T05:49:30.561Z</updated>
     <content type="html"><![CDATA[<p><img src="https://e45a551211fc56cb40b0-7d31421b6f9e7cf93475b75027a9bfbb.ssl.cf2.rackcdn.com/e6c50080e48828348b948be33d5efdb232a25789/images/mailgun.svg" alt="MailGun"></p>
 <h5 id="Python是一门简单又功能强大的脚本语言…-">Python是一门简单又功能强大的脚本语言….</h5><h5 id="配合MailGun提供的API,则可以轻松组装成一把威力强大的MailGun-">配合MailGun提供的API,则可以轻松组装成一把威力强大的<em>MailGun</em>.</h5><h5 id="MailGun官网"><a href="https://www.mailgun.com/" target="_blank" rel="external">MailGun官网</a></h5><p>MailGun提供电子邮件发送的API,免费账号可以每月发送10000封邮件,不验证域名的话每天限量300封</p>
 <p>注册账号后就会提供两个可以调用的API,调用方式非常简单如下:</p>
@@ -499,7 +547,7 @@
     <link href="http://www.ckboss.cf/2015/11/08/HDOJ4756/"/>
     <id>http://www.ckboss.cf/2015/11/08/HDOJ4756/</id>
     <published>2015-11-08T15:21:53.000Z</published>
-    <updated>2016-02-17T12:50:47.757Z</updated>
+    <updated>2016-04-22T05:49:31.209Z</updated>
     <content type="html"><![CDATA[<p>简单次小生成树,根据题目需求计算即可.</p>
 <h1 id="Install_Air_Conditioning"><a href="http://acm.hdu.edu.cn/showproblem.php?pid=4756" target="_blank" rel="external">Install Air Conditioning</a></h1><p>Time Limit: 4000/2000 MS (Java/Others)    Memory Limit: 65535/65535 K (Java/Others)<br>Total Submission(s): 1230    Accepted Submission(s): 288</p>
 <h5 id="Problem_Description">Problem Description</h5><p><img src="http://acm.hdu.edu.cn/data/images/C479-1009-1.jpg" alt=""></p>
@@ -536,7 +584,7 @@
     <link href="http://www.ckboss.cf/2015/11/08/HDOJ4609/"/>
     <id>http://www.ckboss.cf/2015/11/08/HDOJ4609/</id>
     <published>2015-11-08T12:15:51.000Z</published>
-    <updated>2016-02-17T12:50:43.841Z</updated>
+    <updated>2016-04-22T05:49:30.741Z</updated>
     <content type="html"><![CDATA[<p>FFT+组合数,结果又遭遇了莫名奇妙的WA,重写又提交15+后终于过了.</p>
 <h5 id="题意:">题意:</h5><p>给n个数,随机的选择3个数.问能构成三角形的概率是多少.</p>
 <h5 id="解:">解:</h5><p>既求有多少种方法可以构成三角形.<br>可以枚举两个边的和,再来看第三边,由于n比较大,所以用FFT来计算出所有可能的和(感觉类似母函数).</p>
@@ -613,7 +661,7 @@
     <link href="http://www.ckboss.cf/2015/11/08/HDOJ1402/"/>
     <id>http://www.ckboss.cf/2015/11/08/HDOJ1402/</id>
     <published>2015-11-08T02:53:38.000Z</published>
-    <updated>2016-02-17T12:50:48.805Z</updated>
+    <updated>2016-04-22T05:49:31.221Z</updated>
     <content type="html"><![CDATA[<p><strong>fft乘法…</strong></p>
 <h1 id="A_*_B_Problem_Plus"><a href="http://acm.hdu.edu.cn/showproblem.php?pid=1402" target="_blank" rel="external">A * B Problem Plus</a></h1><p>Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 15703    Accepted Submission(s): 3110</p>
 <h5 id="Problem_Description">Problem Description</h5><p>Calculate A * B.</p>
@@ -648,7 +696,7 @@
     <link href="http://www.ckboss.cf/2015/11/07/CF592D/"/>
     <id>http://www.ckboss.cf/2015/11/07/CF592D/</id>
     <published>2015-11-07T12:19:37.000Z</published>
-    <updated>2016-02-17T12:50:43.657Z</updated>
+    <updated>2016-04-22T05:49:30.697Z</updated>
     <content type="html"><![CDATA[<h5 id="题目大意:">题目大意:</h5><p>给一棵树,和树上的一些需要到达的点,你可以选择一个点为起点,沿着树到达其他需要到达的点.问所需走的最小距离是多少.</p>
 <h5 id="解:">解:</h5><p>设一个最小子树T包含了所有需要到达的点,则所需要走的最小距离是T的边数和减去T的直径.T可以由树形DP求得.</p>
 <h1 id="D-_Super_M"><a href="http://codeforces.com/problemset/problem/592/D" target="_blank" rel="external">D. Super M</a></h1><p>time limit per test2 seconds<br>memory limit per test256 megabytes<br>inputstandard input<br>outputstandard output</p>
@@ -700,7 +748,7 @@
     <link href="http://www.ckboss.cf/2015/11/07/HDOJ4126/"/>
     <id>http://www.ckboss.cf/2015/11/07/HDOJ4126/</id>
     <published>2015-11-07T04:31:50.000Z</published>
-    <updated>2016-02-17T12:50:49.169Z</updated>
+    <updated>2016-04-22T05:49:31.301Z</updated>
     <content type="html"><![CDATA[<p><strong>次小生成树:</strong></p>
 <p>次小生成树的另外一种求法,同样先求出MST,然后用树形DP求出如果切除MST上$i,j$之间的边,所形成的两个联通块之间的最短的边的值 $dp[i][j]$.</p>
 <p>$dp[i][j]$可以用树形dp求得,既枚举一个树根P,对于每条边 $u \rightarrow v$ ,我们用v到P的距离来更新$dp[u][v]$的值,伪代码如下:</p>
@@ -752,7 +800,7 @@
     <link href="http://www.ckboss.cf/2015/11/06/UVA10600/"/>
     <id>http://www.ckboss.cf/2015/11/06/UVA10600/</id>
     <published>2015-11-06T14:57:02.000Z</published>
-    <updated>2016-02-17T12:50:47.697Z</updated>
+    <updated>2016-04-22T05:49:31.197Z</updated>
     <content type="html"><![CDATA[<p>求一最小生成树和一个次小生成树….<br><strong>坑: 图有重边,略麻烦一些</strong></p>
 <h4 id="次小生成树求法:">次小生成树求法:</h4><p>先求出最小生成树,然后dfs预处理出在MST上从u到v路径上的最大的边长.最后枚举不在MST上的边,找到最小的差值$edge[u,v]-MaxBetween[u,v]$,次小生成树就是最小生成树加上这个差值.</p>
 <embed width="100%" height="100%" name="plugin" src="http://7xjob4.com1.z0.glb.clouddn.com/88cf8b14ffc3b4adffd415e43e058681" type="application/pdf" internalinstanceid="14">
@@ -774,7 +822,7 @@
     <link href="http://www.ckboss.cf/2015/11/06/HDOJ4127/"/>
     <id>http://www.ckboss.cf/2015/11/06/HDOJ4127/</id>
     <published>2015-11-06T06:11:06.000Z</published>
-    <updated>2016-02-17T12:50:49.625Z</updated>
+    <updated>2016-04-22T05:49:31.341Z</updated>
     <content type="html"><![CDATA[<p><strong>IDA*搜索</strong><br>H()函数可以用剩下的颜色个数来表示,每次枚举需要选择的颜色即可.</p>
 <p><td align="center"><h1 style="color:#1A5CC8">Flood-it!</h1><font><b><span style="font-family:Arial;font-size:12px;font-weight:bold;color:green">Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 1672&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 387<br></span></b></font><br><br><div class="panel_title" align="left">Problem Description</div> <div class="panel_content">Flood-it is a fascinating puzzle game on Google+ platform. The game interface is like follows:<br><center><img style="max-width:100%;" src="http://acm.hdu.edu.cn/data/images/4127-1.jpg"></center> <br>At the beginning of the game, system will randomly generate an N×N square board and each grid of the board is painted by one of the six colors. The player starts from the top left corner. At each step, he/she selects a color and changes all the grids connected with the top left corner to that specific color. The statement “two grids are connected” means that there is a path between the certain two grids under condition that each pair of adjacent grids on this path is in the same color and shares an edge. In this way the player can flood areas of the board from the starting grid (top left corner) until all of the grids are in same color. The following figure shows the earliest steps of a 4×4 game (colors are labeled in 0 to 5):<br><center><img style="max-width:100%;" src="http://acm.hdu.edu.cn/data/images/4127-2.jpg"></center> <br>Given a colored board at very beginning, please find the minimal number of steps to win the game (to change all the grids into a same color). <br><br></div><div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Input</div> <div class="panel_content">The input contains no more than 20 test cases. For each test case, the first line contains a single integer N (2&lt;=N&lt;=8) indicating the size of game board.<br><br>The following N lines show an N×N matrix (a<sub>i,j</sub>)<sub>n×n</sub> representing the game board. a<sub>i,j</sub> is in the range of 0 to 5 representing the color of the corresponding grid. <br>The input ends with N = 0.<br></div><div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Output</div> <div class="panel_content">For each test case, output a single integer representing the minimal number of steps to win the game.<br></div><div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Sample Input</div><div class="panel_content"><pre><div style="font-family:Courier New,Courier,monospace;">2<br>0 0<br>0 0<br>3<br>0 1 2<br>1 1 2<br>2 2 1<br>0</div></pre></div><div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Sample Output</div><div class="panel_content"><pre><div style="font-family:Courier New,Courier,monospace;">0<br>3</div></pre></div><div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Source</div> <div class="panel_content"> <a href="/search.php?field=problem&amp;key=2011+Asia+Fuzhou+Regional+Contest+&amp;source=1&amp;searchmode=source"> 2011 Asia Fuzhou Regional Contest  </a> </div> <div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Recommend</div> <div class="panel_content">lcy&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;We have carefully selected several similar problems for you:&nbsp;&nbsp;<a href="/showproblem.php?pid=4123" target="_blank">4123</a>&nbsp;<a href="/showproblem.php?pid=4124" target="_blank">4124</a>&nbsp;<a href="/showproblem.php?pid=4125" target="_blank">4125</a>&nbsp;<a href="/showproblem.php?pid=4126" target="_blank">4126</a>&nbsp;<a href="/showproblem.php?pid=4128" target="_blank">4128</a>&nbsp;</div><div class="panel_bottom">&nbsp;</div><br><center style="font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8"><a href="statistic.php?pid=4127">Statistic</a>&nbsp;|&nbsp;<a href="submit.php?pid=4127">Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4127">Discuss</a> | <a href="note/note.php?pid=4127">Note</a><br></center></td></p>
 <a id="more"></a>
@@ -797,7 +845,7 @@
     <link href="http://www.ckboss.cf/2015/11/05/HDOJ4163/"/>
     <id>http://www.ckboss.cf/2015/11/05/HDOJ4163/</id>
     <published>2015-11-05T13:22:56.000Z</published>
-    <updated>2016-02-17T12:50:49.837Z</updated>
+    <updated>2016-04-22T05:49:31.381Z</updated>
     <content type="html"><![CDATA[<h1 id="Stock_Prices"><a href="http://acm.hdu.edu.cn/showproblem.php?pid=4163" target="_blank" rel="external">Stock Prices</a></h1><p>Time Limit: 10000/5000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 1026    Accepted Submission(s): 420</p>
 <h5 id="Problem_Description">Problem Description</h5><p>Buy low, sell high. That is what one should do to make profit in the stock market (we will ignore short selling here). Of course, no one can tell the price of a stock in the future, so it is difficult to know exactly when to buy and sell and how much profit one can make by repeatedly buying and selling a stock.</p>
 <p>But if you do have the history of price of a stock for the last n days, it is certainly possible to determine the maximum profit that could have been made. Instead, we are interested in finding the k1 lowest prices and k2 highest prices in the history.</p>
@@ -830,7 +878,7 @@
     <link href="http://www.ckboss.cf/2015/11/05/HDOJ2463/"/>
     <id>http://www.ckboss.cf/2015/11/05/HDOJ2463/</id>
     <published>2015-11-05T02:52:53.000Z</published>
-    <updated>2016-02-17T12:50:50.193Z</updated>
+    <updated>2016-04-22T05:49:31.405Z</updated>
     <content type="html"><![CDATA[<p>BFS搜索…</p>
 <h1 id="USTC_campus_network"><a href="http://acm.hdu.edu.cn/showproblem.php?pid=2463" target="_blank" rel="external">USTC campus network</a></h1><p>Time Limit: 8000/4000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 467    Accepted Submission(s): 157</p>
 <h5 id="Problem_Description">Problem Description</h5><p>USTC campus network is a huge network. There is a bi-directional link between every pair of computers in the network. One of the computers is the BBS server, which is so popular that thousands of people log on it every day. Recently some links of the network are damaged by the rainstorm. The network administrator is going to check which computers are still connected with the BBS server directly or indirectly.</p>
@@ -867,7 +915,7 @@
     <link href="http://www.ckboss.cf/2015/11/04/HDOJ2459/"/>
     <id>http://www.ckboss.cf/2015/11/04/HDOJ2459/</id>
     <published>2015-11-04T14:57:26.000Z</published>
-    <updated>2016-02-17T12:50:41.645Z</updated>
+    <updated>2016-04-22T05:49:30.545Z</updated>
     <content type="html"><![CDATA[<p>后缀数组神题….</p>
 <h4 id="题解:"><a href="http://blog.csdn.net/libin56842/article/details/46317153" target="_blank" rel="external">题解:</a></h4><blockquote>
 <p>容易想到的就是枚举长度为L，然后看长度为L的字符串最多连续出现几次。</p>
@@ -912,7 +960,7 @@
     <link href="http://www.ckboss.cf/2015/11/04/HDOJ5545/"/>
     <id>http://www.ckboss.cf/2015/11/04/HDOJ5545/</id>
     <published>2015-11-04T06:00:44.000Z</published>
-    <updated>2016-02-17T12:50:50.297Z</updated>
+    <updated>2016-04-22T05:49:31.417Z</updated>
     <content type="html"><![CDATA[<p>对于每个村庄,会对一个战场x增加一个士兵对另一个战场y减少一个士兵.<br>士兵总体数量是守恒的,我们可以连一条 $x \longrightarrow y$ 权值为c的边.</p>
 <p>然后以重要程度为0的战场为源点,统计重要成都为2的战场的值.</p>
 <h1 id="The_Battle_of_Guandu"><a href="http://acm.hdu.edu.cn/showproblem.php?pid=5545" target="_blank" rel="external">The Battle of Guandu</a></h1><p>Time Limit: 6000/3000 MS (Java/Others)    Memory Limit: 65535/65535 K (Java/Others)<br>Total Submission(s): 20    Accepted Submission(s): 10</p>
@@ -961,7 +1009,7 @@
     <link href="http://www.ckboss.cf/2015/11/04/HDOJ5544/"/>
     <id>http://www.ckboss.cf/2015/11/04/HDOJ5544/</id>
     <published>2015-11-03T16:21:25.000Z</published>
-    <updated>2016-02-17T12:50:44.321Z</updated>
+    <updated>2016-04-22T05:49:30.813Z</updated>
     <content type="html"><![CDATA[<p>用dfs或者生成树的方式找出一组基环,剩下的各种换都可以用这组基换异或出来,问题就转化成了n个数选出一些数异或值最大的经典问题.</p>
 <blockquote>
 <p>用高斯消元解决</p>
@@ -1009,7 +1057,7 @@
     <link href="http://www.ckboss.cf/2015/11/03/SGU275/"/>
     <id>http://www.ckboss.cf/2015/11/03/SGU275/</id>
     <published>2015-11-03T12:02:51.000Z</published>
-    <updated>2016-02-17T12:50:41.749Z</updated>
+    <updated>2016-04-22T05:49:30.569Z</updated>
     <content type="html"><![CDATA[<p>给n个数,让你从中间选一些数使异或值最大.</p>
 <p><strong>高斯消元</strong>,矩阵a[i][j]表示第j个数的第i位是0还是1.</p>
 <p>首先求系数矩阵。由每个数的范围可以确定每个数转化成二进制以后最多有63位，那么我们构造一个63*100的矩阵，a[i][j]表示第j个数的第i个二进制位，因为我们想要结构最大，最后一列置为1，然后用高斯消元判断每一行即想要结果的每一位能不能取得1。<br>从高位向低位，判断每一行是否有可控制变元(是否有1)，如果有那么这一行可以取得1，同时从该行往下依次异或掉该列不为0的行，即异或掉该变元。如果没有可控制的变元，但是最后一列是0，该行结构也是1，若最后一列不为0说明该行结果为0。从高位向低位，每次确定了一位后，就更新ans的值，最后取得一个最大值。</p>
@@ -1043,7 +1091,7 @@
     <link href="http://www.ckboss.cf/2015/11/02/i3wm/"/>
     <id>http://www.ckboss.cf/2015/11/02/i3wm/</id>
     <published>2015-11-02T14:05:17.000Z</published>
-    <updated>2016-02-17T12:50:41.581Z</updated>
+    <updated>2016-04-22T05:49:30.533Z</updated>
     <content type="html"><![CDATA[<p><img src="http://i3wm.org/img/logo.svg" alt="i3"></p>
 <p>发现了一个好用的平铺式窗口管理器<strong>i3wm</strong></p>
 <p>大概长这样:<br><img src="http://i3wm.org/screenshots/i3-9.bigthumb.png" alt=""></p>
@@ -1082,7 +1130,7 @@
     <link href="http://www.ckboss.cf/2015/11/02/HDOJ5333/"/>
     <id>http://www.ckboss.cf/2015/11/02/HDOJ5333/</id>
     <published>2015-11-02T12:30:38.000Z</published>
-    <updated>2016-02-17T12:50:41.957Z</updated>
+    <updated>2016-04-22T05:49:30.633Z</updated>
     <content type="html"><![CDATA[<p><strong>由于给的都是整数点,所以能够构成的证多边形只有正四边形.</strong></p>
 <h1 id="Dancing_Stars_on_Me"><a href="http://acm.hdu.edu.cn/showproblem.php?pid=5533" target="_blank" rel="external">Dancing Stars on Me</a></h1><p>Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 262144/262144 K (Java/Others)<br>Total Submission(s): 136    Accepted Submission(s): 91</p>
 <h5 id="Problem_Description">Problem Description</h5><p>The sky was brushed clean by the wind and the stars were cold in a black sky. What a wonderful night. You observed that, sometimes the stars can form a regular polygon in the sky if we connect them properly. You want to record these moments by your smart camera. Of course, you cannot stay awake all night for capturing. So you decide to write a program running on the smart camera to check whether the stars can form a regular polygon and capture these moments automatically.</p>
@@ -1111,49 +1159,6 @@
       <category term="大自然" scheme="http://www.ckboss.cf/tags/%E5%A4%A7%E8%87%AA%E7%84%B6/"/>
     
       <category term="acm_想法" scheme="http://www.ckboss.cf/categories/acm-%E6%83%B3%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[HDOJ 5536 Chip Factory]]></title>
-    <link href="http://www.ckboss.cf/2015/11/02/HDOJ5536/"/>
-    <id>http://www.ckboss.cf/2015/11/02/HDOJ5536/</id>
-    <published>2015-11-02T12:20:31.000Z</published>
-    <updated>2016-02-17T12:50:50.233Z</updated>
-    <content type="html"><![CDATA[<p>经典问题:　从n个数中选俩个求异或值最大<br>建立01字典树就可以了</p>
-<h1 id="Chip_Factory"><a href="http://acm.hdu.edu.cn/showproblem.php?pid=5536" target="_blank" rel="external">Chip Factory</a></h1><p>Time Limit: 18000/9000 MS (Java/Others)    Memory Limit: 262144/262144 K (Java/Others)<br>Total Submission(s): 207    Accepted Submission(s): 119</p>
-<h5 id="Problem_Description">Problem Description</h5><p>John is a manager of a CPU chip factory, the factory produces lots of chips everyday. To manage large amounts of products, every processor has a serial number. More specifically, the factory produces n chips today, the i-th chip produced this day has a serial number si.</p>
-<p>At the end of the day, he packages all the chips produced this day, and send it to wholesalers. More specially, he writes a checksum number on the package, this checksum is defined as below:<br>$$maxi,j,k(si+sj)⊕sk$$</p>
-<p>which i,j,k are three different integers between 1 and n. And ⊕ is symbol of bitwise XOR.</p>
-<p>Can you help John calculate the checksum number of today?</p>
-<h5 id="Input">Input</h5><p>The first line of input contains an integer T indicating the total number of test cases.</p>
-<p>The first line of each test case is an integer n, indicating the number of chips produced today. The next line has n integers s1,s2,..,sn, separated with single space, indicating serial number of each chip.</p>
-<p>1≤T≤1000<br>3≤n≤1000<br>0≤si≤109<br>There are at most 10 testcases with n&gt;100</p>
-<h5 id="Output">Output</h5><p>For each test case, please output an integer indicating the checksum number in a line.</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Sample Input</span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">3</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">100</span> <span class="number">200</span> <span class="number">300</span></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Sample Output</span><br><span class="line"><span class="number">6</span></span><br><span class="line"><span class="number">400</span></span><br></pre></td></tr></table></figure>
-<p>Source<br>2015ACM/ICPC亚洲区长春站-重现赛（感谢东北师大）</p>
-<a id="more"></a>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* ***********************************************</span><br><span class="line">Author        :CKboss</span><br><span class="line">Created Time  :2015年11月02日 星期一 19时22分16秒</span><br><span class="line">File Name     :HDOJ5536.cpp</span><br><span class="line">************************************************ */</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;set&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;map&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">1200</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> a[maxn];</span><br><span class="line"><span class="keyword">int</span> num[maxn*<span class="number">32</span>];</span><br><span class="line"><span class="keyword">int</span> ch[maxn*<span class="number">31</span>][<span class="number">2</span>];</span><br><span class="line"><span class="keyword">int</span> bit[<span class="number">33</span>];</span><br><span class="line"><span class="keyword">int</span> nextnode;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    nextnode=<span class="number">1</span>;</span><br><span class="line">    <span class="built_in">memset</span>(ch,<span class="number">0</span>,<span class="keyword">sizeof</span>(ch));</span><br><span class="line">    <span class="built_in">memset</span>(num,<span class="number">0</span>,<span class="keyword">sizeof</span>(num));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fj</span><span class="params">(<span class="keyword">int</span> x)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="built_in">memset</span>(bit,<span class="number">0</span>,<span class="keyword">sizeof</span>(bit));</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">31</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        bit[i]=x&amp;<span class="number">1</span>; x/=<span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> add)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    fj(x);</span><br><span class="line">    <span class="keyword">int</span> now=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">30</span>;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> d=bit[i];</span><br><span class="line">        <span class="keyword">if</span>(ch[now][d]==<span class="number">0</span>) ch[now][d]=nextnode++;</span><br><span class="line">        now=ch[now][d];</span><br><span class="line">        num[now]+=add;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">query</span><span class="params">(<span class="keyword">int</span> x)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    fj(x);</span><br><span class="line">    <span class="keyword">int</span> ret=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> now=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">30</span>;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> d=bit[i];</span><br><span class="line">        <span class="keyword">int</span> rd=<span class="number">1</span>-d;</span><br><span class="line">        <span class="keyword">if</span>(num[ch[now][rd]]) </span><br><span class="line">        &#123;</span><br><span class="line">            now=ch[now][rd];</span><br><span class="line">            ret=ret&lt;&lt;<span class="number">1</span>|<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(num[ch[now][d]]) </span><br><span class="line">        &#123;</span><br><span class="line">            now=ch[now][d];</span><br><span class="line">            ret=ret&lt;&lt;<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">puts</span>(<span class="string">"oh no!!!"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">debug</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;nextnode;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;i&lt;&lt;<span class="string">" num: "</span>&lt;&lt;num[i]&lt;&lt;<span class="string">" left: "</span>&lt;&lt;ch[i][<span class="number">0</span>]&lt;&lt;<span class="string">" right: "</span>&lt;&lt;ch[i][<span class="number">1</span>]&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="comment">//freopen("in.txt","r",stdin);</span></span><br><span class="line">    <span class="comment">//freopen("out.txt","w",stdout);</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> T_T;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;T_T);</span><br><span class="line">    <span class="keyword">while</span>(T_T--)</span><br><span class="line">    &#123;</span><br><span class="line">        init();</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>,a+i);</span><br><span class="line">            insert(a[i],<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            insert(a[i],-<span class="number">1</span>);</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;n;j++)</span><br><span class="line">            &#123;</span><br><span class="line">                insert(a[j],-<span class="number">1</span>);</span><br><span class="line">                <span class="keyword">int</span> c=a[i]+a[j];</span><br><span class="line">                <span class="keyword">int</span> q=query(c);</span><br><span class="line">                ans=max(ans,q);</span><br><span class="line">                insert(a[j],<span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            insert(a[i],<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,ans);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>经典问题:　从n个数中选俩个求异或值最大<br>建立01字典树就可以了</p>
-<h1 id="Chip_Factory"><a href="http://acm.hdu.edu.cn/showproblem.php?pid=5536">Chip Factory</a></h1><p>Time Limit: 18000/9000 MS (Java/Others)    Memory Limit: 262144/262144 K (Java/Others)<br>Total Submission(s): 207    Accepted Submission(s): 119</p>
-<h5 id="Problem_Description">Problem Description</h5><p>John is a manager of a CPU chip factory, the factory produces lots of chips everyday. To manage large amounts of products, every processor has a serial number. More specifically, the factory produces n chips today, the i-th chip produced this day has a serial number si.</p>
-<p>At the end of the day, he packages all the chips produced this day, and send it to wholesalers. More specially, he writes a checksum number on the package, this checksum is defined as below:<br>$$maxi,j,k(si+sj)⊕sk$$</p>
-<p>which i,j,k are three different integers between 1 and n. And ⊕ is symbol of bitwise XOR.</p>
-<p>Can you help John calculate the checksum number of today?</p>
-<h5 id="Input">Input</h5><p>The first line of input contains an integer T indicating the total number of test cases.</p>
-<p>The first line of each test case is an integer n, indicating the number of chips produced today. The next line has n integers s1,s2,..,sn, separated with single space, indicating serial number of each chip.</p>
-<p>1≤T≤1000<br>3≤n≤1000<br>0≤si≤109<br>There are at most 10 testcases with n&gt;100</p>
-<h5 id="Output">Output</h5><p>For each test case, please output an integer indicating the checksum number in a line.</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Sample Input</span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">3</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">100</span> <span class="number">200</span> <span class="number">300</span></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Sample Output</span><br><span class="line"><span class="number">6</span></span><br><span class="line"><span class="number">400</span></span><br></pre></td></tr></table></figure>
-<p>Source<br>2015ACM/ICPC亚洲区长春站-重现赛（感谢东北师大）</p>]]>
-    
-    </summary>
-    
-      <category term="trie" scheme="http://www.ckboss.cf/tags/trie/"/>
-    
-      <category term="acm_数据结构" scheme="http://www.ckboss.cf/categories/acm-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
