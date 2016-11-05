@@ -73,6 +73,66 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-2016年3月-最近在干什么" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/21/2016年3月-最近在干什么/" class="article-date">
+  <time datetime="2016-03-21T14:41:32.000Z" itemprop="datePublished">2016-03-21</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/日常/">日常</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/21/2016年3月-最近在干什么/">2016年3月:最近在干什么</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>很久没更新blog了,记录一下最近几个月来的近况.</p>
+<h4 id="VirtualJudgePY_的_第一版">VirtualJudgePY 的 第一版</h4><p>曾经尝试过搭建搭建hustVJ,记得那时候各种难搭,没有文档,安装说明混乱,代码太复杂等种种原因,一共也只在本地搭建成功过一次老的版本,最新的版本甚至连对应的sql文件都找不到了.于是准备称毕业设计的计划山寨HustVJ做一个轻量级容易使用的virtualJudge.</p>
+<p>当然做vj的其他原因还有当时对爬虫的兴趣,外加练习python和VJ自己留着用.</p>
+<p>选择了python3+tornado作为开发的框架,在选择tornado之前尝试学习了一下django,发现djiango框架很强大,什么东西都帮你做好了,不太喜欢这种限制太多的重量级框架,于是就选择了相对轻量级并且更加自由的tornado.</p>
+<p>以前听说过scrapy这个爬虫库很厉害,据说还支持python3.遂下载下来,结果发现3.x版本里的字典类型的一个变量名改了,导致scrapy不能正常运行.于是网页爬虫只能通过requests手工写了,好在各大OJ的页面结构都很简单..</p>
+<p>在VirtualJudgePY之前,连html都没怎么写过.于是一切都从0开始自己摸索,花了1个多月时间把整个VJ的框架都搭了起来.虽然python没有很强的面向对象要求,但写的时候一直很注意结构化.最后的结果基本满意,尤其是OJ的添加,只需要按照规则实现几个类,完全不需要了解VJ的整结构就可以添加新的OJ.自己尝试手动添加了5个OJ后觉得这套设计确实很方便,于是就又发掘BnuVJ的网络接口,实现了一个VVjudge,最后支持的OJ数和HustOJ一样多了.</p>
+<p>受限于人力和自己的需求,Contest功能不准备详细的写了…</p>
+<p><img src="http://ww1.sinaimg.cn/mw1024/50a04a61gw1f1xwn7vsqdj21330qhth1.jpg" alt="首页"></p>
+<p>第一个web app 基本都是用tornado在服务端进行渲染,没做动态渲染的效果,操作逻辑山寨HDU/PKU,配色山寨HDU,接口盗用Bnuoj,python+html模板代码约4k+,本来是赤裸裸的python项目,因为手贱上传了一个MathJax的js包,github上瞬间js代码的比例占据了99.7%,于是从一个python项目强行被归类到js项目去了…</p>
+<h4 id="软件小作坊">软件小作坊</h4><p>上学期被提前喊到华东师范来当一个,某项目的码农,<strong>包吃住,没收入,写爬虫or打杂</strong>….</p>
+<p>分配的第一个工作就是写爬虫,而且还让我用一个祖传原创的某java爬虫框架.当时对java爬虫了解不多,直到有一天我在github上看到了一个叫WebCollector的爬虫框架,卧槽这代码一模一样!!!卧槽教程里的example也一模一样!!!卧槽就换了个包名就算自己写的?还发了片论文!!感觉真是日了狗了…而且原版的代码都3.0了,这个抄袭的还只是抄的2.x的版本.</p>
+<p>学校这边还表示用祖传代码比较好,不过我没叼…最后还是用的原版.不过后来又看到了一个叫WebMagic的框架,感觉这个设计的更好用一些,后来还尝试使用了一次,可惜看到的时候该写的爬虫已经写完了…</p>
+<p>爬虫写完后,又加了个lucene的搜索到那个项目里,后来就没怎么干和这个项目相关的事情了.</p>
+<p>再说说小作坊的事情,这个某国企和学校合作的项目,企业方面水平奇差,没有一个美工就拿着那种软件示意图当做原型去做UI了,一个图显示的东西两个月都做不出来,最后的效果还不如一个学长一个晚上做出的示意图好.去掉这个图不说,整个项目企业方面两个月就做了个登陆界面.</p>
+<p>就软件项目管理来说,也是很失败的,整个软件架构虽然图上画的结构很清楚,开会上说的分工也很清楚,但做起来前后端的接口都没有定义就开始写了,后端给前端的东西就一个jar包,接口?啥都没有,自己去凑,第一次看到这种开发方式,也许着也是前端开发奇慢的一个原因吧.</p>
+<p>人员方面的变动,总共4个人两个月走了两个,最后产品经理也跳槽了,最终这个软件项目因为<strong>非技术性原因</strong>暂停了…</p>
+<p>第一次做正式项目就这么结束了,这个故事告诉我们这种没啥含金量的学术产业化多么的坑爹….</p>
+<h4 id="其他">其他</h4><p>项目结束了也好,空余了很多时间可以来做自己的事情,最近在看机器学习+基本的数学,最近Alphago不是很火吗?咱以后搞个大数据算命也是不错的….这些算法的研究还是非常有价值的,掌握核心技术才会有真正的竞争力,学习阶段就应该多花点时间研究一些原理,底层的东西.厚积才能薄发…</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.ckboss.cf/2016/03/21/2016年3月-最近在干什么/" data-id="civ4tsogn00cgowonj8nx8wbs" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-qlcoder-时间线2" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/03/21/qlcoder-时间线2/" class="article-date">
@@ -148,7 +208,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2016/03/21/qlcoder-时间线2/" data-id="cis4nyuzr001qpwqflo40au7r" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2016/03/21/qlcoder-时间线2/" data-id="civ4tsobo001qowonuzz7qj89" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/qlcoder/">qlcoder</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据结构/">数据结构</a></li></ul>
@@ -216,7 +276,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2016/02/18/鸟枪换炮/" data-id="cis4nyuyn0003pwqflz44zzuv" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2016/02/18/鸟枪换炮/" data-id="civ4tsoaj0003owonvs2nxvg7" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
@@ -256,7 +316,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2016/01/12/Java模拟两小球的碰撞/" data-id="cis4nyv1m0049pwqf6je3f2db" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2016/01/12/Java模拟两小球的碰撞/" data-id="civ4tsod4004aowonwyw9luw5" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
@@ -332,7 +392,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2016/01/12/java爬虫/" data-id="cis4nyuzz0022pwqfedw8gf2z" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2016/01/12/java爬虫/" data-id="civ4tsobu0022owonuj3kmc1e" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
@@ -378,7 +438,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/12/10/使用实时更新的卫星照片做桌面壁纸/" data-id="cis4nyuzh0014pwqfx2hnmiqh" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/12/10/使用实时更新的卫星照片做桌面壁纸/" data-id="civ4tsobd0014owonmnneplfu" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python3小玩意/">Python3小玩意</a></li></ul>
@@ -430,7 +490,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/12/05/坑爹的freenom域名/" data-id="cis4nyuz3000mpwqfk7y9zdt2" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/12/05/坑爹的freenom域名/" data-id="civ4tsob5000mowon6bg6hg3n" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/freenom/">freenom</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/域名/">域名</a></li></ul>
@@ -475,7 +535,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/11/23/近况201511/" data-id="cis4nyuyw0008pwqfe8e5vrzf" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/11/23/近况201511/" data-id="civ4tsoas0008owon6g4kzygp" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/近况/">近况</a></li></ul>
@@ -522,7 +582,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/11/20/Python填写表单/" data-id="cis4nyv1b003upwqf1uyjo74c" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/11/20/Python填写表单/" data-id="civ4tsocw003uowonk1pf0s78" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python3小玩意/">Python3小玩意</a></li></ul>
@@ -571,65 +631,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/11/20/SPAM-Python/" data-id="cis4nyv11003mpwqf7uph3ef3" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/11/20/SPAM-Python/" data-id="civ4tsocq003mowon9rfall10" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python3小玩意/">Python3小玩意</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-HDOJ4756" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/11/08/HDOJ4756/" class="article-date">
-  <time datetime="2015-11-08T15:21:53.000Z" itemprop="datePublished">2015-11-08</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/acm-图论/">acm_图论</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/08/HDOJ4756/">HDOJ 4756 Install Air Conditioning 次小生成树</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>简单次小生成树,根据题目需求计算即可.</p>
-<h1 id="Install_Air_Conditioning"><a href="http://acm.hdu.edu.cn/showproblem.php?pid=4756">Install Air Conditioning</a></h1><p>Time Limit: 4000/2000 MS (Java/Others)    Memory Limit: 65535/65535 K (Java/Others)<br>Total Submission(s): 1230    Accepted Submission(s): 288</p>
-<h5 id="Problem_Description">Problem Description</h5><p><img src="http://acm.hdu.edu.cn/data/images/C479-1009-1.jpg" alt=""></p>
-<p>  NJUST carries on the tradition of HaJunGong. NJUST, who keeps up the ”people-oriented, harmonious development” of the educational philosophy and develops the ”unity, dedication, truth-seeking, innovation” school motto, has now become an engineering-based, multidisciplinary university.</p>
-<p>  As we all know, Nanjing is one of the four hottest cities in China. Students in NJUST find it hard to fall asleep during hot summer every year. They will never, however, suffer from that hot this year, which makes them really excited. NJUST’s 60th birthday is approaching, in the meantime, 50 million is spent to install air conditioning among students dormitories. Due to NJUST’s long history, the old circuits are not capable to carry heavy load, so it is necessary to set new high-load wires. To reduce cost, every wire between two dormitory is considered a segment. Now, known about all the location of dormitories and a power plant, and the cost of high-load wire per meter, Tom200 wants to know in advance, under the premise of all dormitories being able to supply electricity, the minimum cost be spent on high-load wires. And this is the minimum strategy. But Tom200 is informed that there are so many wires between two specific dormitories that we cannot set a new high-load wire between these two, otherwise it may have potential risks. The problem is that Tom200 doesn’t know exactly which two dormitories until the setting process is started. So according to the minimum strategy described above, how much cost at most you’ll spend?</p>
-<h5 id="Input">Input</h5><p>  The first line of the input contains a single integer T(T ≤ 100), the number of test cases.<br>  For each case, the first line contains two integers n(3 ≤ n ≤ 1000), k(1 ≤ k ≤ 100). n represents n-1 dormitories and one power plant, k represents the cost of high-load wire per meter. n lines followed contains two integers x, y(0 ≤ x, y ≤ 10000000), representing the location of dormitory or power plant. Assume no two locations are the same, and no three locations are on a straight line. The first one is always the location of the power plant.</p>
-<h5 id="Output">Output</h5><p>  For each case, output the cost, correct to two decimal places.</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">Sample Input</span><br><span class="line"><span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="number">4</span> <span class="number">2</span></span><br><span class="line"><span class="number">0</span> <span class="number">0</span></span><br><span class="line"><span class="number">1</span> <span class="number">1</span></span><br><span class="line"><span class="number">2</span> <span class="number">0</span></span><br><span class="line"><span class="number">3</span> <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="number">4</span> <span class="number">3</span></span><br><span class="line"><span class="number">0</span> <span class="number">0</span></span><br><span class="line"><span class="number">1</span> <span class="number">1</span></span><br><span class="line"><span class="number">1</span> <span class="number">0</span></span><br><span class="line"><span class="number">0</span> <span class="number">1</span></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Sample Output</span><br><span class="line"><span class="number">9.66</span></span><br><span class="line"><span class="number">9.00</span></span><br></pre></td></tr></table></figure>
-<h5 id="Source">Source</h5><p>2013 ACM/ICPC Asia Regional Nanjing Online</p>
-        
-          <p class="article-more-link">
-            <a href="/2015/11/08/HDOJ4756/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/11/08/HDOJ4756/" data-id="cis4nyv3t008bpwqf00rg710z" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/次小生成树/">次小生成树</a></li></ul>
 
     </footer>
   </div>
@@ -685,7 +690,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
     </div>
   </div>
 
@@ -695,6 +700,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/11/05/NVIDIA-TITAN-X/">NVIDIA TITAN X</a>
+          </li>
         
           <li>
             <a href="/2016/08/21/HDOJ5858/">HDOJ 5858 Hard problem 积分</a>
@@ -710,10 +719,6 @@
         
           <li>
             <a href="/2016/04/23/Java生产者和消费者/">简单的Java生产者和消费者</a>
-          </li>
-        
-          <li>
-            <a href="/2016/04/23/ubuntu16-04初体验/">ubuntu16.04初体验</a>
           </li>
         
       </ul>

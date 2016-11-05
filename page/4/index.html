@@ -73,6 +73,66 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-HDOJ5545" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/11/04/HDOJ5545/" class="article-date">
+  <time datetime="2015-11-04T06:00:44.000Z" itemprop="datePublished">2015-11-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/acm-图论/">acm_图论</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/04/HDOJ5545/">HDOJ 5545 The Battle of Guandu 最短路</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>对于每个村庄,会对一个战场x增加一个士兵对另一个战场y减少一个士兵.<br>士兵总体数量是守恒的,我们可以连一条 $x \longrightarrow y$ 权值为c的边.</p>
+<p>然后以重要程度为0的战场为源点,统计重要成都为2的战场的值.</p>
+<h1 id="The_Battle_of_Guandu"><a href="http://acm.hdu.edu.cn/showproblem.php?pid=5545">The Battle of Guandu</a></h1><p>Time Limit: 6000/3000 MS (Java/Others)    Memory Limit: 65535/65535 K (Java/Others)<br>Total Submission(s): 20    Accepted Submission(s): 10</p>
+<h5 id="Problem_Description">Problem Description</h5><p>In the year of 200, two generals whose names are Cao Cao and Shao Yuan are fighting in Guandu. The battle of Guandu was a great battle and the two armies were fighting at M different battlefields whose numbers were 1 to M. There were also N villages nearby numbered from 1 to N. Cao Cao could train some warriors from those villages to strengthen his military. For village i, Cao Cao could only call for some number of warriors join the battlefield xi. However, Shao Yuan’s power was extremely strong at that time. So in order to protect themselves, village i would also send equal number of warriors to battlefield yi and join the Yuan Shao’s Army. If Cao Cao had called for one warrior from village i, he would have to pay ci units of money for the village. There was no need for Cao Cao to pay for the warriors who would join Shao Yuan’s army. At the beginning, there were no warriors of both sides in every battlefield.</p>
+<p>As one of greatest strategist at that time, Cao Cao was considering how to beat Shao Yuan. As we can image, the battlefields would have different level of importance wi. Some of the battlefields with wi=2 were very important, so Cao Cao had to guarantee that in these battlefields, the number of his warriors was greater than Shao Yuan’s. And some of the battlefields with wi=1 were not as important as before, so Cao Cao had to make sure that the number of his warriors was greater or equal to Shao Yuan’s. The other battlefields with wi=0 had no importance, so there were no restriction about the number of warriors in those battlefields. Now, given such conditions, could you help Cao Cao find the least number of money he had to pay to win the battlefield?</p>
+<h5 id="Input">Input</h5><p>The first line of the input gives the number of test cases, T(1≤T≤30). T test cases follow.</p>
+<p>Each test case begins with two integers N and M(1≤N,M≤105) in one line.</p>
+<p>The second line contains N integers separated by blanks. The ith integer xi(1≤xi≤M) means Cao Cao could call for warriors from village i to battlefield xi.</p>
+<p>The third line also contains N integers separated by blanks. The ith integer yi(1≤yi≤M) means if Cao Cao called some number of warriors from village i, there would be the same number of warriors join Shao Yuan’s army and fight in battlefield yi.</p>
+<p>The next line contains N integers separated by blanks. The ith integer ci(0≤ci≤105) means the number of money Cao Cao had to pay for each warrior from this village.</p>
+<p>The last line contains M integers separated by blanks. The ith number wi(wi∈0,1,2) means the importance level of ith battlefield.</p>
+<h5 id="Output">Output</h5><p>For each test case, output one line containing Case #x: y, where x is the test case number (starting from 1) and y is the least amount of money that Cao Cao had to pay for all the warriors to win the battle. If he couldn’t win, y=−1.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">Sample Input</span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">2</span> <span class="number">3</span></span><br><span class="line"><span class="number">2</span> <span class="number">3</span></span><br><span class="line"><span class="number">1</span> <span class="number">1</span></span><br><span class="line"><span class="number">1</span> <span class="number">1</span></span><br><span class="line"><span class="number">0</span> <span class="number">1</span> <span class="number">2</span></span><br><span class="line"><span class="number">1</span> <span class="number">1</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Sample Output</span><br><span class="line">Case <span class="preprocessor">#<span class="number">1</span>: <span class="number">1</span></span></span><br><span class="line">Case <span class="preprocessor">#<span class="number">2</span>: -<span class="number">1</span></span></span><br></pre></td></tr></table></figure>
+<p>Source<br>The 2015 China Collegiate Programming Contest</p>
+        
+          <p class="article-more-link">
+            <a href="/2015/11/04/HDOJ5545/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.ckboss.cf/2015/11/04/HDOJ5545/" data-id="civ4tsod8004oowon7vdjw9nt" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spfa/">spfa</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/想法技巧/">想法技巧</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-HDOJ5544" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/11/04/HDOJ5544/" class="article-date">
@@ -120,7 +180,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/11/04/HDOJ5544/" data-id="cis4nyv1v004tpwqflrbphd7n" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/11/04/HDOJ5544/" data-id="civ4tsoda004uowondbsj5gtd" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/图论/">图论</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/想法技巧/">想法技巧</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/高斯消元/">高斯消元</a></li></ul>
@@ -174,7 +234,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/11/03/SGU275/" data-id="cis4nyv16003ppwqfkbg6ekbs" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/11/03/SGU275/" data-id="civ4tsocu003powondwa2l93k" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/高斯消元/">高斯消元</a></li></ul>
@@ -234,7 +294,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/11/02/i3wm/" data-id="cis4nyv010026pwqf0ry62okd" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/11/02/i3wm/" data-id="civ4tsobw0026owonunsmtf8v" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/">Ubuntu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/i3wm/">i3wm</a></li></ul>
@@ -289,7 +349,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/11/02/HDOJ5333/" data-id="cis4nyv3q0087pwqfy31kcacs" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/11/02/HDOJ5333/" data-id="civ4tsoep0088owonpdj2bifh" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/大自然/">大自然</a></li></ul>
@@ -347,7 +407,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/11/02/HDOJ5536/" data-id="cis4nyv1x0050pwqfvbw3q7f6" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/11/02/HDOJ5536/" data-id="civ4tsodd0051owontg7lukfn" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/trie/">trie</a></li></ul>
@@ -410,7 +470,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/11/01/HDOJ2475/" data-id="cis4nyv5n00blpwqft4zwv0b0" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/11/01/HDOJ2475/" data-id="civ4tsog500bmowonc51u3ans" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LCT/">LCT</a></li></ul>
@@ -464,7 +524,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/31/HDOJ3709/" data-id="cis4nyv5k00bfpwqfdrtwklpx" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/31/HDOJ3709/" data-id="civ4tsog300bgowon1b6rif1u" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数位dp/">数位dp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/枚举/">枚举</a></li></ul>
@@ -521,7 +581,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/30/HDOJ3718/" data-id="cis4nyv5f00b3pwqf9twfn606" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/30/HDOJ3718/" data-id="civ4tsog000b4owonljeiou0l" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HDOJ/">HDOJ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/KM/">KM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/图论/">图论</a></li></ul>
@@ -598,66 +658,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/30/HDOJ3715/" data-id="cis4nyv5i00b9pwqf9tuoneqt" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/30/HDOJ3715/" data-id="civ4tsog100baowoni82vvkj6" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/2-SAT/">2-SAT</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HDOJ/">HDOJ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/二分/">二分</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-ZOJ2860" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/10/29/ZOJ2860/" class="article-date">
-  <time datetime="2015-10-29T06:12:38.000Z" itemprop="datePublished">2015-10-29</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/acm-dp/">acm_dp</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/29/ZOJ2860/">ZOJ 2860 Breaking Strings 四边形优化DP</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>区间dp,四边形优化…</p>
-<h1 id="Breaking_Strings"><a href="http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=1860">Breaking Strings</a></h1><p>Time Limit: 2 Seconds      Memory Limit: 65536 KB</p>
-<p>A certain string-processing language allows the programmer to break a string into two pieces. Since this involves copying the old string, it costs n units of time to break a string of n characters into two pieces. Suppose a programmer wants to break a string into many pieces. The order in which the breaks are made can affect the total amount of time used. For example, suppose we wish to break a 20 character string after characters 3, 8, and 10 (numbering the characters in ascending order from the left-hand end, starting from 1). If the breaks are made in left-to-right order, then the first break cost 20 units of time, the second break costs 17 units of time, and the third breaks costs 12 units of time, a total of 49 units of time (see the sample below). If the breaks are made in right-to-left order, then the first break costs 20 units of time, the second break costs 10 units of time, and the third break costs 8 units of time, a total of 38 units of time.</p>
-<p>The cost of making the breaks in left-to-right order:</p>
-<p>thisisastringofchars     (original)<br>thi sisastringofchars    (cost:20 units)<br>thi sisas tringofchars   (cost:17 units)<br>thi sisas tr ingofchars  (cost:12 units)<br>                         Total: 49 units.<br>The cost of making the breaks in right-to-left order:</p>
-<p>thisisastringofchars     (original)<br>thisisastr ingofchars    (cost:20 units)<br>thisisas tr ingofchars   (cost:10 units)<br>thi sisas tr ingofchars  (cost: 8 units)<br>                         Total: 38 units.</p>
-<h5 id="Input:">Input:</h5><p>There are several test cases! In each test case, the first line contains 2 integers N (2&lt;=N&lt;=10000000) and M (1&lt;=M&lt;=1000, M&lt;N). N is the original length of the string, and M is the number of the breaks. The following lines contain M integers Mi (1&lt;=Mi&lt;N) in ascending order that represent the breaking positions from the string’s left-hand end.</p>
-<h5 id="Output:">Output:</h5><p>For each test case, output in one line the least cost to make all the breakings.</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Sample Input:</span><br><span class="line"></span><br><span class="line"><span class="number">20</span> <span class="number">3</span></span><br><span class="line"><span class="number">3</span> <span class="number">8</span> <span class="number">10</span></span><br><span class="line">Sample Output:</span><br><span class="line"></span><br><span class="line"><span class="number">37</span></span><br></pre></td></tr></table></figure>
-<p>Author: Wei, Qizheng<br>Source: ZOJ Monthly, June 2007</p>
-        
-          <p class="article-more-link">
-            <a href="/2015/10/29/ZOJ2860/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/29/ZOJ2860/" data-id="cis4nyv0c002mpwqfmgzralog" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ZOJ/">ZOJ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp/">dp</a></li></ul>
 
     </footer>
   </div>
@@ -713,7 +717,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
     </div>
   </div>
 
@@ -723,6 +727,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/11/05/NVIDIA-TITAN-X/">NVIDIA TITAN X</a>
+          </li>
         
           <li>
             <a href="/2016/08/21/HDOJ5858/">HDOJ 5858 Hard problem 积分</a>
@@ -738,10 +746,6 @@
         
           <li>
             <a href="/2016/04/23/Java生产者和消费者/">简单的Java生产者和消费者</a>
-          </li>
-        
-          <li>
-            <a href="/2016/04/23/ubuntu16-04初体验/">ubuntu16.04初体验</a>
           </li>
         
       </ul>

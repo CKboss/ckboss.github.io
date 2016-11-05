@@ -73,6 +73,62 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-ZOJ2860" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/10/29/ZOJ2860/" class="article-date">
+  <time datetime="2015-10-29T06:12:38.000Z" itemprop="datePublished">2015-10-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/acm-dp/">acm_dp</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/29/ZOJ2860/">ZOJ 2860 Breaking Strings 四边形优化DP</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>区间dp,四边形优化…</p>
+<h1 id="Breaking_Strings"><a href="http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=1860">Breaking Strings</a></h1><p>Time Limit: 2 Seconds      Memory Limit: 65536 KB</p>
+<p>A certain string-processing language allows the programmer to break a string into two pieces. Since this involves copying the old string, it costs n units of time to break a string of n characters into two pieces. Suppose a programmer wants to break a string into many pieces. The order in which the breaks are made can affect the total amount of time used. For example, suppose we wish to break a 20 character string after characters 3, 8, and 10 (numbering the characters in ascending order from the left-hand end, starting from 1). If the breaks are made in left-to-right order, then the first break cost 20 units of time, the second break costs 17 units of time, and the third breaks costs 12 units of time, a total of 49 units of time (see the sample below). If the breaks are made in right-to-left order, then the first break costs 20 units of time, the second break costs 10 units of time, and the third break costs 8 units of time, a total of 38 units of time.</p>
+<p>The cost of making the breaks in left-to-right order:</p>
+<p>thisisastringofchars     (original)<br>thi sisastringofchars    (cost:20 units)<br>thi sisas tringofchars   (cost:17 units)<br>thi sisas tr ingofchars  (cost:12 units)<br>                         Total: 49 units.<br>The cost of making the breaks in right-to-left order:</p>
+<p>thisisastringofchars     (original)<br>thisisastr ingofchars    (cost:20 units)<br>thisisas tr ingofchars   (cost:10 units)<br>thi sisas tr ingofchars  (cost: 8 units)<br>                         Total: 38 units.</p>
+<h5 id="Input:">Input:</h5><p>There are several test cases! In each test case, the first line contains 2 integers N (2&lt;=N&lt;=10000000) and M (1&lt;=M&lt;=1000, M&lt;N). N is the original length of the string, and M is the number of the breaks. The following lines contain M integers Mi (1&lt;=Mi&lt;N) in ascending order that represent the breaking positions from the string’s left-hand end.</p>
+<h5 id="Output:">Output:</h5><p>For each test case, output in one line the least cost to make all the breakings.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Sample Input:</span><br><span class="line"></span><br><span class="line"><span class="number">20</span> <span class="number">3</span></span><br><span class="line"><span class="number">3</span> <span class="number">8</span> <span class="number">10</span></span><br><span class="line">Sample Output:</span><br><span class="line"></span><br><span class="line"><span class="number">37</span></span><br></pre></td></tr></table></figure>
+<p>Author: Wei, Qizheng<br>Source: ZOJ Monthly, June 2007</p>
+        
+          <p class="article-more-link">
+            <a href="/2015/10/29/ZOJ2860/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.ckboss.cf/2015/10/29/ZOJ2860/" data-id="civ4tsoc6002mowons2sqi2i2" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ZOJ/">ZOJ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp/">dp</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-ZOJ2563" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/10/29/ZOJ2563/" class="article-date">
@@ -115,7 +171,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/29/ZOJ2563/" data-id="cis4nyv0j0031pwqf3l0qqc3x" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/29/ZOJ2563/" data-id="civ4tsoce0031owonovgm4e2u" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp/">dp</a></li></ul>
@@ -170,7 +226,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/27/2015ShengyangRegional/" data-id="cis4nyv6d00cipwqfv58cokso" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/27/2015ShengyangRegional/" data-id="civ4tsogo00cjowonugi0rvrm" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/现场赛/">现场赛</a></li></ul>
@@ -229,7 +285,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/27/ZOJ2561/" data-id="cis4nyv0m0034pwqfg0pnbl8u" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/27/ZOJ2561/" data-id="civ4tsocg0034owonhozucgy5" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp优化/">dp优化</a></li></ul>
@@ -284,7 +340,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/27/四边形优化DP/" data-id="cis4nyuz6000spwqf21mowkqh" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/27/四边形优化DP/" data-id="civ4tsob7000sowonilpuz5e8" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DP/">DP</a></li></ul>
@@ -342,7 +398,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/27/ZOJ2565/" data-id="cis4nyv0h002xpwqfm7t8l3yv" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/27/ZOJ2565/" data-id="civ4tsoca002xowon61jtdabo" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp/">dp</a></li></ul>
@@ -397,7 +453,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/27/ZOJ2559/" data-id="cis4nyv0s0038pwqfxks1ktpj" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/27/ZOJ2559/" data-id="civ4tsocj0038owone3rhekfk" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/水/">水</a></li></ul>
@@ -462,7 +518,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/20/HDOJ5506/" data-id="cis4nyv1y0055pwqfp8y0orxm" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/20/HDOJ5506/" data-id="civ4tsodg0056owonqxgaq66x" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/搜索/">搜索</a></li></ul>
@@ -521,7 +577,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/19/2015CCPC/" data-id="cis4nyv6h00cmpwqfbm4xakmp" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/19/2015CCPC/" data-id="civ4tsogr00cnowong93revlz" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/现场赛/">现场赛</a></li></ul>
@@ -581,68 +637,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/13/HDOJ5501/" data-id="cis4nyv1z0059pwqf0wx9gjbj" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/10/13/HDOJ5501/" data-id="civ4tsodh005aowonveiunh7m" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/背包/">背包</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/贪心/">贪心</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-HDOJ5500" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/10/12/HDOJ5500/" class="article-date">
-  <time datetime="2015-10-12T14:16:03.000Z" itemprop="datePublished">2015-10-12</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/acm-想法/">acm_想法</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/12/HDOJ5500/">HDOJ 5500 Reorder the Books</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong> 如果一个数小的数在一个大的数后面,那么这个数一定要移动到前面.<br>需要移动的最大的数的就是要操作的次数. </strong></p>
-<h2 id="Reorder_the_Books">Reorder the Books</h2><p>Time Limit: 4000/2000 MS (Java/Others)    Memory Limit: 131072/131072 K (Java/Others)<br>Total Submission(s): 412    Accepted Submission(s): 267</p>
-<h5 id="Problem_Description">Problem Description</h5><p>dxy has a collection of a series of books called “The Stories of SDOI”,There are n(n≤19) books in this series.Every book has a number from 1 to n.</p>
-<p>dxy puts these books in a book stack with the order of their numbers increasing from top to bottom. dxy takes great care of these books and no one is allowed to touch them.</p>
-<p>One day Evensgn visited dxy’s home, because dxy was dating with his girlfriend, dxy let Evensgn stay at home himself. Evensgn was curious about this series of books.So he took a look at them. He found out there was a story about “Little E&amp;Little Q”. While losing himself in the story,he disrupted the order of the books.</p>
-<p>Knowing that dxy would be back soon,Evensgn needed to get the books ordered again.But because the books were too heavy.The only thing Evensgn could do was to take out a book from the book stack and and put it at the stack top. </p>
-<p>Give you the order of the disordered books.Could you calculate the minimum steps Evensgn would use to reorder the books? If you could solve the problem for him,he will give you a signed book “The Stories of SDOI 9: The Story of Little E” as a gift.</p>
-<h5 id="Input">Input</h5><p>There are several testcases.</p>
-<p>There is an positive integer T(T≤30) in the first line standing for the number of testcases.</p>
-<p>For each testcase, there is an positive integer n in the first line standing for the number of books in this series.</p>
-<p>Followed n positive integers separated by space standing for the order of the disordered books,the ith integer stands for the ith book’s number(from top to bottom).</p>
-<p>Hint:<br>For the first testcase:Moving in the order of book3,book2,book1 ,(4,1,2,3)→(3,4,1,2)→(2,3,4,1)→(1,2,3,4),and this is the best way to reorder the books.<br>For the second testcase:It’s already ordered so there is no operation needed.</p>
-<h5 id="Output">Output</h5><p>For each testcase,output one line for an integer standing for the minimum steps Evensgn would use to reorder the books.</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Sample Input</span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">4</span></span><br><span class="line"><span class="number">4</span> <span class="number">1</span> <span class="number">2</span> <span class="number">3</span></span><br><span class="line"><span class="number">5</span></span><br><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Sample Output</span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">0</span></span><br></pre></td></tr></table></figure>
-<h5 id="Source">Source</h5><p>BestCoder Round #59 (div.1)</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* ***********************************************</span><br><span class="line">Author        :CKboss</span><br><span class="line">Created Time  :2015年10月12日 星期一 21时46分19秒</span><br><span class="line">File Name     :HDOJ5500.cpp</span><br><span class="line">************************************************ */</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;set&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;map&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">20</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="comment">//freopen("in.txt","r",stdin);</span></span><br><span class="line">    <span class="comment">//freopen("out.txt","w",stdout);</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> T_T;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;T_T);</span><br><span class="line">	<span class="keyword">while</span>(T_T--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++) <span class="built_in">scanf</span>(<span class="string">"%d"</span>,a+i);</span><br><span class="line">		<span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;n;j++)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">if</span>(a[j]&lt;a[i]) ans=max(ans,a[j]);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,ans);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/12/HDOJ5500/" data-id="cis4nyv21005fpwqf2llxcli4" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/想法/">想法</a></li></ul>
 
     </footer>
   </div>
@@ -698,7 +696,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
     </div>
   </div>
 
@@ -708,6 +706,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/11/05/NVIDIA-TITAN-X/">NVIDIA TITAN X</a>
+          </li>
         
           <li>
             <a href="/2016/08/21/HDOJ5858/">HDOJ 5858 Hard problem 积分</a>
@@ -723,10 +725,6 @@
         
           <li>
             <a href="/2016/04/23/Java生产者和消费者/">简单的Java生产者和消费者</a>
-          </li>
-        
-          <li>
-            <a href="/2016/04/23/ubuntu16-04初体验/">ubuntu16.04初体验</a>
           </li>
         
       </ul>
