@@ -73,6 +73,58 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Log4j2入门" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/04/12/Log4j2入门/" class="article-date">
+  <time datetime="2016-04-12T05:45:52.000Z" itemprop="datePublished">2016-04-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Java/">Java</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/12/Log4j2入门/">Log4j2入门</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>总是用printf调试不太方便管理,稍微研究了一下log4j的用法,其实都可以在<a href="https://logging.apache.org/log4j/2.0/faq.html" target="_blank" rel="external">FAQ</a>里找到.</p>
+<ul>
+<li><p>Log4j2<a href="https://logging.apache.org/log4j/2.x/" target="_blank" rel="external">官网</a></p>
+</li>
+<li><p>需要两个包: <strong>log4j-api-2.5.jar , log4j-core-2.5.jar</strong></p>
+</li>
+<li><p>配置文件名是  log4j2.xml</p>
+</li>
+</ul>
+<p>网上找的example文件:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="pi">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">Configuration</span> <span class="attribute">status</span>=<span class="value">"WARN"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">Appenders</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">Console</span> <span class="attribute">name</span>=<span class="value">"Console"</span> <span class="attribute">target</span>=<span class="value">"SYSTEM_OUT"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">PatternLayout</span> <span class="attribute">pattern</span>=<span class="value">"%d&#123;HH:mm:ss.SSS&#125; %-5level %logger&#123;36&#125; - %msg%n"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">Console</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">Console</span> <span class="attribute">name</span>=<span class="value">"SlowConsole"</span> <span class="attribute">target</span>=<span class="value">"SYSTEM_OUT"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">PatternLayout</span> <span class="attribute">pattern</span>=<span class="value">"%highlight&#123;%d&#123;HH:mm:ss.SSS&#125; %-5level %logger&#123;36&#125;.%M() @%L - %msg%n&#125;&#123;FATAL=red, ERROR=red, WARN=yellow, INFO=black, DEBUG=green, TRACE=blue&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">Console</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">File</span> <span class="attribute">name</span>=<span class="value">"File"</span> <span class="attribute">fileName</span>=<span class="value">"C:\log\out.txt"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">PatternLayout</span> <span class="attribute">pattern</span>=<span class="value">"%d&#123;HH:mm:ss.SSS&#125; %-5level %logger&#123;36&#125; - %msg%n"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">File</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">Appenders</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">Loggers</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">logger</span> <span class="attribute">name</span>=<span class="value">"org.abc.ea.web"</span> <span class="attribute">level</span>=<span class="value">"ALL"</span> <span class="attribute">additivity</span>=<span class="value">"false"</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!--Log4j for the WEB MODULE --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">appender-ref</span> <span class="attribute">ref</span>=<span class="value">"SlowConsole"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">logger</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">logger</span> <span class="attribute">name</span>=<span class="value">"org.abc.ea.ejb"</span> <span class="attribute">level</span>=<span class="value">"ALL"</span> <span class="attribute">additivity</span>=<span class="value">"false"</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!--Log4j for the EJB MODULE --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">appender-ref</span> <span class="attribute">ref</span>=<span class="value">"SlowConsole"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">logger</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">Root</span> <span class="attribute">level</span>=<span class="value">"ERROR"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">AppenderRef</span> <span class="attribute">ref</span>=<span class="value">"Console"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">AppenderRef</span> <span class="attribute">ref</span>=<span class="value">"File"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">Root</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">Loggers</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">Configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.ckboss.cf/2016/04/12/Log4j2入门/" data-id="cixzujq3d0046guonjvdc6vip" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Log4j/">Log4j</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-用朴素贝叶斯进行垃圾邮件分类" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/04/09/用朴素贝叶斯进行垃圾邮件分类/" class="article-date">
@@ -128,7 +180,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2016/04/09/用朴素贝叶斯进行垃圾邮件分类/" data-id="civma62v1000hpconutrsz7w1" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2016/04/09/用朴素贝叶斯进行垃圾邮件分类/" data-id="cixzujpvn000hguoneg9is1wb" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MachineLearning/">MachineLearning</a></li></ul>
@@ -189,7 +241,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2016/03/26/Ubuntu默认字体设置和Chrome书签栏的Bug/" data-id="civma62wt003fpconl6hwyjpt" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2016/03/26/Ubuntu默认字体设置和Chrome书签栏的Bug/" data-id="cixzujpxg003hguon03oz4pxl" class="article-share-link">Share</a>
       
       
     </footer>
@@ -247,7 +299,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2016/03/21/2016年3月-最近在干什么/" data-id="civma631z00cmpcone3ab6hwv" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2016/03/21/2016年3月-最近在干什么/" data-id="cixzujq7m00coguonpq2j9kzt" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
@@ -334,7 +386,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2016/03/21/qlcoder-时间线2/" data-id="civma62vq001qpcon2nj56z12" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2016/03/21/qlcoder-时间线2/" data-id="cixzujpwe001sguonkzync2bx" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/qlcoder/">qlcoder</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据结构/">数据结构</a></li></ul>
@@ -402,7 +454,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2016/02/18/鸟枪换炮/" data-id="civma62ug0003pconx0f9l3ju" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2016/02/18/鸟枪换炮/" data-id="cixzujpvb0003guontwgxoair" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
@@ -442,7 +494,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2016/01/12/Java模拟两小球的碰撞/" data-id="civma62xk004gpconfx57uqeg" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2016/01/12/Java模拟两小球的碰撞/" data-id="cixzujq3h004iguonhmnnz4p4" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
@@ -518,7 +570,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2016/01/12/java爬虫/" data-id="civma62vx0022pcondxyv2zxc" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2016/01/12/java爬虫/" data-id="cixzujpwm0024guonhzlyzrof" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
@@ -564,7 +616,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/12/10/使用实时更新的卫星照片做桌面壁纸/" data-id="civma62vd0014pcon1zyu45di" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/12/10/使用实时更新的卫星照片做桌面壁纸/" data-id="cixzujpvz0014guonjzi112jr" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python3小玩意/">Python3小玩意</a></li></ul>
@@ -616,7 +668,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/12/05/坑爹的freenom域名/" data-id="civma62v3000mpcontkheu8sn" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.cf/2015/12/05/坑爹的freenom域名/" data-id="cixzujpvp000mguonev07le70" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/freenom/">freenom</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/域名/">域名</a></li></ul>
@@ -628,54 +680,9 @@
 
 
   
-    <article id="post-近况201511" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/11/23/近况201511/" class="article-date">
-  <time datetime="2015-11-23T05:04:10.000Z" itemprop="datePublished">2015-11-23</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/日常/">日常</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/23/近况201511/">近况2015年11月 ACM退役 和 模版Release</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="近况:">近况:</h4><h5 id="1-_ACM生涯正式结束了,我这么弱应该就不需要什么退役感言了-">1. ACM生涯正式结束了,我这么弱应该就不需要什么退役感言了.</h5><h5 id="2-_整理了一下模版,放出了第一个v0-1-alpha-1的pre-release…">2. 整理了一下模版,放出了第一个<strong>v0.1-alpha.1的pre-release</strong>…</h5><h5 id="下载地址:_MyAcmTemplate_Nov_23_2015">下载地址:  <a href="https://github.com/CKboss/MyAcmTemplate/releases/tag/v0.1-alpha.1" target="_blank" rel="external">MyAcmTemplate Nov 23 2015</a></h5><h4 id="最近在做什么:">最近在做什么:</h4><h5 id="1-_复习期末考试">1. 复习期末考试</h5><h5 id="2-_学习一下Django框架,顺手写个毕业设计(准备写个VJ)">2. 学习一下Django框架,顺手写个毕业设计(准备写个VJ)</h5><h6 id="PS:_推荐一个Django1-8的入门教程:https://www-youtube-com/watch?v=cvceyNioank_和_这个老外的youtube的主页:">PS: 推荐一个Django1.8的入门教程:<a href="https://www.youtube.com/watch?v=cvceyNioank" target="_blank" rel="external">https://www.youtube.com/watch?v=cvceyNioank</a> 和 <a href="https://www.youtube.com/channel/UCWEHue8kksIaktO8KTTN_zg" target="_blank" rel="external">这个老外的youtube的主页:</a></h6><h4 id="将来做什么:">将来做什么:</h4><p>学习一下 Linux,Unix高级编程,编译原理,Haskell等…<br>以后可能会搞一点 机器学习+数据挖掘 , 然后应用在: 大数据算命上…</p>
-<h4 id="博客内容变化:">博客内容变化:</h4><p>会从题解博客转型为技术博客,不过接下来一段时间应该会学习一些基础知识,应该没什么好更新的…</p>
-<p>当然过一段时间后,会重新开始刷点题,主战场会换成BZOJ….</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/11/23/近况201511/" data-id="civma62uv0008pconji166ikq" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/近况/">近况</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
     </nav>
   
 </section>
@@ -720,7 +727,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
     </div>
   </div>
 
@@ -730,6 +737,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/01/16/你的段位和水平有关吗/">你的游戏水平和排位等级有关系吗?</a>
+          </li>
         
           <li>
             <a href="/2016/11/17/docker初体验/">docker初体验</a>
@@ -747,10 +758,6 @@
             <a href="/2016/08/21/HDOJ5858/">HDOJ 5858 Hard problem 积分</a>
           </li>
         
-          <li>
-            <a href="/2016/05/30/Tornado的部署/">服务器上Tornado的运行和部署</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -764,7 +771,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
 
-      &copy; 2016 CKboss<br>
+      &copy; 2017 CKboss<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
 
     <br>
