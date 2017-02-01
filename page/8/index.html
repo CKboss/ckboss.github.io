@@ -9,7 +9,7 @@
   <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="码代码的猿猿">
-<meta property="og:url" content="http://www.ckboss.cf/page/8/index.html">
+<meta property="og:url" content="http://www.ckboss.science/page/8/index.html">
 <meta property="og:site_name" content="码代码的猿猿">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -73,6 +73,64 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-HDOJ5491" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/09/30/HDOJ5491/" class="article-date">
+  <time datetime="2015-09-30T08:32:21.000Z" itemprop="datePublished">2015-09-30</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/acm-构造/">acm_构造</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/09/30/HDOJ5491/">HDOJ 5491 The Next 构造</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>给一个数D,满足D的二进制里的1在s1和s2之间.<br>问下一个满足条件的数是多少.</p>
+</blockquote>
+<h5 id="构造题:">构造题:</h5><p>由于给出的D是符合条件的,我们从D开始构造出D2,假设这时的D中有L个1,那么我们需要构造出的D2中1的个数至少得为L+1,因为有L个1的数D已经是最小的了.</p>
+<p>如何增加一个1并且让D2比D大呢? 我们选择D中最靠近右边的一个0,把这个0变成1.这样D2就可以增加一个1并且比D大了.但是这时的D2并不一定是包含L+1个1中的最小的那个,我们还需要对D2中最右边的0的后面的数进行一次重新排序,把1全部都移动到后面去…</p>
+<p>当D中的1的个数L已经比s2大了,这时我们不能再增加1了,需要利用进位把1的个数给减少.如何进位?就是将D加上一个Low_bit(D),这样就可以消除掉一串1.当D中的1&lt;=s2,就继续重复上面的过程,就这样不断的找<strong>增加一个1并且比D大的最小的数</strong>就可以了.</p>
+<h3 id="The_Next"><a href="http://acm.hdu.edu.cn/showproblem.php?pid=5491">The Next</a></h3><p>Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 890    Accepted Submission(s): 369</p>
+<h5 id="Problem_Description">Problem Description</h5><p>Let L denote the number of 1s in integer D’s binary representation. Given two integers S1 and S2, we call D a WYH number if S1≤L≤S2.<br>With a given D, we would like to find the next WYH number Y, which is JUST larger than D. In other words, Y is the smallest WYH number among the numbers larger than D. Please write a program to solve this problem.</p>
+<h5 id="Input">Input</h5><p>The first line of input contains a number T indicating the number of test cases (T≤300000).<br>Each test case consists of three integers D, S1, and S2, as described above. It is guaranteed that 0 ≤ D &lt; 231 and D is a WYH number.</p>
+<h5 id="Output">Output</h5><p>For each test case, output a single line consisting of “Case #X: Y”. X is the test case number starting from 1. Y is the next WYH number.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Sample Input&#10;3&#10;11 2 4&#10;22 3 3&#10;15 2 5&#10;&#10;&#10;Sample Output&#10;Case #1: 12&#10;Case #2: 25&#10;Case #3: 17</span><br></pre></td></tr></table></figure>
+<p>Source<br>2015 ACM/ICPC Asia Regional Hefei Online</p>
+        
+          <p class="article-more-link">
+            <a href="/2015/09/30/HDOJ5491/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.ckboss.science/2015/09/30/HDOJ5491/" data-id="ciymf72te006gb7on5mze41bn" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/构造/">构造</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-HDOJ5492" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/09/30/HDOJ5492/" class="article-date">
@@ -114,7 +172,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/09/30/HDOJ5492/" data-id="cixzujq4n006dguonzmzb3dpt" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/09/30/HDOJ5492/" data-id="ciymf72tc006db7on51wsmejd" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp/">dp</a></li></ul>
@@ -175,7 +233,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/09/29/HDOJ5486/" data-id="cixzujq4s006rguony0kx9fpe" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/09/29/HDOJ5486/" data-id="ciymf72ti006rb7onbufcfut4" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/模拟/">模拟</a></li></ul>
@@ -240,7 +298,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/09/29/保研告一段落/" data-id="cixzujpvx0011guon5who7mb2" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/09/29/保研告一段落/" data-id="ciymf72ql0012b7onrtorr4vb" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
@@ -296,7 +354,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/09/29/HDOJ5487/" data-id="cixzujq4r006lguon25wfru9z" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/09/29/HDOJ5487/" data-id="ciymf72tf006lb7onycg91w8i" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BFS/">BFS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/想法题/">想法题</a></li></ul>
@@ -358,7 +416,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/09/27/HDOJ5476/" data-id="cixzujq550077guoncv52nk5b" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/09/27/HDOJ5476/" data-id="ciymf72tq0077b7ont2mxeve5" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/几何/">几何</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/观察法/">观察法</a></li></ul>
@@ -411,7 +469,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/09/27/HDOJ5478/" data-id="cixzujq520071guon75ttzbro" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/09/27/HDOJ5478/" data-id="ciymf72to0071b7onyy7ojcam" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/acm/">acm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/暴力/">暴力</a></li></ul>
@@ -470,7 +528,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/09/20/HDOJ4297/" data-id="cixzujq5v0095guon5gv1z6cf" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/09/20/HDOJ4297/" data-id="ciymf72uk0095b7on8ic01w6c" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LCA/">LCA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/图论/">图论</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/并查集/">并查集</a></li></ul>
@@ -526,7 +584,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/09/19/HDOJ5452/" data-id="cixzujq5a007qguoncy8ftwmc" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/09/19/HDOJ5452/" data-id="ciymf72tw007qb7onedpba4gr" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/树链剖分/">树链剖分</a></li></ul>
@@ -585,72 +643,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/09/17/HDOJ4291/" data-id="cixzujq5z009iguonxb51wndz" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/09/17/HDOJ4291/" data-id="ciymf72uo009ib7onoqrznkyj" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/矩阵快速幂/">矩阵快速幂</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-HDOJ4288" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/09/17/HDOJ4288/" class="article-date">
-  <time datetime="2015-09-17T12:12:12.000Z" itemprop="datePublished">2015-09-17</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/acm-数据结构/">acm_数据结构</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/09/17/HDOJ4288/">HDOJ 4288 Coder 线段树</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>线段树</strong>:</p>
-<ul>
-<li><p>先离散化,然后用一个$10^5$的线段树维护</p>
-</li>
-<li><p>每个节点用一个数组维护一下%5的值,同时维护一下每个节点的中已经插入的点的数量.</p>
-</li>
-</ul>
-<p>每个节点可以这样维护:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> pc = sz[x&lt;&lt;<span class="number">1</span>];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)</span><br><span class="line">&#123;</span><br><span class="line">	tree[x][i]=tree[x&lt;&lt;<span class="number">1</span>][i]+tree[x&lt;&lt;<span class="number">1</span>|<span class="number">1</span>][(i-pc+<span class="number">5</span>)%<span class="number">5</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="Coder">Coder</h3><p>Time Limit: 20000/10000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 4643    Accepted Submission(s): 1772</p>
-<h5 id="Problem_Description">Problem Description</h5><p>　　In mathematics and computer science, an algorithm describes a set of procedures or instructions that define a procedure. The term has become increasing popular since the advent of cheap and reliable computers. Many companies now employ a single coder to write an algorithm that will replace many other employees. An added benefit to the employer is that the coder will also become redundant once their work is done. 1<br>　　You are now the signle coder, and have been assigned a new task writing code, since your boss would like to replace many other employees (and you when you become redundant once your task is complete).<br>Your code should be able to complete a task to replace these employees who do nothing all day but eating: make the digest sum.<br>　　By saying “digest sum” we study some properties of data. For the sake of simplicity, our data is a set of integers. Your code should give response to following operations:<br>　　1. add x – add the element x to the set;<br>　　2. del x – remove the element x from the set;<br>　　3. sum – find the digest sum of the set. The digest sum should be understood by</p>
-<p><img src="http://acm.hdu.edu.cn/data/images/C415-1001-1.jpg" alt=""></p>
-<p>　　where the set S is written as {a1, a2, … , ak} satisfying a1 &lt; a2 &lt; a3 &lt; … &lt; ak</p>
-<p>　　Can you complete this task (and be then fired)?</p>
-<p>1 See <a href="http://uncyclopedia.wikia.com/wiki/Algorithm">http://uncyclopedia.wikia.com/wiki/Algorithm</a></p>
-<h5 id="Input">Input</h5><p>　　There’re several test cases.<br>　　In each test case, the first line contains one integer N ( 1 &lt;= N &lt;= 105 ), the number of operations to process.<br>　　Then following is n lines, each one containing one of three operations: “add x” or “del x” or “sum”.<br>　　You may assume that 1 &lt;= x &lt;= 109.<br>　　Please see the sample for detailed format.<br>　　For any “add x” it is guaranteed that x is not currently in the set just before this operation.<br>　　For any “del x” it is guaranteed that x must currently be in the set just before this operation.<br>　　Please process until EOF (End Of File).</p>
-<h5 id="Output">Output</h5><p>　　For each operation “sum” please print one line containing exactly one integer denoting the digest sum of the current set. Print 0 if the set is empty.</p>
-        
-          <p class="article-more-link">
-            <a href="/2015/09/17/HDOJ4288/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/09/17/HDOJ4288/" data-id="cixzujq65009pguonzhn9tzyv" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/线段树/">线段树</a></li></ul>
 
     </footer>
   </div>
@@ -706,7 +702,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
     </div>
   </div>
 
@@ -716,6 +712,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/02/01/新的域名/">新的域名</a>
+          </li>
         
           <li>
             <a href="/2017/01/16/你的段位和水平有关吗/">你的游戏水平和排位等级有关系吗?</a>
@@ -731,10 +731,6 @@
         
           <li>
             <a href="/2016/11/05/NVIDIA-TITAN-X/">NVIDIA TITAN X</a>
-          </li>
-        
-          <li>
-            <a href="/2016/08/21/HDOJ5858/">HDOJ 5858 Hard problem 积分</a>
           </li>
         
       </ul>

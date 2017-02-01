@@ -9,7 +9,7 @@
   <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="码代码的猿猿">
-<meta property="og:url" content="http://www.ckboss.cf/page/5/index.html">
+<meta property="og:url" content="http://www.ckboss.science/page/5/index.html">
 <meta property="og:site_name" content="码代码的猿猿">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -73,6 +73,69 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-HDOJ2475" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/11/01/HDOJ2475/" class="article-date">
+  <time datetime="2015-11-01T13:37:46.000Z" itemprop="datePublished">2015-11-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/acm-数据结构/">acm_数据结构</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/01/HDOJ2475/">HDOJ 2475 Box LCT(分离,合并,寻根)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>LCT裸题….<br>08年就出现的LCT,而我到现在用的都不熟练….</p>
+<h1 id="Box"><a href="http://acm.hdu.edu.cn/showproblem.php?pid=2475">Box</a></h1><p>Time Limit: 10000/5000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 2684    Accepted Submission(s): 783</p>
+<h5 id="Problem_Description">Problem Description</h5><p>There are N boxes on the ground, which are labeled by numbers from 1 to N. The boxes are magical, the size of each one can be enlarged or reduced arbitrarily.<br>Jack can perform the “MOVE x y” operation to the boxes: take out box x; if y = 0, put it on the ground; Otherwise, put it inside box y. All the boxes inside box x remain the same. It is possible that an operation is illegal, that is, if box y is contained (directly or indirectly) by box x, or if y is equal to x.<br>In the following picture, box 2 and 4 are directly inside box 6, box 3 is directly inside box 4, box 5 is directly inside box 1, box 1 and 6 are on the ground.</p>
+<p><img src="http://acm.hdu.edu.cn/data/images/C165-1002-1.jpg" alt=""></p>
+<p>The picture below shows the state after Jack performs “MOVE 4 1”:</p>
+<p><img src="http://acm.hdu.edu.cn/data/images/C165-1002-2.jpg" alt=""></p>
+<p>Then he performs “MOVE 3 0”, the state becomes:</p>
+<p><img src="http://acm.hdu.edu.cn/data/images/C165-1002-3.jpg" alt=""></p>
+<p>During a sequence of MOVE operations, Jack wants to know the root box of a specified box. The root box of box x is defined as the most outside box which contains box x. In the last picture, the root box of box 5 is box 1, and box 3’s root box is itself.</p>
+<h5 id="Input">Input</h5><p>Input contains several test cases.<br>For each test case, the first line has an integer N (1 &lt;= N &lt;= 50000), representing the number of boxes.<br>Next line has N integers: a1, a2, a3, … , aN (0 &lt;= ai &lt;= N), describing the initial state of the boxes. If ai is 0, box i is on the ground, it is not contained by any box; Otherwise, box i is directly inside box ai. It is guaranteed that the input state is always correct (No loop exists).<br>Next line has an integer M (1 &lt;= M &lt;= 100000), representing the number of MOVE operations and queries.<br>On the next M lines, each line contains a MOVE operation or a query:</p>
+<ol>
+<li>MOVE x y, 1 &lt;= x &lt;= N, 0 &lt;= y &lt;= N, which is described above. If an operation is illegal, just ignore it.</li>
+<li>QUERY x, 1 &lt;= x &lt;= N, output the root box of box x.</li>
+</ol>
+<h5 id="Output">Output</h5><p>For each query, output the result on a single line. Use a blank line to separate each test case.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">Sample Input</span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">0</span> <span class="number">1</span></span><br><span class="line"><span class="number">5</span></span><br><span class="line">QUERY <span class="number">1</span></span><br><span class="line">QUERY <span class="number">2</span></span><br><span class="line">MOVE <span class="number">2</span> <span class="number">0</span></span><br><span class="line">MOVE <span class="number">1</span> <span class="number">2</span></span><br><span class="line">QUERY <span class="number">1</span></span><br><span class="line"><span class="number">6</span></span><br><span class="line"><span class="number">0</span> <span class="number">6</span> <span class="number">4</span> <span class="number">6</span> <span class="number">1</span> <span class="number">0</span></span><br><span class="line"><span class="number">4</span></span><br><span class="line">MOVE <span class="number">4</span> <span class="number">1</span></span><br><span class="line">QUERY <span class="number">3</span></span><br><span class="line">MOVE <span class="number">1</span> <span class="number">4</span></span><br><span class="line">QUERY <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Sample Output</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>Source<br>2008 Asia Regional Chengdu</p>
+        
+          <p class="article-more-link">
+            <a href="/2015/11/01/HDOJ2475/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.ckboss.science/2015/11/01/HDOJ2475/" data-id="ciymf72vt00bub7on857lgcxx" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LCT/">LCT</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-HDOJ3709" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/10/31/HDOJ3709/" class="article-date">
@@ -115,7 +178,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/31/HDOJ3709/" data-id="cixzujq7400boguonazbbgcbu" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/31/HDOJ3709/" data-id="ciymf72vq00bob7onibhmq73f" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数位dp/">数位dp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/枚举/">枚举</a></li></ul>
@@ -172,7 +235,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/30/HDOJ3718/" data-id="cixzujq6u00bcguon0mg6315j" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/30/HDOJ3718/" data-id="ciymf72vh00bcb7on4y2yg5lg" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HDOJ/">HDOJ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/KM/">KM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/图论/">图论</a></li></ul>
@@ -249,7 +312,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/30/HDOJ3715/" data-id="cixzujq6z00biguonhgy3k4np" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/30/HDOJ3715/" data-id="ciymf72vm00bib7ond5635vn4" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/2-SAT/">2-SAT</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HDOJ/">HDOJ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/二分/">二分</a></li></ul>
@@ -305,7 +368,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/29/ZOJ2860/" data-id="cixzujpx1002rguongjhl9nix" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/29/ZOJ2860/" data-id="ciymf72rl002rb7ontjaxau2g" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ZOJ/">ZOJ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp/">dp</a></li></ul>
@@ -359,7 +422,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/29/ZOJ2563/" data-id="cixzujpxa0036guontwbmzx4j" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/29/ZOJ2563/" data-id="ciymf72ru0036b7ondzvukep0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp/">dp</a></li></ul>
@@ -414,7 +477,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/27/2015ShengyangRegional/" data-id="cixzujq7n00crguonngwbmxem" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/27/2015ShengyangRegional/" data-id="ciymf72wa00crb7onptakb405" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/现场赛/">现场赛</a></li></ul>
@@ -473,7 +536,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/27/ZOJ2561/" data-id="cixzujpxc0039guonyhpbgy3j" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/27/ZOJ2561/" data-id="ciymf72rv0039b7onxdzpxlcn" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp优化/">dp优化</a></li></ul>
@@ -528,7 +591,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/27/四边形优化DP/" data-id="cixzujpvs000sguonjotn1ls9" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/27/四边形优化DP/" data-id="ciymf72qg000tb7on724qe97m" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DP/">DP</a></li></ul>
@@ -586,65 +649,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/27/ZOJ2565/" data-id="cixzujpx70032guonee44ddyj" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/27/ZOJ2565/" data-id="ciymf72rr0032b7on3452lnly" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp/">dp</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-ZOJ2559" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/10/27/ZOJ2559/" class="article-date">
-  <time datetime="2015-10-27T06:00:10.000Z" itemprop="datePublished">2015-10-27</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/acm-水/">acm_水</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/27/ZOJ2559/">ZOJ 2559 The Smart Bomb 水</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="The_Smart_Bomb">The Smart Bomb</h2><p>Time Limit: 2 Seconds      Memory Limit: 65536 KB      Special Judge</p>
-<p>The military scientists of Flatland have recently developed the new smart bomb. The main feature of the bomb is that its explosion power can be regulated after the production.</p>
-<p>After the bomb was added to the arsenal, the generals have decided to run a series of test xplosions. The equipment department has provided them with three bombs to explode. Since bureaucracy is a significant problem in the modern Flatland, the generals have decided to make all three explosions in one day. They selected the points where the bombs must be placed, and started to choose the destructing power of the bombs to be exploded.</p>
-<p>Of course, the generals want to explode as powerful bombs as possible. On the other hand, to analyze the results of the experiment, the craters of the explosions must not intersect. Each crater is a circle, its radius is proportional to the power of the bomb exploded.</p>
-<p>Now the generals want to know what is the maximal total power of the bombs they can explode. Help them to find that out! The total power of the bombs is the sum of their powers.</p>
-<h4 id="Input">Input</h4><p>The input file contains multiple test cases. Each test case contains three lines, each contains two integer numbers – the coordinates of the location where the corresponding bomb must be exploded. Coordinates do not exceed 109 by their absolute value. Points do not belong to the same line.</p>
-<h4 id="Output">Output</h4><p>Output three real numbers for each test case – for each bomb output the desired radius of the crater after its explosion. The sum of the radii must be maximal possible, but craters must not intersect (although they may touch each other). Your answer must be accurate up to 10-4.</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Sample Input:</span><br><span class="line"></span><br><span class="line"><span class="number">0</span> <span class="number">0</span></span><br><span class="line"><span class="number">4</span> <span class="number">0</span></span><br><span class="line"><span class="number">4</span> <span class="number">3</span></span><br><span class="line">Sample Output:</span><br><span class="line"></span><br><span class="line"><span class="number">3.000000</span></span><br><span class="line"><span class="number">1.000000</span></span><br><span class="line"><span class="number">2.000000</span></span><br></pre></td></tr></table></figure>
-<p>Author: Andrew Stankevich<br>Source: Andrew Stankevich’s Contest #4</p>
-        
-          <p class="article-more-link">
-            <a href="/2015/10/27/ZOJ2559/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.ckboss.cf/2015/10/27/ZOJ2559/" data-id="cixzujpxf003dguonbh69w7vb" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/水/">水</a></li></ul>
 
     </footer>
   </div>
@@ -700,7 +708,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
     </div>
   </div>
 
@@ -710,6 +718,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/02/01/新的域名/">新的域名</a>
+          </li>
         
           <li>
             <a href="/2017/01/16/你的段位和水平有关吗/">你的游戏水平和排位等级有关系吗?</a>
@@ -725,10 +737,6 @@
         
           <li>
             <a href="/2016/11/05/NVIDIA-TITAN-X/">NVIDIA TITAN X</a>
-          </li>
-        
-          <li>
-            <a href="/2016/08/21/HDOJ5858/">HDOJ 5858 Hard problem 积分</a>
           </li>
         
       </ul>

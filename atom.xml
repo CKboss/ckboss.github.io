@@ -3,9 +3,9 @@
   <title><![CDATA[码代码的猿猿]]></title>
   <subtitle><![CDATA[码代码的猿猿的ac之路]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://www.ckboss.cf/"/>
-  <updated>2017-01-16T08:48:27.579Z</updated>
-  <id>http://www.ckboss.cf/</id>
+  <link href="http://www.ckboss.science/"/>
+  <updated>2017-02-01T03:55:12.846Z</updated>
+  <id>http://www.ckboss.science/</id>
   
   <author>
     <name><![CDATA[CKboss]]></name>
@@ -15,9 +15,26 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[新的域名]]></title>
+    <link href="http://www.ckboss.science/2017/02/01/%E6%96%B0%E7%9A%84%E5%9F%9F%E5%90%8D/"/>
+    <id>http://www.ckboss.science/2017/02/01/新的域名/</id>
+    <published>2017-02-01T03:51:35.000Z</published>
+    <updated>2017-02-01T03:55:12.846Z</updated>
+    <content type="html"><![CDATA[<p>freenom又一次把我的域名搞没了,免费的就是不靠谱.</p>
+<p>在阿里云里重新注册了新的域名 ckboss.science 直接买了10年只要68,这回估计能用好一阵子,再也不用折腾了.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>freenom又一次把我的域名搞没了,免费的就是不靠谱.</p>
+<p>在阿里云里重新注册了新的域名 ckboss.science 直接买了10年只要68,这回估计能用好一阵子,再也不用折腾了.</p>
+]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[你的游戏水平和排位等级有关系吗?]]></title>
-    <link href="http://www.ckboss.cf/2017/01/16/%E4%BD%A0%E7%9A%84%E6%AE%B5%E4%BD%8D%E5%92%8C%E6%B0%B4%E5%B9%B3%E6%9C%89%E5%85%B3%E5%90%97/"/>
-    <id>http://www.ckboss.cf/2017/01/16/你的段位和水平有关吗/</id>
+    <link href="http://www.ckboss.science/2017/01/16/%E4%BD%A0%E7%9A%84%E6%AE%B5%E4%BD%8D%E5%92%8C%E6%B0%B4%E5%B9%B3%E6%9C%89%E5%85%B3%E5%90%97/"/>
+    <id>http://www.ckboss.science/2017/01/16/你的段位和水平有关吗/</id>
     <published>2017-01-16T06:53:35.000Z</published>
     <updated>2017-01-16T08:48:27.579Z</updated>
     <content type="html"><![CDATA[<h4 id="介绍">介绍</h4><p>现在的很多竞技类游戏都有排位机制,但实际体验上打排位赛的过程是糟糕的,大部分的排位赛总是会赢一把输一把,最终胜率稳定在50%左右,为什么会有这种现象发生,是不是系统会把坑队友匹配给连胜的你?你的游戏水平和排位等级有关系吗?</p>
@@ -46,8 +63,8 @@
   
   <entry>
     <title><![CDATA[docker初体验]]></title>
-    <link href="http://www.ckboss.cf/2016/11/17/docker%E5%88%9D%E4%BD%93%E9%AA%8C/"/>
-    <id>http://www.ckboss.cf/2016/11/17/docker初体验/</id>
+    <link href="http://www.ckboss.science/2016/11/17/docker%E5%88%9D%E4%BD%93%E9%AA%8C/"/>
+    <id>http://www.ckboss.science/2016/11/17/docker初体验/</id>
     <published>2016-11-17T11:29:54.000Z</published>
     <updated>2016-11-17T11:35:21.478Z</updated>
     <content type="html"><![CDATA[<p>记录几条docker的命令:</p>
@@ -57,14 +74,14 @@
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">]]>
     </summary>
     
-      <category term="docker" scheme="http://www.ckboss.cf/tags/docker/"/>
+      <category term="docker" scheme="http://www.ckboss.science/tags/docker/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Tensorflow初体验]]></title>
-    <link href="http://www.ckboss.cf/2016/11/05/Tensorflow%E5%88%9D%E4%BD%93%E9%AA%8C/"/>
-    <id>http://www.ckboss.cf/2016/11/05/Tensorflow初体验/</id>
+    <link href="http://www.ckboss.science/2016/11/05/Tensorflow%E5%88%9D%E4%BD%93%E9%AA%8C/"/>
+    <id>http://www.ckboss.science/2016/11/05/Tensorflow初体验/</id>
     <published>2016-11-05T07:58:05.000Z</published>
     <updated>2016-11-05T08:43:48.399Z</updated>
     <content type="html"><![CDATA[<h3 id="安装:">安装:</h3><p>个人感觉Tensoflow是最容易安装的.</p>
@@ -113,14 +130,14 @@
 <p>介绍]]>
     </summary>
     
-      <category term="Tensorflow" scheme="http://www.ckboss.cf/tags/Tensorflow/"/>
+      <category term="Tensorflow" scheme="http://www.ckboss.science/tags/Tensorflow/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[NVIDIA TITAN X]]></title>
-    <link href="http://www.ckboss.cf/2016/11/05/NVIDIA-TITAN-X/"/>
-    <id>http://www.ckboss.cf/2016/11/05/NVIDIA-TITAN-X/</id>
+    <link href="http://www.ckboss.science/2016/11/05/NVIDIA-TITAN-X/"/>
+    <id>http://www.ckboss.science/2016/11/05/NVIDIA-TITAN-X/</id>
     <published>2016-11-05T06:23:00.000Z</published>
     <updated>2016-11-05T06:24:59.730Z</updated>
     <content type="html"><![CDATA[<p>12G 显存刚好够用..</p>
@@ -136,8 +153,8 @@
   
   <entry>
     <title><![CDATA[HDOJ 5858 Hard problem 积分]]></title>
-    <link href="http://www.ckboss.cf/2016/08/21/HDOJ5858/"/>
-    <id>http://www.ckboss.cf/2016/08/21/HDOJ5858/</id>
+    <link href="http://www.ckboss.science/2016/08/21/HDOJ5858/"/>
+    <id>http://www.ckboss.science/2016/08/21/HDOJ5858/</id>
     <published>2016-08-21T13:33:03.000Z</published>
     <updated>2016-08-21T13:52:28.000Z</updated>
     <content type="html"><![CDATA[<p>博客恢复更新了,顺便看了下今年多校的题目…</p>
@@ -247,18 +264,18 @@ int main()
     
     </summary>
     
-      <category term="HDOJ" scheme="http://www.ckboss.cf/tags/HDOJ/"/>
+      <category term="HDOJ" scheme="http://www.ckboss.science/tags/HDOJ/"/>
     
-      <category term="math" scheme="http://www.ckboss.cf/tags/math/"/>
+      <category term="math" scheme="http://www.ckboss.science/tags/math/"/>
     
-      <category term="acm_math" scheme="http://www.ckboss.cf/categories/acm-math/"/>
+      <category term="acm_math" scheme="http://www.ckboss.science/categories/acm-math/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[服务器上Tornado的运行和部署]]></title>
-    <link href="http://www.ckboss.cf/2016/05/30/Tornado%E7%9A%84%E9%83%A8%E7%BD%B2/"/>
-    <id>http://www.ckboss.cf/2016/05/30/Tornado的部署/</id>
+    <link href="http://www.ckboss.science/2016/05/30/Tornado%E7%9A%84%E9%83%A8%E7%BD%B2/"/>
+    <id>http://www.ckboss.science/2016/05/30/Tornado的部署/</id>
     <published>2016-05-30T07:49:10.000Z</published>
     <updated>2016-05-30T08:09:53.000Z</updated>
     <content type="html"><![CDATA[<p>虽然tornado本身运行不需要服务器,但是真正部署的时候还是需要用一些设置才好保证稳定性.</p>
@@ -284,16 +301,16 @@ int main()
 <p>首先安装]]>
     </summary>
     
-      <category term="python" scheme="http://www.ckboss.cf/tags/python/"/>
+      <category term="python" scheme="http://www.ckboss.science/tags/python/"/>
     
-      <category term="tornado" scheme="http://www.ckboss.cf/tags/tornado/"/>
+      <category term="tornado" scheme="http://www.ckboss.science/tags/tornado/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[antergos使用小记]]></title>
-    <link href="http://www.ckboss.cf/2016/05/12/antergos%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0/"/>
-    <id>http://www.ckboss.cf/2016/05/12/antergos使用小记/</id>
+    <link href="http://www.ckboss.science/2016/05/12/antergos%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0/"/>
+    <id>http://www.ckboss.science/2016/05/12/antergos使用小记/</id>
     <published>2016-05-12T04:53:45.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p><img src="https://antergos.com/wp-content/uploads/2014/09/antergos-clean.png" alt="antergos"></p>
@@ -311,16 +328,16 @@ int main()
 <p>antergos是arch的衍伸版，用的是arch+antergos的源]]>
     </summary>
     
-      <category term="arch" scheme="http://www.ckboss.cf/tags/arch/"/>
+      <category term="arch" scheme="http://www.ckboss.science/tags/arch/"/>
     
-      <category term="arch" scheme="http://www.ckboss.cf/categories/arch/"/>
+      <category term="arch" scheme="http://www.ckboss.science/categories/arch/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[简单的Java生产者和消费者]]></title>
-    <link href="http://www.ckboss.cf/2016/04/23/Java%E7%94%9F%E4%BA%A7%E8%80%85%E5%92%8C%E6%B6%88%E8%B4%B9%E8%80%85/"/>
-    <id>http://www.ckboss.cf/2016/04/23/Java生产者和消费者/</id>
+    <link href="http://www.ckboss.science/2016/04/23/Java%E7%94%9F%E4%BA%A7%E8%80%85%E5%92%8C%E6%B6%88%E8%B4%B9%E8%80%85/"/>
+    <id>http://www.ckboss.science/2016/04/23/Java生产者和消费者/</id>
     <published>2016-04-23T15:53:23.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p>生产者和消费者是经典的一种模型</p>
@@ -335,18 +352,18 @@ int main()
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line]]>
     </summary>
     
-      <category term="Java" scheme="http://www.ckboss.cf/tags/Java/"/>
+      <category term="Java" scheme="http://www.ckboss.science/tags/Java/"/>
     
-      <category term="多线程" scheme="http://www.ckboss.cf/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+      <category term="多线程" scheme="http://www.ckboss.science/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
     
-      <category term="Java" scheme="http://www.ckboss.cf/categories/Java/"/>
+      <category term="Java" scheme="http://www.ckboss.science/categories/Java/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[ubuntu16.04初体验]]></title>
-    <link href="http://www.ckboss.cf/2016/04/23/ubuntu16-04%E5%88%9D%E4%BD%93%E9%AA%8C/"/>
-    <id>http://www.ckboss.cf/2016/04/23/ubuntu16-04初体验/</id>
+    <link href="http://www.ckboss.science/2016/04/23/ubuntu16-04%E5%88%9D%E4%BD%93%E9%AA%8C/"/>
+    <id>http://www.ckboss.science/2016/04/23/ubuntu16-04初体验/</id>
     <published>2016-04-23T14:32:57.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p>大概两天前，4月21日，第一时间下载了ubuntu16.04。并作死安装升级。</p>
@@ -385,16 +402,16 @@ int main()
 <p>总的来说初体验的感觉就是问题非常的多，根本不像个LTS版的样子，小白鼠fedaro都比现在的ubuntu稳定]]>
     </summary>
     
-      <category term="Ubuntu" scheme="http://www.ckboss.cf/tags/Ubuntu/"/>
+      <category term="Ubuntu" scheme="http://www.ckboss.science/tags/Ubuntu/"/>
     
-      <category term="Ubuntu" scheme="http://www.ckboss.cf/categories/Ubuntu/"/>
+      <category term="Ubuntu" scheme="http://www.ckboss.science/categories/Ubuntu/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[ubuntu创建无线热点的神器!!]]></title>
-    <link href="http://www.ckboss.cf/2016/04/16/ubuntu%E5%88%9B%E5%BB%BA%E6%97%A0%E7%BA%BF%E7%83%AD%E7%82%B9/"/>
-    <id>http://www.ckboss.cf/2016/04/16/ubuntu创建无线热点/</id>
+    <link href="http://www.ckboss.science/2016/04/16/ubuntu%E5%88%9B%E5%BB%BA%E6%97%A0%E7%BA%BF%E7%83%AD%E7%82%B9/"/>
+    <id>http://www.ckboss.science/2016/04/16/ubuntu创建无线热点/</id>
     <published>2016-04-16T04:54:27.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p>以前用ubuntu共享wifi一直是一个比较麻烦事情….</p>
@@ -408,18 +425,18 @@ int main()
 <h3 id="create_ap"><a href="https://github.com/oblique/create_ap" target="_blank" r]]>
     </summary>
     
-      <category term="Ubuntu" scheme="http://www.ckboss.cf/tags/Ubuntu/"/>
+      <category term="Ubuntu" scheme="http://www.ckboss.science/tags/Ubuntu/"/>
     
-      <category term="实用工具" scheme="http://www.ckboss.cf/tags/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
+      <category term="实用工具" scheme="http://www.ckboss.science/tags/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="Ubuntu相关" scheme="http://www.ckboss.cf/categories/Ubuntu%E7%9B%B8%E5%85%B3/"/>
+      <category term="Ubuntu相关" scheme="http://www.ckboss.science/categories/Ubuntu%E7%9B%B8%E5%85%B3/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Log4j2入门]]></title>
-    <link href="http://www.ckboss.cf/2016/04/12/Log4j2%E5%85%A5%E9%97%A8/"/>
-    <id>http://www.ckboss.cf/2016/04/12/Log4j2入门/</id>
+    <link href="http://www.ckboss.science/2016/04/12/Log4j2%E5%85%A5%E9%97%A8/"/>
+    <id>http://www.ckboss.science/2016/04/12/Log4j2入门/</id>
     <published>2016-04-12T05:45:52.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p>总是用printf调试不太方便管理,稍微研究了一下log4j的用法,其实都可以在<a href="https://logging.apache.org/log4j/2.0/faq.html" target="_blank" rel="external">FAQ</a>里找到.</p>
@@ -437,18 +454,18 @@ int main()
     <![CDATA[<p>总是用printf调试不太方便管理,稍微研究了一下log4j的用法,其实都可以在<a href="https://logging.apache.org/log4j/2.0/faq.html" target="_blank" rel="external">FAQ</a>里找到]]>
     </summary>
     
-      <category term="Java" scheme="http://www.ckboss.cf/tags/Java/"/>
+      <category term="Java" scheme="http://www.ckboss.science/tags/Java/"/>
     
-      <category term="Log4j" scheme="http://www.ckboss.cf/tags/Log4j/"/>
+      <category term="Log4j" scheme="http://www.ckboss.science/tags/Log4j/"/>
     
-      <category term="Java" scheme="http://www.ckboss.cf/categories/Java/"/>
+      <category term="Java" scheme="http://www.ckboss.science/categories/Java/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[用朴素贝叶斯进行垃圾邮件分类]]></title>
-    <link href="http://www.ckboss.cf/2016/04/09/%E7%94%A8%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E8%BF%9B%E8%A1%8C%E5%9E%83%E5%9C%BE%E9%82%AE%E4%BB%B6%E5%88%86%E7%B1%BB/"/>
-    <id>http://www.ckboss.cf/2016/04/09/用朴素贝叶斯进行垃圾邮件分类/</id>
+    <link href="http://www.ckboss.science/2016/04/09/%E7%94%A8%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E8%BF%9B%E8%A1%8C%E5%9E%83%E5%9C%BE%E9%82%AE%E4%BB%B6%E5%88%86%E7%B1%BB/"/>
+    <id>http://www.ckboss.science/2016/04/09/用朴素贝叶斯进行垃圾邮件分类/</id>
     <published>2016-04-08T17:38:59.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p>朴素贝叶斯算法非常简单,但是在实际运用中效果往往还不错…</p>
@@ -483,16 +500,16 @@ int main()
 <p>举个例]]>
     </summary>
     
-      <category term="MachineLearning" scheme="http://www.ckboss.cf/tags/MachineLearning/"/>
+      <category term="MachineLearning" scheme="http://www.ckboss.science/tags/MachineLearning/"/>
     
-      <category term="MachineLearning" scheme="http://www.ckboss.cf/categories/MachineLearning/"/>
+      <category term="MachineLearning" scheme="http://www.ckboss.science/categories/MachineLearning/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Ubuntu默认字体设置和Chrome书签栏的Bug]]></title>
-    <link href="http://www.ckboss.cf/2016/03/26/Ubuntu%E9%BB%98%E8%AE%A4%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE%E5%92%8CChrome%E4%B9%A6%E7%AD%BE%E6%A0%8F%E7%9A%84Bug/"/>
-    <id>http://www.ckboss.cf/2016/03/26/Ubuntu默认字体设置和Chrome书签栏的Bug/</id>
+    <link href="http://www.ckboss.science/2016/03/26/Ubuntu%E9%BB%98%E8%AE%A4%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE%E5%92%8CChrome%E4%B9%A6%E7%AD%BE%E6%A0%8F%E7%9A%84Bug/"/>
+    <id>http://www.ckboss.science/2016/03/26/Ubuntu默认字体设置和Chrome书签栏的Bug/</id>
     <published>2016-03-26T06:01:59.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p>ubuntu 默认字体设置:</p>
@@ -529,8 +546,8 @@ int main()
   
   <entry>
     <title><![CDATA[2016年3月:最近在干什么]]></title>
-    <link href="http://www.ckboss.cf/2016/03/21/2016%E5%B9%B43%E6%9C%88-%E6%9C%80%E8%BF%91%E5%9C%A8%E5%B9%B2%E4%BB%80%E4%B9%88/"/>
-    <id>http://www.ckboss.cf/2016/03/21/2016年3月-最近在干什么/</id>
+    <link href="http://www.ckboss.science/2016/03/21/2016%E5%B9%B43%E6%9C%88-%E6%9C%80%E8%BF%91%E5%9C%A8%E5%B9%B2%E4%BB%80%E4%B9%88/"/>
+    <id>http://www.ckboss.science/2016/03/21/2016年3月-最近在干什么/</id>
     <published>2016-03-21T14:41:32.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p>很久没更新blog了,记录一下最近几个月来的近况.</p>
@@ -557,16 +574,16 @@ int main()
 <h4 id="VirtualJudgePY_的_第一版">VirtualJudgePY 的 第一版</h4><p>曾经尝试过搭建搭建hustVJ,记得那时候各种难搭,没有文档,安装说明混乱,代码太复杂等种种原因,]]>
     </summary>
     
-      <category term="日常" scheme="http://www.ckboss.cf/tags/%E6%97%A5%E5%B8%B8/"/>
+      <category term="日常" scheme="http://www.ckboss.science/tags/%E6%97%A5%E5%B8%B8/"/>
     
-      <category term="日常" scheme="http://www.ckboss.cf/categories/%E6%97%A5%E5%B8%B8/"/>
+      <category term="日常" scheme="http://www.ckboss.science/categories/%E6%97%A5%E5%B8%B8/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[qlcoder-时间线2]]></title>
-    <link href="http://www.ckboss.cf/2016/03/21/qlcoder-%E6%97%B6%E9%97%B4%E7%BA%BF2/"/>
-    <id>http://www.ckboss.cf/2016/03/21/qlcoder-时间线2/</id>
+    <link href="http://www.ckboss.science/2016/03/21/qlcoder-%E6%97%B6%E9%97%B4%E7%BA%BF2/"/>
+    <id>http://www.ckboss.science/2016/03/21/qlcoder-时间线2/</id>
     <published>2016-03-21T14:29:59.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<h4 id="近况:">近况:</h4><p>写了不少业务代码…</p>
@@ -622,18 +639,18 @@ int main()
 <p>当然,最主要的事情是为了键盘去做ql]]>
     </summary>
     
-      <category term="qlcoder" scheme="http://www.ckboss.cf/tags/qlcoder/"/>
+      <category term="qlcoder" scheme="http://www.ckboss.science/tags/qlcoder/"/>
     
-      <category term="数据结构" scheme="http://www.ckboss.cf/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="http://www.ckboss.science/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
-      <category term="qlcoder" scheme="http://www.ckboss.cf/categories/qlcoder/"/>
+      <category term="qlcoder" scheme="http://www.ckboss.science/categories/qlcoder/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[喜大普奔，装备升级]]></title>
-    <link href="http://www.ckboss.cf/2016/02/18/%E9%B8%9F%E6%9E%AA%E6%8D%A2%E7%82%AE/"/>
-    <id>http://www.ckboss.cf/2016/02/18/鸟枪换炮/</id>
+    <link href="http://www.ckboss.science/2016/02/18/%E9%B8%9F%E6%9E%AA%E6%8D%A2%E7%82%AE/"/>
+    <id>http://www.ckboss.science/2016/02/18/鸟枪换炮/</id>
     <published>2016-02-18T02:38:27.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p>喜大普奔，装备终于升级了 , hp 291tx，上了i7和8g的内存，写起代码更爽了。。。</p>
@@ -672,16 +689,16 @@ int main()
 <li>触摸板是关不]]>
     </summary>
     
-      <category term="日常" scheme="http://www.ckboss.cf/tags/%E6%97%A5%E5%B8%B8/"/>
+      <category term="日常" scheme="http://www.ckboss.science/tags/%E6%97%A5%E5%B8%B8/"/>
     
-      <category term="日常" scheme="http://www.ckboss.cf/categories/%E6%97%A5%E5%B8%B8/"/>
+      <category term="日常" scheme="http://www.ckboss.science/categories/%E6%97%A5%E5%B8%B8/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Java模拟两小球的碰撞]]></title>
-    <link href="http://www.ckboss.cf/2016/01/12/Java%E6%A8%A1%E6%8B%9F%E4%B8%A4%E5%B0%8F%E7%90%83%E7%9A%84%E7%A2%B0%E6%92%9E/"/>
-    <id>http://www.ckboss.cf/2016/01/12/Java模拟两小球的碰撞/</id>
+    <link href="http://www.ckboss.science/2016/01/12/Java%E6%A8%A1%E6%8B%9F%E4%B8%A4%E5%B0%8F%E7%90%83%E7%9A%84%E7%A2%B0%E6%92%9E/"/>
+    <id>http://www.ckboss.science/2016/01/12/Java模拟两小球的碰撞/</id>
     <published>2016-01-11T17:09:39.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<h6 id="2016年第二更…">2016年第二更…</h6><p>最近写了一个模拟两个小球,无能量损失碰撞的java小程序….</p>
@@ -692,14 +709,14 @@ int main()
 <h5 id="介绍_java_绘图的网站"><a href="https://www3.ntu.edu.sg/home/ehchua/p]]>
     </summary>
     
-      <category term="java" scheme="http://www.ckboss.cf/tags/java/"/>
+      <category term="java" scheme="http://www.ckboss.science/tags/java/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Java爬虫简单介绍]]></title>
-    <link href="http://www.ckboss.cf/2016/01/12/java%E7%88%AC%E8%99%AB/"/>
-    <id>http://www.ckboss.cf/2016/01/12/java爬虫/</id>
+    <link href="http://www.ckboss.science/2016/01/12/java%E7%88%AC%E8%99%AB/"/>
+    <id>http://www.ckboss.science/2016/01/12/java爬虫/</id>
     <published>2016-01-11T16:18:46.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<h6 id="2016年第一更…">2016年第一更…</h6><p>上个月写了不少java的爬虫,总结一下常用的java爬虫框架.</p>
@@ -743,16 +760,16 @@ int main()
 <h2 id="Part1_正常向]]>
     </summary>
     
-      <category term="java" scheme="http://www.ckboss.cf/tags/java/"/>
+      <category term="java" scheme="http://www.ckboss.science/tags/java/"/>
     
-      <category term="杂" scheme="http://www.ckboss.cf/categories/%E6%9D%82/"/>
+      <category term="杂" scheme="http://www.ckboss.science/categories/%E6%9D%82/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[使用实时更新的卫星照片做桌面壁纸]]></title>
-    <link href="http://www.ckboss.cf/2015/12/10/%E4%BD%BF%E7%94%A8%E5%AE%9E%E6%97%B6%E6%9B%B4%E6%96%B0%E7%9A%84%E5%8D%AB%E6%98%9F%E7%85%A7%E7%89%87%E5%81%9A%E6%A1%8C%E9%9D%A2%E5%A3%81%E7%BA%B8/"/>
-    <id>http://www.ckboss.cf/2015/12/10/使用实时更新的卫星照片做桌面壁纸/</id>
+    <link href="http://www.ckboss.science/2015/12/10/%E4%BD%BF%E7%94%A8%E5%AE%9E%E6%97%B6%E6%9B%B4%E6%96%B0%E7%9A%84%E5%8D%AB%E6%98%9F%E7%85%A7%E7%89%87%E5%81%9A%E6%A1%8C%E9%9D%A2%E5%A3%81%E7%BA%B8/"/>
+    <id>http://www.ckboss.science/2015/12/10/使用实时更新的卫星照片做桌面壁纸/</id>
     <published>2015-12-10T07:44:13.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://www.v2ex.com/t/241563#reply62" target="_blank" rel="external">V2EX里的一篇帖子….</a></p>
@@ -765,16 +782,16 @@ int main()
 <p>抓取日本的向日葵8号卫星每十分钟更新的的地球照片作为桌面壁纸.</p]]>
     </summary>
     
-      <category term="Python3小玩意" scheme="http://www.ckboss.cf/tags/Python3%E5%B0%8F%E7%8E%A9%E6%84%8F/"/>
+      <category term="Python3小玩意" scheme="http://www.ckboss.science/tags/Python3%E5%B0%8F%E7%8E%A9%E6%84%8F/"/>
     
-      <category term="Python3小玩意" scheme="http://www.ckboss.cf/categories/Python3%E5%B0%8F%E7%8E%A9%E6%84%8F/"/>
+      <category term="Python3小玩意" scheme="http://www.ckboss.science/categories/Python3%E5%B0%8F%E7%8E%A9%E6%84%8F/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[坑爹freenom随意取消域名]]></title>
-    <link href="http://www.ckboss.cf/2015/12/05/%E5%9D%91%E7%88%B9%E7%9A%84freenom%E5%9F%9F%E5%90%8D/"/>
-    <id>http://www.ckboss.cf/2015/12/05/坑爹的freenom域名/</id>
+    <link href="http://www.ckboss.science/2015/12/05/%E5%9D%91%E7%88%B9%E7%9A%84freenom%E5%9F%9F%E5%90%8D/"/>
+    <id>http://www.ckboss.science/2015/12/05/坑爹的freenom域名/</id>
     <published>2015-12-04T16:14:34.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p>晚上看了下邮箱，发现了这个：</p>
@@ -794,18 +811,18 @@ int main()
 <p>freenom说我的域名违规,给取消了…..<]]>
     </summary>
     
-      <category term="freenom" scheme="http://www.ckboss.cf/tags/freenom/"/>
+      <category term="freenom" scheme="http://www.ckboss.science/tags/freenom/"/>
     
-      <category term="域名" scheme="http://www.ckboss.cf/tags/%E5%9F%9F%E5%90%8D/"/>
+      <category term="域名" scheme="http://www.ckboss.science/tags/%E5%9F%9F%E5%90%8D/"/>
     
-      <category term="日常" scheme="http://www.ckboss.cf/categories/%E6%97%A5%E5%B8%B8/"/>
+      <category term="日常" scheme="http://www.ckboss.science/categories/%E6%97%A5%E5%B8%B8/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[近况2015年11月 ACM退役 和 模版Release]]></title>
-    <link href="http://www.ckboss.cf/2015/11/23/%E8%BF%91%E5%86%B5201511/"/>
-    <id>http://www.ckboss.cf/2015/11/23/近况201511/</id>
+    <link href="http://www.ckboss.science/2015/11/23/%E8%BF%91%E5%86%B5201511/"/>
+    <id>http://www.ckboss.science/2015/11/23/近况201511/</id>
     <published>2015-11-23T05:04:10.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<h4 id="近况:">近况:</h4><h5 id="1-_ACM生涯正式结束了,我这么弱应该就不需要什么退役感言了-">1. ACM生涯正式结束了,我这么弱应该就不需要什么退役感言了.</h5><h5 id="2-_整理了一下模版,放出了第一个v0-1-alpha-1的pre-release…">2. 整理了一下模版,放出了第一个<strong>v0.1-alpha.1的pre-release</strong>…</h5><h5 id="下载地址:_MyAcmTemplate_Nov_23_2015">下载地址:  <a href="https://github.com/CKboss/MyAcmTemplate/releases/tag/v0.1-alpha.1" target="_blank" rel="external">MyAcmTemplate Nov 23 2015</a></h5><h4 id="最近在做什么:">最近在做什么:</h4><h5 id="1-_复习期末考试">1. 复习期末考试</h5><h5 id="2-_学习一下Django框架,顺手写个毕业设计(准备写个VJ)">2. 学习一下Django框架,顺手写个毕业设计(准备写个VJ)</h5><h6 id="PS:_推荐一个Django1-8的入门教程:https://www-youtube-com/watch?v=cvceyNioank_和_这个老外的youtube的主页:">PS: 推荐一个Django1.8的入门教程:<a href="https://www.youtube.com/watch?v=cvceyNioank" target="_blank" rel="external">https://www.youtube.com/watch?v=cvceyNioank</a> 和 <a href="https://www.youtube.com/channel/UCWEHue8kksIaktO8KTTN_zg" target="_blank" rel="external">这个老外的youtube的主页:</a></h6><h4 id="将来做什么:">将来做什么:</h4><p>学习一下 Linux,Unix高级编程,编译原理,Haskell等…<br>以后可能会搞一点 机器学习+数据挖掘 , 然后应用在: 大数据算命上…</p>
@@ -816,16 +833,16 @@ int main()
     <![CDATA[<h4 id="近况:">近况:</h4><h5 id="1-_ACM生涯正式结束了,我这么弱应该就不需要什么退役感言了-">1. ACM生涯正式结束了,我这么弱应该就不需要什么退役感言了.</h5><h5 id="2-_整理了一下模版,放出了第一个v0-1-alpha-1的pr]]>
     </summary>
     
-      <category term="近况" scheme="http://www.ckboss.cf/tags/%E8%BF%91%E5%86%B5/"/>
+      <category term="近况" scheme="http://www.ckboss.science/tags/%E8%BF%91%E5%86%B5/"/>
     
-      <category term="日常" scheme="http://www.ckboss.cf/categories/%E6%97%A5%E5%B8%B8/"/>
+      <category term="日常" scheme="http://www.ckboss.science/categories/%E6%97%A5%E5%B8%B8/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Python3 处理Post操作]]></title>
-    <link href="http://www.ckboss.cf/2015/11/20/Python%E5%A1%AB%E5%86%99%E8%A1%A8%E5%8D%95/"/>
-    <id>http://www.ckboss.cf/2015/11/20/Python填写表单/</id>
+    <link href="http://www.ckboss.science/2015/11/20/Python%E5%A1%AB%E5%86%99%E8%A1%A8%E5%8D%95/"/>
+    <id>http://www.ckboss.science/2015/11/20/Python填写表单/</id>
     <published>2015-11-20T15:28:13.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p>Python写爬虫的时候经常要填写一些表单,总结了一下POST操作的写法.</p>
@@ -841,16 +858,16 @@ int main()
 <figure class="highlight python">]]>
     </summary>
     
-      <category term="Python3小玩意" scheme="http://www.ckboss.cf/tags/Python3%E5%B0%8F%E7%8E%A9%E6%84%8F/"/>
+      <category term="Python3小玩意" scheme="http://www.ckboss.science/tags/Python3%E5%B0%8F%E7%8E%A9%E6%84%8F/"/>
     
-      <category term="Python3小玩意" scheme="http://www.ckboss.cf/categories/Python3%E5%B0%8F%E7%8E%A9%E6%84%8F/"/>
+      <category term="Python3小玩意" scheme="http://www.ckboss.science/categories/Python3%E5%B0%8F%E7%8E%A9%E6%84%8F/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[MailGun API发送电子邮件]]></title>
-    <link href="http://www.ckboss.cf/2015/11/20/SPAM-Python/"/>
-    <id>http://www.ckboss.cf/2015/11/20/SPAM-Python/</id>
+    <link href="http://www.ckboss.science/2015/11/20/SPAM-Python/"/>
+    <id>http://www.ckboss.science/2015/11/20/SPAM-Python/</id>
     <published>2015-11-20T14:51:17.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p><img src="https://e45a551211fc56cb40b0-7d31421b6f9e7cf93475b75027a9bfbb.ssl.cf2.rackcdn.com/e6c50080e48828348b948be33d5efdb232a25789/images/mailgun.svg" alt="MailGun"></p>
@@ -865,16 +882,16 @@ int main()
     <![CDATA[<p><img src="https://e45a551211fc56cb40b0-7d31421b6f9e7cf93475b75027a9bfbb.ssl.cf2.rackcdn.com/e6c50080e48828348b948be33d5efdb232a25789/imag]]>
     </summary>
     
-      <category term="Python3小玩意" scheme="http://www.ckboss.cf/tags/Python3%E5%B0%8F%E7%8E%A9%E6%84%8F/"/>
+      <category term="Python3小玩意" scheme="http://www.ckboss.science/tags/Python3%E5%B0%8F%E7%8E%A9%E6%84%8F/"/>
     
-      <category term="Python3小玩意" scheme="http://www.ckboss.cf/categories/Python3%E5%B0%8F%E7%8E%A9%E6%84%8F/"/>
+      <category term="Python3小玩意" scheme="http://www.ckboss.science/categories/Python3%E5%B0%8F%E7%8E%A9%E6%84%8F/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[HDOJ 4756 Install Air Conditioning 次小生成树]]></title>
-    <link href="http://www.ckboss.cf/2015/11/08/HDOJ4756/"/>
-    <id>http://www.ckboss.cf/2015/11/08/HDOJ4756/</id>
+    <link href="http://www.ckboss.science/2015/11/08/HDOJ4756/"/>
+    <id>http://www.ckboss.science/2015/11/08/HDOJ4756/</id>
     <published>2015-11-08T15:21:53.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p>简单次小生成树,根据题目需求计算即可.</p>
@@ -902,16 +919,16 @@ int main()
     
     </summary>
     
-      <category term="次小生成树" scheme="http://www.ckboss.cf/tags/%E6%AC%A1%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/"/>
+      <category term="次小生成树" scheme="http://www.ckboss.science/tags/%E6%AC%A1%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/"/>
     
-      <category term="acm_图论" scheme="http://www.ckboss.cf/categories/acm-%E5%9B%BE%E8%AE%BA/"/>
+      <category term="acm_图论" scheme="http://www.ckboss.science/categories/acm-%E5%9B%BE%E8%AE%BA/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[HDOJ 4609 3-idiots FFT+组合数]]></title>
-    <link href="http://www.ckboss.cf/2015/11/08/HDOJ4609/"/>
-    <id>http://www.ckboss.cf/2015/11/08/HDOJ4609/</id>
+    <link href="http://www.ckboss.science/2015/11/08/HDOJ4609/"/>
+    <id>http://www.ckboss.science/2015/11/08/HDOJ4609/</id>
     <published>2015-11-08T12:15:51.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p>FFT+组合数,结果又遭遇了莫名奇妙的WA,重写又提交15+后终于过了.</p>
@@ -979,16 +996,16 @@ int main()
     
     </summary>
     
-      <category term="FFT" scheme="http://www.ckboss.cf/tags/FFT/"/>
+      <category term="FFT" scheme="http://www.ckboss.science/tags/FFT/"/>
     
-      <category term="acm_数论" scheme="http://www.ckboss.cf/categories/acm-%E6%95%B0%E8%AE%BA/"/>
+      <category term="acm_数论" scheme="http://www.ckboss.science/categories/acm-%E6%95%B0%E8%AE%BA/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[HDOJ 1402 A * B Problem Plus FFT乘法]]></title>
-    <link href="http://www.ckboss.cf/2015/11/08/HDOJ1402/"/>
-    <id>http://www.ckboss.cf/2015/11/08/HDOJ1402/</id>
+    <link href="http://www.ckboss.science/2015/11/08/HDOJ1402/"/>
+    <id>http://www.ckboss.science/2015/11/08/HDOJ1402/</id>
     <published>2015-11-08T02:53:38.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p><strong>fft乘法…</strong></p>
@@ -1014,16 +1031,16 @@ int main()
     
     </summary>
     
-      <category term="FFT" scheme="http://www.ckboss.cf/tags/FFT/"/>
+      <category term="FFT" scheme="http://www.ckboss.science/tags/FFT/"/>
     
-      <category term="acm_数论" scheme="http://www.ckboss.cf/categories/acm-%E6%95%B0%E8%AE%BA/"/>
+      <category term="acm_数论" scheme="http://www.ckboss.science/categories/acm-%E6%95%B0%E8%AE%BA/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[CodeForces 592D. Super M 树的直径+树DP]]></title>
-    <link href="http://www.ckboss.cf/2015/11/07/CF592D/"/>
-    <id>http://www.ckboss.cf/2015/11/07/CF592D/</id>
+    <link href="http://www.ckboss.science/2015/11/07/CF592D/"/>
+    <id>http://www.ckboss.science/2015/11/07/CF592D/</id>
     <published>2015-11-07T12:19:37.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<h5 id="题目大意:">题目大意:</h5><p>给一棵树,和树上的一些需要到达的点,你可以选择一个点为起点,沿着树到达其他需要到达的点.问所需走的最小距离是多少.</p>
@@ -1064,18 +1081,18 @@ int main()
     
     </summary>
     
-      <category term="dp" scheme="http://www.ckboss.cf/tags/dp/"/>
+      <category term="dp" scheme="http://www.ckboss.science/tags/dp/"/>
     
-      <category term="树" scheme="http://www.ckboss.cf/tags/%E6%A0%91/"/>
+      <category term="树" scheme="http://www.ckboss.science/tags/%E6%A0%91/"/>
     
-      <category term="acm_dp" scheme="http://www.ckboss.cf/categories/acm-dp/"/>
+      <category term="acm_dp" scheme="http://www.ckboss.science/categories/acm-dp/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[HDOJ 4126 Genghis Khan the Conqueror 次小生成树]]></title>
-    <link href="http://www.ckboss.cf/2015/11/07/HDOJ4126/"/>
-    <id>http://www.ckboss.cf/2015/11/07/HDOJ4126/</id>
+    <link href="http://www.ckboss.science/2015/11/07/HDOJ4126/"/>
+    <id>http://www.ckboss.science/2015/11/07/HDOJ4126/</id>
     <published>2015-11-07T04:31:50.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p><strong>次小生成树:</strong></p>
@@ -1118,16 +1135,16 @@ int main()
     
     </summary>
     
-      <category term="次小生成树" scheme="http://www.ckboss.cf/tags/%E6%AC%A1%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/"/>
+      <category term="次小生成树" scheme="http://www.ckboss.science/tags/%E6%AC%A1%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/"/>
     
-      <category term="acm_图论" scheme="http://www.ckboss.cf/categories/acm-%E5%9B%BE%E8%AE%BA/"/>
+      <category term="acm_图论" scheme="http://www.ckboss.science/categories/acm-%E5%9B%BE%E8%AE%BA/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[UVA 10600 - ACM Contest and Blackout 次小生成树Java版]]></title>
-    <link href="http://www.ckboss.cf/2015/11/06/UVA10600/"/>
-    <id>http://www.ckboss.cf/2015/11/06/UVA10600/</id>
+    <link href="http://www.ckboss.science/2015/11/06/UVA10600/"/>
+    <id>http://www.ckboss.science/2015/11/06/UVA10600/</id>
     <published>2015-11-06T14:57:02.000Z</published>
     <updated>2016-05-14T14:28:24.000Z</updated>
     <content type="html"><![CDATA[<p>求一最小生成树和一个次小生成树….<br><strong>坑: 图有重边,略麻烦一些</strong></p>
@@ -1140,32 +1157,9 @@ int main()
 <h4 id="次小生成树求法:">次小生成树求法:</h4><p>先求出最小生成树,然后dfs预处理出在MST上从u到v路径上的最大的边长.最后枚举不在MST上]]>
     </summary>
     
-      <category term="次小生成树" scheme="http://www.ckboss.cf/tags/%E6%AC%A1%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/"/>
+      <category term="次小生成树" scheme="http://www.ckboss.science/tags/%E6%AC%A1%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/"/>
     
-      <category term="acm_图论" scheme="http://www.ckboss.cf/categories/acm-%E5%9B%BE%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[HDOJ 4127 Flood-it! IDA*]]></title>
-    <link href="http://www.ckboss.cf/2015/11/06/HDOJ4127/"/>
-    <id>http://www.ckboss.cf/2015/11/06/HDOJ4127/</id>
-    <published>2015-11-06T06:11:06.000Z</published>
-    <updated>2016-05-14T14:28:24.000Z</updated>
-    <content type="html"><![CDATA[<p><strong>IDA*搜索</strong><br>H()函数可以用剩下的颜色个数来表示,每次枚举需要选择的颜色即可.</p>
-<p><td align="center"><h1 style="color:#1A5CC8">Flood-it!</h1><font><b><span style="font-family:Arial;font-size:12px;font-weight:bold;color:green">Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 1672&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 387<br></span></b></font><br><br><div class="panel_title" align="left">Problem Description</div> <div class="panel_content">Flood-it is a fascinating puzzle game on Google+ platform. The game interface is like follows:<br><center><img style="max-width:100%;" src="http://acm.hdu.edu.cn/data/images/4127-1.jpg"></center> <br>At the beginning of the game, system will randomly generate an N×N square board and each grid of the board is painted by one of the six colors. The player starts from the top left corner. At each step, he/she selects a color and changes all the grids connected with the top left corner to that specific color. The statement “two grids are connected” means that there is a path between the certain two grids under condition that each pair of adjacent grids on this path is in the same color and shares an edge. In this way the player can flood areas of the board from the starting grid (top left corner) until all of the grids are in same color. The following figure shows the earliest steps of a 4×4 game (colors are labeled in 0 to 5):<br><center><img style="max-width:100%;" src="http://acm.hdu.edu.cn/data/images/4127-2.jpg"></center> <br>Given a colored board at very beginning, please find the minimal number of steps to win the game (to change all the grids into a same color). <br><br></div><div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Input</div> <div class="panel_content">The input contains no more than 20 test cases. For each test case, the first line contains a single integer N (2&lt;=N&lt;=8) indicating the size of game board.<br><br>The following N lines show an N×N matrix (a<sub>i,j</sub>)<sub>n×n</sub> representing the game board. a<sub>i,j</sub> is in the range of 0 to 5 representing the color of the corresponding grid. <br>The input ends with N = 0.<br></div><div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Output</div> <div class="panel_content">For each test case, output a single integer representing the minimal number of steps to win the game.<br></div><div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Sample Input</div><div class="panel_content"><pre><div style="font-family:Courier New,Courier,monospace;">2<br>0 0<br>0 0<br>3<br>0 1 2<br>1 1 2<br>2 2 1<br>0</div></pre></div><div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Sample Output</div><div class="panel_content"><pre><div style="font-family:Courier New,Courier,monospace;">0<br>3</div></pre></div><div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Source</div> <div class="panel_content"> <a href="/search.php?field=problem&amp;key=2011+Asia+Fuzhou+Regional+Contest+&amp;source=1&amp;searchmode=source"> 2011 Asia Fuzhou Regional Contest  </a> </div> <div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Recommend</div> <div class="panel_content">lcy&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;We have carefully selected several similar problems for you:&nbsp;&nbsp;<a href="/showproblem.php?pid=4123" target="_blank">4123</a>&nbsp;<a href="/showproblem.php?pid=4124" target="_blank">4124</a>&nbsp;<a href="/showproblem.php?pid=4125" target="_blank">4125</a>&nbsp;<a href="/showproblem.php?pid=4126" target="_blank">4126</a>&nbsp;<a href="/showproblem.php?pid=4128" target="_blank">4128</a>&nbsp;</div><div class="panel_bottom">&nbsp;</div><br><center style="font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8"><a href="statistic.php?pid=4127">Statistic</a>&nbsp;|&nbsp;<a href="submit.php?pid=4127">Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4127">Discuss</a> | <a href="note/note.php?pid=4127">Note</a><br></center></td></p>
-<a id="more"></a>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* ***********************************************</span><br><span class="line">Author        :CKboss</span><br><span class="line">Created Time  :2015年11月06日 星期五 09时57分59秒</span><br><span class="line">File Name     :HDOJ4127.cpp</span><br><span class="line">************************************************ */</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;set&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;map&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">10</span>][<span class="number">10</span>];</span><br><span class="line"><span class="keyword">bool</span> vis[<span class="number">10</span>][<span class="number">10</span>];</span><br><span class="line"><span class="keyword">int</span> deep;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">H</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">bool</span> color[<span class="number">10</span>];</span><br><span class="line">    <span class="keyword">int</span> ret=<span class="number">0</span>;</span><br><span class="line">    <span class="built_in">memset</span>(color,<span class="literal">false</span>,<span class="keyword">sizeof</span>(color));</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(vis[i][j]==<span class="literal">true</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span>(color[a[i][j]]==<span class="literal">false</span>)</span><br><span class="line">                &#123;</span><br><span class="line">                    color[a[i][j]]=<span class="literal">true</span>;</span><br><span class="line">                    ret++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> dir_x[<span class="number">4</span>]=&#123;<span class="number">0</span>,<span class="number">0</span>,-<span class="number">1</span>,<span class="number">1</span>&#125;;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> dir_y[<span class="number">4</span>]=&#123;<span class="number">1</span>,-<span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">inSide</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(x&gt;=<span class="number">0</span>&amp;&amp;x&lt;n&amp;&amp;y&gt;=<span class="number">0</span>&amp;&amp;y&lt;n) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">dfs2</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y,<span class="keyword">int</span> c)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    vis[x][y]=<span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">int</span> ret=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">4</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> nx=x+dir_x[i];</span><br><span class="line">        <span class="keyword">int</span> ny=y+dir_y[i];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(inSide(nx,ny)==<span class="literal">false</span>||vis[nx][ny]==<span class="literal">false</span>||a[nx][ny]!=c) <span class="keyword">continue</span>;</span><br><span class="line">        ret++;</span><br><span class="line">        ret+=dfs2(nx,ny,c);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">fill</span><span class="params">(<span class="keyword">int</span> c)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> cnt=<span class="number">0</span>; <span class="comment">// 被染色的格子数</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(vis[i][j]==<span class="literal">false</span>) </span><br><span class="line">            &#123;</span><br><span class="line">                cnt+=dfs2(i,j,c);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> cnt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">dfs1</span><span class="params">(<span class="keyword">int</span> d,<span class="keyword">int</span> deep)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(d==deep) <span class="keyword">return</span> H()==<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span>(d+H()&gt;deep) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">bool</span> tv[<span class="number">10</span>][<span class="number">10</span>];</span><br><span class="line">    <span class="built_in">memcpy</span>(tv,vis,<span class="keyword">sizeof</span>(vis));</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">6</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(fill(i)==<span class="number">0</span>) <span class="keyword">continue</span>;</span><br><span class="line">        <span class="keyword">if</span>(dfs1(d+<span class="number">1</span>,deep)==<span class="literal">true</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="built_in">memcpy</span>(vis,tv,<span class="keyword">sizeof</span>(vis));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="comment">//freopen("data2.in","r",stdin);</span></span><br><span class="line">    <span class="comment">//freopen("out.txt","w",stdout);</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n)!=EOF&amp;&amp;n)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;n;j++)</span><br><span class="line">                <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;a[i][j]);</span><br><span class="line"></span><br><span class="line">        <span class="built_in">memset</span>(vis,<span class="literal">true</span>,<span class="keyword">sizeof</span>(vis));</span><br><span class="line">        vis[<span class="number">0</span>][<span class="number">0</span>]=<span class="literal">false</span>; deep=<span class="number">0</span>;</span><br><span class="line">        dfs2(<span class="number">0</span>,<span class="number">0</span>,a[<span class="number">0</span>][<span class="number">0</span>]);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(dfs1(<span class="number">0</span>,deep)==<span class="literal">false</span>) deep++;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,deep);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><strong>IDA*搜索</strong><br>H()函数可以用剩下的颜色个数来表示,每次枚举需要选择的颜色即可.</p>
-<p><td align="center"><h1 style="color:#1A5CC8">Flood-it!</h1><font><b><span style="font-family:Arial;font-size:12px;font-weight:bold;color:green">Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 1672&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 387<br></span></b></font><br><br><div class="panel_title" align="left">Problem Description</div> <div class="panel_content">Flood-it is a fascinating puzzle game on Google+ platform. The game interface is like follows:<br><center><img style="max-width:100%;" src="http://acm.hdu.edu.cn/data/images/4127-1.jpg"></center> <br>At the beginning of the game, system will randomly generate an N×N square board and each grid of the board is painted by one of the six colors. The player starts from the top left corner. At each step, he/she selects a color and changes all the grids connected with the top left corner to that specific color. The statement “two grids are connected” means that there is a path between the certain two grids under condition that each pair of adjacent grids on this path is in the same color and shares an edge. In this way the player can flood areas of the board from the starting grid (top left corner) until all of the grids are in same color. The following figure shows the earliest steps of a 4×4 game (colors are labeled in 0 to 5):<br><center><img style="max-width:100%;" src="http://acm.hdu.edu.cn/data/images/4127-2.jpg"></center> <br>Given a colored board at very beginning, please find the minimal number of steps to win the game (to change all the grids into a same color). <br><br></div><div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Input</div> <div class="panel_content">The input contains no more than 20 test cases. For each test case, the first line contains a single integer N (2&lt;=N&lt;=8) indicating the size of game board.<br><br>The following N lines show an N×N matrix (a<sub>i,j</sub>)<sub>n×n</sub> representing the game board. a<sub>i,j</sub> is in the range of 0 to 5 representing the color of the corresponding grid. <br>The input ends with N = 0.<br></div><div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Output</div> <div class="panel_content">For each test case, output a single integer representing the minimal number of steps to win the game.<br></div><div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Sample Input</div><div class="panel_content"><pre><div style="font-family:Courier New,Courier,monospace;">2<br>0 0<br>0 0<br>3<br>0 1 2<br>1 1 2<br>2 2 1<br>0</div></pre></div><div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Sample Output</div><div class="panel_content"><pre><div style="font-family:Courier New,Courier,monospace;">0<br>3</div></pre></div><div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Source</div> <div class="panel_content"> <a href="/search.php?field=problem&amp;key=2011+Asia+Fuzhou+Regional+Contest+&amp;source=1&amp;searchmode=source"> 2011 Asia Fuzhou Regional Contest  </a> </div> <div class="panel_bottom">&nbsp;</div><br><div class="panel_title" align="left">Recommend</div> <div class="panel_content">lcy&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;We have carefully selected several similar problems for you:&nbsp;&nbsp;<a href="/showproblem.php?pid=4123" target="_blank">4123</a>&nbsp;<a href="/showproblem.php?pid=4124" target="_blank">4124</a>&nbsp;<a href="/showproblem.php?pid=4125" target="_blank">4125</a>&nbsp;<a href="/showproblem.php?pid=4126" target="_blank">4126</a>&nbsp;<a href="/showproblem.php?pid=4128" target="_blank">4128</a>&nbsp;</div><div class="panel_bottom">&nbsp;</div><br><center style="font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8"><a href="statistic.php?pid=4127">Statistic</a>&nbsp;|&nbsp;<a href="submit.php?pid=4127">Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4127">Discuss</a> | <a href="note/note.php?pid=4127">Note</a><br></center></td></tr></p>]]>
-    
-    </summary>
-    
-      <category term="IDA*" scheme="http://www.ckboss.cf/tags/IDA/"/>
-    
-      <category term="acm_搜索" scheme="http://www.ckboss.cf/categories/acm-%E6%90%9C%E7%B4%A2/"/>
+      <category term="acm_图论" scheme="http://www.ckboss.science/categories/acm-%E5%9B%BE%E8%AE%BA/"/>
     
   </entry>
   
