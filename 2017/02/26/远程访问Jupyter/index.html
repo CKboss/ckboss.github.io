@@ -6,29 +6,32 @@
   
   <title>远程访问Jupyter | 码代码的猿猿</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="生成配置文件:notebook --generate-config```1&amp;#10;&amp;#32534;&amp;#36753;:&amp;#10;```vim /home/slient/.jupyter/jupyter_notebook_config.py
+  <meta name="description" content="生成配置文件:1jupyter notebook --generate-config
+编辑:1vim /home/slient/.jupyter/jupyter_notebook_config.py
 修改下面几个地方
-1# Notebook config&amp;#10;c.NotebookApp.certfile = u&amp;#39;/absolute/path/to">
+1# Notebook config&amp;#10;c.NotebookApp.certfile = u&amp;#39;/absolute/path/to/your/certificate/my">
 <meta property="og:type" content="article">
 <meta property="og:title" content="远程访问Jupyter">
 <meta property="og:url" content="http://www.ckboss.science/2017/02/26/远程访问Jupyter/index.html">
 <meta property="og:site_name" content="码代码的猿猿">
-<meta property="og:description" content="生成配置文件:notebook --generate-config```1&amp;#10;&amp;#32534;&amp;#36753;:&amp;#10;```vim /home/slient/.jupyter/jupyter_notebook_config.py
+<meta property="og:description" content="生成配置文件:1jupyter notebook --generate-config
+编辑:1vim /home/slient/.jupyter/jupyter_notebook_config.py
 修改下面几个地方
-1# Notebook config&amp;#10;c.NotebookApp.certfile = u&amp;#39;/absolute/path/to">
-<meta property="og:updated_time" content="2017-02-26T04:13:19.370Z">
+1# Notebook config&amp;#10;c.NotebookApp.certfile = u&amp;#39;/absolute/path/to/your/certificate/my">
+<meta property="og:updated_time" content="2017-02-26T04:51:49.217Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="远程访问Jupyter">
-<meta name="twitter:description" content="生成配置文件:notebook --generate-config```1&amp;#10;&amp;#32534;&amp;#36753;:&amp;#10;```vim /home/slient/.jupyter/jupyter_notebook_config.py
+<meta name="twitter:description" content="生成配置文件:1jupyter notebook --generate-config
+编辑:1vim /home/slient/.jupyter/jupyter_notebook_config.py
 修改下面几个地方
-1# Notebook config&amp;#10;c.NotebookApp.certfile = u&amp;#39;/absolute/path/to">
+1# Notebook config&amp;#10;c.NotebookApp.certfile = u&amp;#39;/absolute/path/to/your/certificate/my">
   
     <link rel="alternative" href="/atom.xml" title="码代码的猿猿" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
-  <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link href="https://fonts.css.network/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   
 
@@ -100,18 +103,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>生成配置文件:<br><figure class="highlight"><figcaption><span>notebook --generate-config```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#32534;&#36753;:&#10;```vim /home/slient/.jupyter/jupyter_notebook_config.py</span><br></pre></td></tr></table></figure></p>
+        <p>生成配置文件:<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter notebook <span class="comment">--generate-config</span></span><br></pre></td></tr></table></figure></p>
+<p>编辑:<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim <span class="regexp">/home/</span>slient<span class="regexp">/.jupyter/</span>jupyter_notebook_config.py</span><br></pre></td></tr></table></figure></p>
 <p>修改下面几个地方</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># Notebook config&#10;c.NotebookApp.certfile = u&#39;/absolute/path/to/your/certificate/mycert.pem&#39;&#10;c.NotebookApp.ip = &#39;*&#39;&#10;c.NotebookApp.open_browser = False&#10;c.NotebookApp.password = u&#39;sha1:bcd259ccf...your hashed password here&#39;&#10;# It&#39;s a good idea to put it on a known, fixed port&#10;c.NotebookApp.port = 9999</span><br></pre></td></tr></table></figure>
 <p>其中:</p>
-<figure class="highlight"><figcaption><span>req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mycert.pem -out mycert.pem```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#29983;&#25104;mycert.pem&#10;&#10;```python&#10;from IPython.lib import passwd&#10;passwd()</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl req -x509 -nodes -days <span class="number">365</span> -newkey rsa:<span class="number">1024</span> -keyout mycert.pem -out mycert.pem</span><br></pre></td></tr></table></figure>
+<p>生成mycert.pem</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> IPython.lib <span class="keyword">import</span> passwd</span><br><span class="line">passwd()</span><br></pre></td></tr></table></figure>
 <p>生成hash密码</p>
 <p>最后:<br><figure class="highlight fix"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">jupyter notebook –profile</span>=<span class="string">xxx</span></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2017/02/26/远程访问Jupyter/" data-id="cizm60ood00082eonyje5s8ek" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2017/02/26/远程访问Jupyter/" data-id="cizm78z910008imon72qyvmkt" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
@@ -279,7 +285,8 @@ var duoshuoQuery = {short_name:"ckboss-blog-hexo"};
 
     &nbsp
 
-    <img src="https://www.digitalocean.com/assets/images/logos-badges/horizontal-color-3d5b56b3.png"/>
+    <!-- <img src="https://www.digitalocean.com/assets/images/logos-badges/horizontal-color-3d5b56b3.png"/> -->
+    <img src="http://www.unixstickers.com/image/cache/data/stickers/guyfawkes/guyfawkes.sh-80x80.png">
 
     &nbsp
 
@@ -324,7 +331,7 @@ var duoshuoQuery = {short_name:"ckboss-blog-hexo"};
 </nav>
     
 
-<script src="//ajax.useso.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
   <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
