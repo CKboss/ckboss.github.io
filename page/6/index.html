@@ -73,6 +73,65 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-ZOJ2561" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/10/27/ZOJ2561/" class="article-date">
+  <time datetime="2015-10-27T15:08:27.000Z" itemprop="datePublished">2015-10-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/acm-dp/">acm_dp</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/27/ZOJ2561/">ZOJ 2561 Order-Preserving Codes 四边形优化DP</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>求安字典序递增的huffman编码,区间DP但是得用四边形优化…</p>
+<h2 id="Order-Preserving_Codes"><a href="http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=1561">Order-Preserving Codes</a></h2><p>Time Limit: 5 Seconds      Memory Limit: 65536 KB      Special Judge<br>Binary code is a mapping of characters of some alphabet to the set of finite length bit sequences. For example, standard ASCII code is a fixed length code, where each character is encoded using 8 bits.</p>
+<p>Variable length codes are often used to compress texts taking into account the frequencies of occurence of different characters. Characters that occur more often get shorter codes, while characters occuring less often – longer ones.</p>
+<p>To ensure unique decoding of variable length codes so called prefix codes are usually used. In a prefix code no code sequence is a proper prefix of another sequence. Prefix code can be easily decoded scanning the encoded sequence from left to right, since no code is the prefix of another, one always knows where the code for the current character ends and the new character starts.</p>
+<p>Among prefix codes, the optimal code is known, so called Huffman code. It provides the shortest possible length of the text among all prefix codes that separatly encode each character with an integer number of bits.</p>
+<p>However, as many other codes, Huffman code does not preserve character order. That is, Huffman codes for lexicographically ordered characters are not necessarily lexicographicaly ordered.</p>
+<p>In this problem you are asked to develop a prefix code that would be optimal for the given text among all order-preserving prefix codes. Code is called order-preserving if for any two characters the code sequence for the character that goes earlier in the alphabet is lexicographically smaller.</p>
+<p>Since text itself is not essential for finding the code, only the number of occurences of each character is important, only this data is given.</p>
+<h5 id="Input:">Input:</h5><p>The input consists of several test cases</p>
+<p>For each test case, the first line contains n – the number of characters in the alphabet (2 &lt;= n &lt;= 2000). The next line contains n integer numbers – the number of occurences of the characters in the text for which the code must be developed (numbers are positive and do not exceed 109). Characters are described in the alphabetical order.</p>
+<h5 id="Output:">Output:</h5><p>For each test case, Output n bit sequences, one on a line – the optimal order-preserving prefix code for the described text.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Sample Input:</span><br><span class="line"><span class="number">5</span></span><br><span class="line"><span class="number">1</span> <span class="number">8</span> <span class="number">2</span> <span class="number">3</span> <span class="number">1</span></span><br><span class="line">Sample Output:</span><br><span class="line"><span class="number">00</span></span><br><span class="line"><span class="number">01</span></span><br><span class="line"><span class="number">10</span></span><br><span class="line"><span class="number">110</span></span><br><span class="line"><span class="number">111</span></span><br></pre></td></tr></table></figure>
+<p>Author: Andrew Stankevich<br>Source: Andrew Stankevich’s Contest #4</p>
+        
+          <p class="article-more-link">
+            <a href="/2015/10/27/ZOJ2561/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.ckboss.science/2015/10/27/ZOJ2561/" data-id="cj0i24kn9003ddsonyr2e5c71" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp优化/">dp优化</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-四边形优化DP" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/10/27/四边形优化DP/" class="article-date">
@@ -116,7 +175,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/10/27/四边形优化DP/" data-id="cizm78z9c000wimonnvg7mlps" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/27/四边形优化DP/" data-id="cj0i24klv000xdsonxvwlr8cl" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DP/">DP</a></li></ul>
@@ -174,7 +233,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/10/27/ZOJ2565/" data-id="cizm78zaq0035imon6ayggnos" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/27/ZOJ2565/" data-id="cj0i24kn30036dsontkwdv6ij" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp/">dp</a></li></ul>
@@ -229,7 +288,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/10/27/ZOJ2559/" data-id="cizm78zaw003gimong0pd01lu" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/27/ZOJ2559/" data-id="cj0i24knc003hdson5rzo17dy" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/水/">水</a></li></ul>
@@ -294,7 +353,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/10/20/HDOJ5506/" data-id="cizm78zco005iimon5m15igfl" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/20/HDOJ5506/" data-id="cj0i24kob005jdson8rdfpx7p" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/搜索/">搜索</a></li></ul>
@@ -353,7 +412,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/10/19/2015CCPC/" data-id="cizm78zgb00czimon90px4z7o" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/19/2015CCPC/" data-id="cj0i24krt00d0dsonx8phcgl6" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/现场赛/">现场赛</a></li></ul>
@@ -413,7 +472,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/10/13/HDOJ5501/" data-id="cizm78zcv005mimonsqkre6dh" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/13/HDOJ5501/" data-id="cj0i24koc005ndsonrswiutly" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/背包/">背包</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/贪心/">贪心</a></li></ul>
@@ -471,7 +530,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/10/12/HDOJ5500/" data-id="cizm78zd3005simonx9vbuvkf" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/12/HDOJ5500/" data-id="cj0i24koe005tdsoncgqlg9zc" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/想法/">想法</a></li></ul>
@@ -527,7 +586,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/10/12/HDOJ5497/" data-id="cizm78zd5005ximontc9lmxy1" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/12/HDOJ5497/" data-id="cj0i24kof005ydsons9f7tnh0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/线段树/">线段树</a></li></ul>
@@ -574,72 +633,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/10/11/博客更新1/" data-id="cizm78z9f0011imonub0xygbd" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/11/博客更新1/" data-id="cj0i24km00012dsonsbxt3dwy" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Blog/">Blog</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-ZOJ3914" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/10/11/ZOJ3914/" class="article-date">
-  <time datetime="2015-10-11T11:34:44.000Z" itemprop="datePublished">2015-10-11</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/acm-模拟/">acm_模拟</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/11/ZOJ3914/">ZOJ 3914 Semantic Version 模拟</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>给你两个软件的版本号,比较两个软件哪个新…</p>
-<p>关键是得看懂题目,或者能找到<a href="http://semver.org/lang/zh-CN/">中文原文</a>也行….</p>
-<p>题目用到达几个比较规则:</p>
-<ul>
-<li>先比较主版本号(都是3段)</li>
-<li>主版本一样,有辅助版本号(‘ - ‘后面的那些)的小一些</li>
-<li>辅助版本号中按’ . ‘分开一端一段考虑<ul>
-<li>全数字的比有字母的小</li>
-<li>全数字的按数字大小比较</li>
-<li>有字母的按字符串大小比较</li>
-<li>辅助版本号短的小一些</li>
-</ul>
-</li>
-</ul>
-<p>具体细节见代码.</p>
-<td id="content" style="vertical-align:top"><br>        <div id="content_title">ZOJ Problem Set - 3914</div><br>        <div id="content_body"><br>            <center><span class="bigProblemTitle">Semantic Version</span></center><br>            <hr><br>            <center><br>                <font color="green">Time Limit: </font> 2 Seconds<br>                &nbsp;&nbsp;&nbsp;&nbsp;<br>                <font color="green">Memory Limit: </font> 65536 KB<br><br>            </center><br>            <hr><br>            <p><br>  In the world of software management there exists a dread place called “dependency hell.” The bigger your system grows and the more packages you integrate into your software, the more likely you are to find yourself, one day, in this pit of despair.<br></p><br><p><br>  In systems with many dependencies, releasing new package versions can quickly become a nightmare. If the dependency specifications are too tight, you are in danger of version lock (the inability to upgrade a package without having to release new versions of every dependent package). If dependencies are specified too loosely, you will inevitably be bitten by version promiscuity (assuming compatibility with more future versions than is reasonable). Dependency hell is where you are when version lock and/or version promiscuity prevent you from easily and safely moving your project forward.<br></p><br><p><br>  As a solution to this problem, Tom Preston-Werner proposed a simple set of rules and requirements that dictate how version numbers are assigned and incremented. These rules are based on but not necessarily limited to pre-existing widespread common practices in use in both closed and open-source software. For this system to work, you first need to declare a public API. This may consist of documentation or be enforced by the code itself. Regardless, it is important that this API be clear and precise. Once you identify your public API, you communicate changes to it with specific increments to your version number. Consider a version format of X.Y.Z (Major.Minor.Patch). Bug fixes not affecting the API increment the patch version, backwards compatible API additions/changes increment the minor version, and backwards incompatible API changes increment the major version.<br></p><br><p><br>  </p><ol><br>  <li><p>Software using Semantic Versioning MUST declare a public API. This API could be declared in the code itself or exist strictly in documentation. However it is done, it should be precise and comprehensive.</p></li><br>  <li><p>A normal version number MUST take the form X.Y.Z where X, Y, and Z are non-negative integers, and MUST NOT contain leading zeroes. X is the major version, Y is the minor version, and Z is the patch version. Each element MUST increase numerically. For instance: 1.9.0 -&gt; 1.10.0 -&gt; 1.11.0.</p></li><br>  <li><p>Once a versioned package has been released, the contents of that version MUST NOT be modified. Any modifications MUST be released as a new version.</p></li><br>  <li><p>Major version zero (0.y.z) is for initial development. Anything may change at any time. The public API should not be considered stable.</p></li><br>  <li><p>Version 1.0.0 defines the public API. The way in which the version number is incremented after this release is dependent on this public API and how it changes.</p></li><br>  <li><p>Patch version Z (x.y.Z | x &gt;= 0, y &gt;= 0, Z &gt;= 0) MUST be incremented if only backwards compatible bug fixes are introduced. A bug fix is defined as an internal change that fixes incorrect behavior.</p></li><br>  <li><p>Minor version Y (x.Y.z | x &gt;= 0, Y &gt;= 0, z &gt;= 0) MUST be incremented if new, backwards compatible functionality is introduced to the public API. It MUST be incremented if any public API functionality is marked as deprecated. It MAY be incremented if substantial new functionality or improvements are introduced within the private code. It MAY include patch level changes. Patch version MUST be reset to 0 when minor version is incremented.</p></li><br>  <li><p>Major version X (X.y.z | X &gt;= 0, y &gt;= 0, z &gt;= 0) MUST be incremented if any backwards incompatible changes are introduced to the public API. It MAY include minor<br>  and patch level changes. Patch and minor version MUST be reset to 0 when major version is incremented.</p></li><br>  <li><p>A pre-release version MAY be denoted by appending a hyphen and a series of dot separated identifiers immediately following the patch version. Identifiers MUST comprise only ASCII alphanumerics and hyphen [0-9A-Za-z-]. Identifiers MUST NOT be empty. Numeric identifiers MUST NOT include leading zeroes. Pre-release versions have a lower precedence than the associated normal version. A pre-release version indicates that the version is unstable and might not satisfy the intended compatibility requirements as denoted by its associated normal version. Examples: 1.0.0-alpha, 1.0.0-alpha.1, 1.0.0-0.3.7, 1.0.0-x.7.z.92.</p></li><br>  <li><p>Build metadata MAY be denoted by appending a plus sign and a series of dot separated identifiers immediately following the patch or pre-release version. Identifiers MUST comprise only ASCII alphanumerics and hyphen [0-9A-Za-z-]. Identifiers MUST NOT be empty. Build metadata SHOULD be ignored when determining version precedence. Thus two versions that differ only in the build metadata, have the same precedence. Examples: 1.0.0-alpha+001, 1.0.0+20130313144700, 1.0.0-beta+exp.sha.5114f85.</p></li><br>  <li><p>Precedence refers to how versions are compared to each other when ordered. Precedence MUST be calculated by separating the version into major, minor, patch and pre-release identifiers in that order (Build metadata does not figure into precedence). Precedence is determined by the first difference when comparing each of these identifiers from left to right as follows: Major, minor, and patch versions are always compared numerically. Example: 1.0.0 &lt; 2.0.0 &lt; 2.1.0 &lt; 2.1.1. When major, minor, and patch are equal, a pre-release version has lower precedence than a normal version. Example: 1.0.0-alpha &lt; 1.0.0. Precedence for two pre-release versions with the same major, minor, and patch version MUST be determined by comparing each dot separated identifier from left to right until a difference is found as follows: identifiers consisting of only digits are compared numerically and identifiers with letters or hyphens are compared lexically in ASCII sort order. Numeric identifiers always have lower precedence than non-numeric identifiers. A larger set of pre-release fields has a higher precedence than a smaller set, if all of the preceding identifiers are equal. Example: 1.0.0-alpha &lt; 1.0.0-alpha.1 &lt; 1.0.0-alpha.beta &lt; 1.0.0-beta &lt; 1.0.0-beta.2 &lt; 1.0.0-beta.11 &lt; 1.0.0-rc.1 &lt; 1.0.0.</p></li><br></ol><br><p></p><br><p><br>  Now you have installed a software which is managed by strict semantic version without build metadata. Knowing its current version and latest version, determine whether you need to update the software. It’s guaranteed the length of version string is no more than 30, and major version, minor version, patch version are all integers which are not less than 0.<br></p><br><h4>Input</h4><br><p><br>  The input may consist multiple test cases.<br></p><br><p><br>  For each test case, two legal semantic versions without build metadata are given in one line, seperated by a single space, describing the installed version and the latest version respectively.<br></p><br><br><h4>Output</h4><br><p><br>  If a new version is ready, print a line “Wow! Such feature! Very smart! I’m excited!”. If not, print a line “I’m angry!”.<br></p><p><br><br></p><h4>Sample Input</h4><br><pre>1.0.0 1.1.0-beta<br>1.0.0-beta 1.0.0<br>1.0.0-beta.2 1.0.0-beta<br>1.0.0-rc.1 1.0.0-rc.1<br></pre><br><br><h4>Sample Output</h4><br><pre>Wow! Such feature! Very smart! I’m excited!<br>Wow! Such feature! Very smart! I’m excited!<br>I’m angry!<br>I’m angry!<br></pre><br><br>            <hr><br><br>                Author: <strong>LIN, Hanzhao</strong><br><br><br><br><br>            <center><br>                <a href="/onlinejudge/submit.do?problemId=5641"><font color="blue">Submit</font></a><br><br>                &nbsp;&nbsp;<br>                <a href="/onlinejudge/showProblemStatus.do?problemId=5641"><font color="blue">Status</font></a><br><br><br>            </center><br>        </div><br><br><br><br>                </td>
-        
-          <p class="article-more-link">
-            <a href="/2015/10/11/ZOJ3914/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/10/11/ZOJ3914/" data-id="cizm78zah002pimoni170x221" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/恶模拟/">恶模拟</a></li></ul>
 
     </footer>
   </div>
@@ -695,7 +692,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
     </div>
   </div>
 
@@ -705,6 +702,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/03/20/求导数的程序/">求导数的程序</a>
+          </li>
         
           <li>
             <a href="/2017/02/26/Spyder远程连接Kernel/">Spyder远程连接Kernel</a>
@@ -720,10 +721,6 @@
         
           <li>
             <a href="/2017/01/16/你的段位和水平有关吗/">你的游戏水平和排位等级有关系吗?</a>
-          </li>
-        
-          <li>
-            <a href="/2016/11/17/docker初体验/">docker初体验</a>
           </li>
         
       </ul>

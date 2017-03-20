@@ -73,6 +73,57 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-antergos使用小记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/12/antergos使用小记/" class="article-date">
+  <time datetime="2016-05-12T04:53:45.000Z" itemprop="datePublished">2016-05-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/arch/">arch</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/12/antergos使用小记/">antergos使用小记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="https://antergos.com/wp-content/uploads/2014/09/antergos-clean.png" alt="antergos"></p>
+<p>antergos是arch的衍伸版，用的是arch+antergos的源。即可以方便的安装又可以使用arch的滚动更新和<br>强大包管理功能。</p>
+<p>一些安装和配置的时候遇到的问题。</p>
+<h2 id="fcitx-sogoupinyin_输入法的安装">fcitx-sogoupinyin 输入法的安装</h2><p>在aur里有打包好的搜狗拼音，不过安装好之后并不能切换出来，最后执行这两句就好了。。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S fcitx-im</span><br><span class="line">sudo pacman -S fcitx-configtool</span><br></pre></td></tr></table></figure>
+<h2 id="VMware的安装">VMware的安装</h2><p>arch的安装方式有点不太一样，安装的时候忽略没有/etc/init.d的错误，然后执行以下两句就可以了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S linux-headers </span><br><span class="line">sudo pacman -S base-devel</span><br></pre></td></tr></table></figure>
+<h2 id="中文字体的设置">中文字体的设置</h2><p>安装 <code>yaourt -S fontconfig-infinality</code>后中文字体的显示会好很多.<br>m1+ mn 是一个非常好用的，中英文共存的等宽字体。</p>
+<p><del>最后先试用一阵，看看会不会滚挂掉再说</del></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.ckboss.science/2016/05/12/antergos使用小记/" data-id="cj0i24kmu002ldsoniqzg4axb" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/arch/">arch</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Java生产者和消费者" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/04/23/Java生产者和消费者/" class="article-date">
@@ -108,7 +159,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2016/04/23/Java生产者和消费者/" data-id="cizm78zc2004himonk9qzd43f" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2016/04/23/Java生产者和消费者/" data-id="cj0i24knw004idsonx5lwpojk" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多线程/">多线程</a></li></ul>
@@ -179,7 +230,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2016/04/23/ubuntu16-04初体验/" data-id="cizm78z9w001rimonxs5794zd" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2016/04/23/ubuntu16-04初体验/" data-id="cj0i24kmb001sdsonoot8mvxm" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/">Ubuntu</a></li></ul>
@@ -225,7 +276,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2016/04/16/ubuntu创建无线热点/" data-id="cizm78z9s001kimonip1i5d6s" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2016/04/16/ubuntu创建无线热点/" data-id="cj0i24km9001ldsonrd9f7xm8" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/">Ubuntu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/实用工具/">实用工具</a></li></ul>
@@ -277,7 +328,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2016/04/12/Log4j2入门/" data-id="cizm78zbz004aimona83ah2sn" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2016/04/12/Log4j2入门/" data-id="cj0i24knv004bdsonox9u9k37" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Log4j/">Log4j</a></li></ul>
@@ -344,7 +395,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2016/04/09/用朴素贝叶斯进行垃圾邮件分类/" data-id="cizm78z98000kimonk8q81zji" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2016/04/09/用朴素贝叶斯进行垃圾邮件分类/" data-id="cj0i24kln000kdson9gfh58zl" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MachineLearning/">MachineLearning</a></li></ul>
@@ -405,7 +456,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2016/03/26/Ubuntu默认字体设置和Chrome书签栏的Bug/" data-id="cizm78zaz003kimonbch1jglv" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2016/03/26/Ubuntu默认字体设置和Chrome书签栏的Bug/" data-id="cj0i24kne003ldsonaniymn6p" class="article-share-link">Share</a>
       
       
     </footer>
@@ -463,7 +514,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2016/03/21/2016年3月-最近在干什么/" data-id="cizm78zg800csimonlrobbo02" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2016/03/21/2016年3月-最近在干什么/" data-id="cj0i24krq00ctdsonr8qboldm" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
@@ -550,7 +601,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2016/03/21/qlcoder-时间线2/" data-id="cizm78z9z001vimonefhvloqk" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2016/03/21/qlcoder-时间线2/" data-id="cj0i24kme001wdson94dxjmn7" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/qlcoder/">qlcoder</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据结构/">数据结构</a></li></ul>
@@ -618,50 +669,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2016/02/18/鸟枪换炮/" data-id="cizm78z8v0003imon3zxztyoq" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2016/02/18/鸟枪换炮/" data-id="cj0i24kla0003dson3ksednfd" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Java模拟两小球的碰撞" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/01/12/Java模拟两小球的碰撞/" class="article-date">
-  <time datetime="2016-01-11T17:09:39.000Z" itemprop="datePublished">2016-01-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/01/12/Java模拟两小球的碰撞/">Java模拟两小球的碰撞</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h6 id="2016年第二更…">2016年第二更…</h6><p>最近写了一个模拟两个小球,无能量损失碰撞的java小程序….</p>
-<h5 id="介绍_java_绘图的网站"><a href="https://www3.ntu.edu.sg/home/ehchua/programming/java/J4b_CustomGraphics.html" target="_blank" rel="external">介绍 java 绘图的网站</a></h5><h5 id="模拟两个小球碰撞_网上的demo">模拟两个小球碰撞  <a href="http://www.cnblogs.com/kenkofox/archive/2011/09/06/2168944.html" target="_blank" rel="external">网上的demo</a></h5><h5 id="碰撞时速度的变化"><a href="http://tina0152.blog.163.com/blog/static/119447958200910229109326/" target="_blank" rel="external">碰撞时速度的变化</a></h5><p><em>碰撞的代码</em>:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Collision</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">double</span> base = <span class="number">50</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">double</span> w = <span class="number">500</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">double</span> eps = <span class="number">1e-5</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">distanceSQ</span><span class="params">(Circle c1,Circle c2)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">double</span> dx = Math.abs(c1.x - c2.x);</span><br><span class="line">        <span class="keyword">double</span> dy = Math.abs(c1.y - c2.y);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> dx*dx+dy*dy;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">CirToCirS</span><span class="params">(Circle c , Vector&lt;Circle&gt; vc)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">boolean</span> flag=<span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">for</span>(Circle othercircle : vc) &#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span>(othercircle.equals(c)) &#123;</span><br><span class="line">                flag=<span class="keyword">true</span>;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(flag==<span class="keyword">false</span>) &#123;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(flag==<span class="keyword">true</span>) &#123;</span><br><span class="line">                CircleToCircle(c,othercircle);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">CircleToCircle</span><span class="params">(Circle c1,Circle c2)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(CheckCirlceToCircle(c1,c2)) &#123;</span><br><span class="line">            <span class="comment">/// change vector</span></span><br><span class="line"></span><br><span class="line">            VVector vss = <span class="keyword">new</span> VVector(c2.x-c1.x,c2.y-c1.y);</span><br><span class="line">            vss = vss.unitfy();</span><br><span class="line">            VVector vst = <span class="keyword">new</span> VVector(vss.y,-vss.x);</span><br><span class="line"></span><br><span class="line">            VVector v1 = <span class="keyword">new</span> VVector(c1.vx,c1.vy);</span><br><span class="line">            VVector v2 = <span class="keyword">new</span> VVector(c2.vx,c2.vy);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">double</span> v1s = v1.dotMul(vss);</span><br><span class="line">            <span class="keyword">double</span> v2s = v2.dotMul(vss);</span><br><span class="line">            <span class="keyword">double</span> v1t = v1.dotMul(vst);</span><br><span class="line">            <span class="keyword">double</span> v2t = v2.dotMul(vst);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">double</span> temp = v1s; v1s=v2s; v2s=temp;</span><br><span class="line"></span><br><span class="line">            VVector v1tV = vst.mul(v1t);</span><br><span class="line">            VVector v1sV = vss.mul(v1s);</span><br><span class="line">            VVector v2tV = vst.mul(v2t);</span><br><span class="line">            VVector v2sV = vss.mul(v2s);</span><br><span class="line"></span><br><span class="line">            c1.vx=v1tV.x+v1sV.x; c1.vy=v1tV.y+v1sV.y;</span><br><span class="line">            c2.vx=v2tV.x+v2sV.x; c2.vy=v2tV.y+v2sV.y;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">CirlcleToWall</span><span class="params">(Circle cirlce)</span> </span>&#123;</span><br><span class="line">        Vector&lt;Integer&gt; vi = <span class="keyword">new</span> Vector&lt;Integer&gt;();</span><br><span class="line">        vi = CheckCircleToWall(cirlce);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(Integer x : vi) &#123;</span><br><span class="line">            <span class="keyword">if</span>(x==<span class="number">1</span>||x==<span class="number">3</span>) &#123;</span><br><span class="line">               cirlce.vx*=-<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(x==<span class="number">2</span>||x==<span class="number">4</span>) &#123;</span><br><span class="line">               cirlce.vy*=-<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">CheckCirlceToCircle</span><span class="params">(Circle c1,Circle c2)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(distanceSQ(c1, c2)+eps&lt;(<span class="keyword">double</span>)((c1.r+c2.r)*(c1.r+c2.r)))</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/// 0 no Collison</span></span><br><span class="line">    <span class="comment">/// 1 North 2 East 3 South 4 West</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Vector&lt;Integer&gt; <span class="title">CheckCircleToWall</span><span class="params">(Circle c)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        Vector&lt;Integer&gt; ret = <span class="keyword">new</span> Vector&lt;Integer&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(c.x+c.r&gt;w+base) &#123;</span><br><span class="line">            ret.add(<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(c.x-c.r&lt;base) &#123;</span><br><span class="line">            ret.add(<span class="number">3</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(c.y+c.r&gt;w+base) &#123;</span><br><span class="line">            ret.add(<span class="number">4</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(c.y-c.r&lt;base) &#123;</span><br><span class="line">            ret.add(<span class="number">2</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2016/01/12/Java模拟两小球的碰撞/" data-id="cizm78zc4004mimontkoywdt3" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
 
     </footer>
   </div>
@@ -717,7 +728,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
     </div>
   </div>
 
@@ -727,6 +738,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/03/20/求导数的程序/">求导数的程序</a>
+          </li>
         
           <li>
             <a href="/2017/02/26/Spyder远程连接Kernel/">Spyder远程连接Kernel</a>
@@ -742,10 +757,6 @@
         
           <li>
             <a href="/2017/01/16/你的段位和水平有关吗/">你的游戏水平和排位等级有关系吗?</a>
-          </li>
-        
-          <li>
-            <a href="/2016/11/17/docker初体验/">docker初体验</a>
           </li>
         
       </ul>

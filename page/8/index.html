@@ -73,6 +73,60 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-HDOJ5469" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/10/02/HDOJ5469/" class="article-date">
+  <time datetime="2015-10-01T16:40:30.000Z" itemprop="datePublished">2015-10-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/acm-暴力/">acm_暴力</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/02/HDOJ5469/">HDOJ 5469 Antonidas 暴力+bitset</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>暴力DFS,对每个节点用一个bitset记录这个点可以匹配的前缀的位置和后缀的位置….</p>
+<p>写法比较有讲究,容易TLE和MLE,(<del>代码在G++中ac,C++ MLE</del>)….</p>
+<h3 id="Antonidas"><a href="http://acm.hdu.edu.cn/showproblem.php?pid=5469">Antonidas</a></h3><p>Time Limit: 8000/4000 MS (Java/Others)    Memory Limit: 65536/65536 K (Java/Others)<br>Total Submission(s): 529    Accepted Submission(s): 142</p>
+<h5 id="Problem_Description">Problem Description</h5><p>Given a tree with N vertices and N−1 edges. Each vertex has a single letter Ci. Given a string S, you are to choose two vertices A and B, and make sure the letters catenated on the shortest path from A to B is exactly S. Now, would you mind telling me whether the path exists?</p>
+<h5 id="Input">Input</h5><p>The first line is an integer T, the number of test cases.<br>For each case, the first line is an integer N. Following N−1 lines contains two integers a and b, meaning there is an edge connect vertex a and vertex b.<br>Next line contains a string C, the length of C is exactly N. String C represents the letter on each vertex.<br>Next line contains a string S.<br>1≤T≤200, 1≤N≤104, 1≤a,b≤N, a≠b, |C|=N, 1≤|S|≤104. String C and S both only contain lower case letters.</p>
+<h5 id="Output">Output</h5><p>First, please output “Case #k: “, k is the number of test case. See sample output for more detail.<br>If the path exists, please output “Find”. Otherwise, please output “Impossible”.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">Sample Input</span><br><span class="line"><span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="number">7</span></span><br><span class="line"><span class="number">1</span> <span class="number">2</span></span><br><span class="line"><span class="number">2</span> <span class="number">3</span></span><br><span class="line"><span class="number">2</span> <span class="number">4</span></span><br><span class="line"><span class="number">1</span> <span class="number">5</span></span><br><span class="line"><span class="number">5</span> <span class="number">6</span></span><br><span class="line"><span class="number">6</span> <span class="number">7</span></span><br><span class="line">abcdefg</span><br><span class="line">dbaefg</span><br><span class="line"></span><br><span class="line"><span class="number">5</span></span><br><span class="line"><span class="number">1</span> <span class="number">2</span></span><br><span class="line"><span class="number">2</span> <span class="number">3</span></span><br><span class="line"><span class="number">2</span> <span class="number">4</span></span><br><span class="line"><span class="number">4</span> <span class="number">5</span></span><br><span class="line">abcxy</span><br><span class="line">yxbac</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Sample Output</span><br><span class="line">Case <span class="preprocessor">#<span class="number">1</span>: Find</span></span><br><span class="line">Case <span class="preprocessor">#<span class="number">2</span>: Impossible</span></span><br></pre></td></tr></table></figure>
+<p>Source<br>2015 ACM/ICPC Asia Regional Shanghai Online</p>
+        
+          <p class="article-more-link">
+            <a href="/2015/10/02/HDOJ5469/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.ckboss.science/2015/10/02/HDOJ5469/" data-id="cj0i24kp7007qdsong81w9ic5" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bitset/">bitset</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/暴力/">暴力</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-HDOJ5481" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/10/01/HDOJ5481/" class="article-date">
@@ -122,7 +176,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/10/01/HDOJ5481/" data-id="cizm78zdm006zimonztba34he" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/10/01/HDOJ5481/" data-id="cj0i24kow0070dsonghmf65rg" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/线段树/">线段树</a></li></ul>
@@ -183,7 +237,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/09/30/HDOJ5480/" data-id="cizm78zdo0072imongcuwiq4s" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/09/30/HDOJ5480/" data-id="cj0i24koz0073dsonus8mpvja" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/水/">水</a></li></ul>
@@ -241,7 +295,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/09/30/HDOJ5491/" data-id="cizm78zdg006kimonurfbm8bf" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/09/30/HDOJ5491/" data-id="cj0i24koq006ldsonm86stgxv" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/构造/">构造</a></li></ul>
@@ -294,7 +348,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/09/30/HDOJ5492/" data-id="cizm78zdf006himonwxj5hkcp" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/09/30/HDOJ5492/" data-id="cj0i24kop006idsonmwwctjz7" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp/">dp</a></li></ul>
@@ -355,7 +409,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/09/29/HDOJ5486/" data-id="cizm78zdl006vimon2hm94b5h" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/09/29/HDOJ5486/" data-id="cj0i24kov006wdson6bq3vopt" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/模拟/">模拟</a></li></ul>
@@ -420,7 +474,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/09/29/保研告一段落/" data-id="cizm78z9i0015imonri27a0b0" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/09/29/保研告一段落/" data-id="cj0i24km10016dsonjf063p53" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
@@ -476,7 +530,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/09/29/HDOJ5487/" data-id="cizm78zdi006pimonmb65u7n2" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/09/29/HDOJ5487/" data-id="cj0i24kot006qdsonurxtysk2" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BFS/">BFS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/想法题/">想法题</a></li></ul>
@@ -538,7 +592,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/09/27/HDOJ5476/" data-id="cizm78zdr007bimonfxey9efy" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/09/27/HDOJ5476/" data-id="cj0i24kp2007cdsont4g201g8" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/几何/">几何</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/观察法/">观察法</a></li></ul>
@@ -591,69 +645,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/09/27/HDOJ5478/" data-id="cizm78zdp0075imonwamhsm16" class="article-share-link">Share</a>
+      <a data-url="http://www.ckboss.science/2015/09/27/HDOJ5478/" data-id="cj0i24kp00076dsonwuuhlkc2" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/acm/">acm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/暴力/">暴力</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-HDOJ4297" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/09/20/HDOJ4297/" class="article-date">
-  <time datetime="2015-09-20T02:00:06.000Z" itemprop="datePublished">2015-09-20</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/acm-图论/">acm_图论</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/09/20/HDOJ4297/">HDOJ 4297 One and One Story 并查集+LCA</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>不是很好搞的一题…<br>首先要找到树上那些点在环上,这个可以用并查集解决.</p>
-<p>有一个环的树大概长成这样:<br><img src="http://www.csie.ntnu.edu.tw/~u91029/Chu-Liu-Edmonds1.png" alt="水母图"></p>
-<p>实际的情况是这些图可能不联通,形成了一个水母的森林.</p>
-<p>我们对水母上的每个往外延伸的点做一次dfs求相关的LCA.</p>
-<p>如果俩个点在不同的水母上,者输出-1<br>如果两个点在水母的一条分叉上,直接输出改点深度和lca的深度的差.</p>
-<p>如果两个点在同一个水母上,则根据一个走一个不走进行判断.</p>
-<hr>
-<h3 id="One_and_One_Story">One and One Story</h3><p>Time Limit: 6000/3000 MS (Java/Others)    Memory Limit: 327680/327680 K (Java/Others)<br>Total Submission(s): 900    Accepted Submission(s): 393</p>
-<h5 id="Problem_Description">Problem Description</h5><p>　　Have you ever played the romantic Flash game, “One and One Story”?1 In this story of a boy and a girl and their romance you are to direct them to meet together as they face their euphoria and trials of their relationship.<br>　　You, as a member of the FFF Inquisition, 2 are fed up with such game since you believe that to make things fair, you should not keep providing guidance information while risking remaining forever alone 3 . So you decided to write a program working out guidance for these sweet small lovers on behalf of you. ( Another reason is, you have to help K couples, which would make you somewhat overwhelmed. )<br>　　Fortunately, you are to handle not the Flash game above, but a simplified version: In the game, a maze consists of some rooms connected with one-way hallways. For each room, there is exactly one outgoing hallway here, and it would lead directly to some room (not necessarily a different one). The boy and girl are trapped in (not necessarily different) rooms. In each round of the games, both of them could choose to stay in the current room or walk to the room to which the unique outgoing hallway leads. Note that boy and girl could act independently of each other. Your goal is to come to the reunion between them.<br>　　Your program should determine a pair of numbers (A,B) for each couple of boy and girl, where A represents number of hallway the boy walked through, B the girl, that could lead reunion between them. First, your program should minimize max(A,B). If there are several solutions, you should then guarantee that min(A,B) is minimized subject to above. If, satisfying above conditions, there are still multiple solutions, girl should walk less, that is you should then keep A &gt;= B subject to conditions above.<br>　　In case they could not reunion, just let A = B = -1.</p>
-<hr>
-<p>1It’s available here: <a href="http://armorgames.com/play/12409/one-and-one-story">http://armorgames.com/play/12409/one-and-one-story</a><br>2See <a href="http://bakatotest.wikia.com/wiki/FFF_Inquisition">http://bakatotest.wikia.com/wiki/FFF_Inquisition</a><br>3<a href="http://foreveralonecomic.com/">http://foreveralonecomic.com/</a></p>
-<h5 id="Input">Input</h5><p>　　There’re several test cases.<br>　　In each test case, in the first line there are two positive integers N and K (1 &lt;= N &lt;= 500000; 1 &lt;= K &lt;= 500000) denoting the number of rooms and number of couples. Rooms a numbered from 1 to N.<br>　　The second line contains n positive integers: the ith integer denotes the number of room to which the hallway going out of room i leads.<br>The following K lines are queries of several couples. Each query consists of two positive integers in a single line denoting the numbers of rooms where the lovers currently are: first the boy, then the girl.<br>　　Please process until EOF (End Of File).</p>
-<h5 id="Output">Output</h5><p>　　For each test case you should output exactly K lines, one line per query. Each line consists two integers separated by a space: the integer A and B for this couple.<br>　　See samples for detailed information.</p>
-        
-          <p class="article-more-link">
-            <a href="/2015/09/20/HDOJ4297/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.ckboss.science/2015/09/20/HDOJ4297/" data-id="cizm78zei0099imonod0u4hwr" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LCA/">LCA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/图论/">图论</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/并查集/">并查集</a></li></ul>
 
     </footer>
   </div>
@@ -709,7 +704,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">33</span></li></ul>
     </div>
   </div>
 
@@ -719,6 +714,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/03/20/求导数的程序/">求导数的程序</a>
+          </li>
         
           <li>
             <a href="/2017/02/26/Spyder远程连接Kernel/">Spyder远程连接Kernel</a>
@@ -734,10 +733,6 @@
         
           <li>
             <a href="/2017/01/16/你的段位和水平有关吗/">你的游戏水平和排位等级有关系吗?</a>
-          </li>
-        
-          <li>
-            <a href="/2016/11/17/docker初体验/">docker初体验</a>
           </li>
         
       </ul>
