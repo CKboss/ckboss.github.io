@@ -3,17 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.ckboss.science/</loc>
+  </url>
+  
+  <url>
     <loc>http://www.ckboss.science/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.ckboss.science/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.ckboss.science/</loc>
     <priority>0</priority>
   </url>
   
