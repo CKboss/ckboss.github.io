@@ -1,0 +1,30 @@
+baseURL = "http://www.ckboss.science/"
+languageCode = "en-us"
+title = "码代码的猿猿"
+theme = "hugo-classic"
+preserveTaxonomyNames = true
+footnotereturnlinkcontents = "↩"
+
+[permalinks]
+    post = "/post/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 2
+[[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+[[menu.feed]]
+    name = "Subscribe"
+    url = "/index.xml"
+
+[params]
+    description = "Just another blog."
+    footer = "Open-Source | [Github](https://github.com/CKboss) "
+
