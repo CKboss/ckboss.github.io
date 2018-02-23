@@ -3,7 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.ckboss.science/post/2018/02/23/2018_a_new_blog/</loc>
+    <lastmod>2018-02-23T17:01:59+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.ckboss.science/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.ckboss.science/post/</loc>
+    <lastmod>2018-02-23T17:01:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -14,6 +25,7 @@
   
   <url>
     <loc>http://www.ckboss.science/</loc>
+    <lastmod>2018-02-23T17:01:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
